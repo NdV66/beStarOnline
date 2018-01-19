@@ -68,7 +68,11 @@ module.exports = {
         watchContentBase: true,
         hot: true,
         inline: true,
-        port: 3000
+        port: 3000,
+        stats: 'minimal',
+        headers: {
+            'Access-Control-Allow-Origin': '*'
+        }
     },
     plugins: [HtmlWebpackPluginConfig_Index,
         new webpack.NamedModulesPlugin(),

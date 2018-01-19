@@ -1,0 +1,59 @@
+* {
+    font-family: Roboto;
+    font-weight: 200;
+    outline: 0 !important;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+body {
+    background-color: $BACKGROUND_COLOR;
+    font-size: $BASE_FONT_SIZE;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+h2 {
+    margin: 0px;
+    font-size: $BASE_FONT_SIZE;
+    width: 100%;
+    background-color: #422442;
+    padding: 8px 0px;
+    color: #FFCD02;
+    font-weight: 200;
+    padding-left: 16px;
+}
+
+h3 {
+    font-size: $BASE_FONT_SIZE;
+    width: 100%;
+    font-weight: 200;
+    padding: 8px 16px !important;
+}
+
+a:active,
+a:visited,
+a:link,
+a:hover,
+a {
+    color: #FFCD02 !important;
+}
+
+textarea {
+    width: 100%;
+    background-color: $BACKGROUND_COLOR;
+    border: 1px solid rgba(94, 51, 94, 0.2);
+    font-weight: 400;
+    font-size: $BASE_FONT_SIZE;
+    resize: none;
+}
+
+.btn:focus,.btn:active {
+   outline: none !important;
+   box-shadow: none;
+}
+
+.row{
+    margin-left: 0;
+    margin-right: 0;
+}
+

@@ -1,0 +1,53 @@
+.no-padding {
+    padding: 0px !important;
+}
+
+.no-margin {
+    margin: 0px !important;
+}
+
+.bg-color {
+    background-color: #5E335E;
+}
+
+.bg-color-dark {
+    background-color: #422442;
+}
+
+.bg-color-light {
+    background-color: #8D44AD;
+}
+
+.bg-neutral {
+    background-color: #F2F2F2;
+}
+
+.bg-neutral-darker {
+    background-color: $BACKGROUND_COLOR;
+}
+
+.bg-neutral-more-dark {
+    background-color: #dedede;
+}
+
+.font-primary {
+    color: #FFFFFF;
+}
+
+.full-height {
+    height: calc(100vh - 126px);
+}
+
+.font-headers {
+    color: #FFCD02;
+}
+
+.font-headers-dark {
+    color: #FFA800;
+}
+
+.content-padding {
+    padding: 0px 30px;
+}
+
+

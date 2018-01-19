@@ -1,11 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import image from './images/bStar.jpeg';
-import { Button } from 'react-bootstrap';
-import Bootstrap from 'bootstrap/dist/css/bootstrap.css';
-import './scss/main.scss';
+import HamburgerNavbar from './presentationComponents/HamburgerNavbar';
 
-ReactDOM.render(<Button>Click me!</Button>, document.getElementById('root'));
+import 'bootstrap/dist/css/bootstrap.css';
+import './scss/BBcode-interpreter.scss';
+import './scss/style.scss';
+
+const root = document.getElementById('root');
+
+ReactDOM.render(<HamburgerNavbar />, root);
 
 
 
