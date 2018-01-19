@@ -1,5 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const webpack = require('webpack');
 
 const HtmlWebpackPluginConfig_Index = new HtmlWebpackPlugin({
     template: './client/index.html',
@@ -64,7 +65,12 @@ module.exports = {
     devServer: {
         contentBase: path.join(__dirname, 'client'),
         noInfo: true,
-        watchContentBase: true
+        watchContentBase: true,
+        hot: true,
+        inline: true,
+        port: 3000
     },
-    plugins: [HtmlWebpackPluginConfig_Index]
+    plugins: [HtmlWebpackPluginConfig_Index,
+        new webpack.NamedModulesPlugin(),
+        new webpack.HotModuleReplacementPlugin()]
 };

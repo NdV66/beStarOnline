@@ -6,7 +6,7 @@
   "author": "Narin",
   "license": "MIT",
   "scripts": {
-    "start": "webpack-dev-server --inline"
+    "start": "webpack-dev-server"
   },
   "dependencies": {
     "bootstrap": "^3.3.7",
