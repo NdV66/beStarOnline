@@ -1,6 +1,9 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { Container } from 'reactstrap';
 import HamburgerNavbar from './HamburgerNavbar';
+import AboutPage from '../presentation/AboutPage';
+import FooterElement from '../presentation/FooterElement';
 
 const Home = () => {
     return (
@@ -10,23 +13,23 @@ const Home = () => {
             );
 };
 
-const About = () => {
-    return (
-            <div className="container">
-              <h1>About :)</h1>
-            </div>
-            );
-};
-
 const App = () => {
     return (
         <Router>
-            <div className="container-flud no-padding">
-                <HamburgerNavbar />
+            <Container fluid={true} className="no-padding no-margin">
+                <header>
+                    <HamburgerNavbar />
+                </header>
 
-                <Route exact path="/" component={Home} />
-                <Route path="/about" component={About} />
-            </div>
+                <main>
+                    <Route exact path="/" component={Home} />
+                    <Route path="/about" component={AboutPage} />
+                </main>
+
+                <footer className="footer">
+                    <FooterElement />
+                </footer>
+            </Container>
         </Router>
        );
 };

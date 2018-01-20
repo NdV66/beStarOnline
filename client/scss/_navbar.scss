@@ -14,6 +14,11 @@
 
 .navbar {
     background-color: $THEME_COLOR_PRIMARY;
+
+    a:active, a:visited,
+    a:link, a:hover, a {
+        color: $THEME_COLOR_TEXT !important;
+    }
 }
 
 .navbar-nav {
