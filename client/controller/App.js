@@ -21,7 +21,7 @@ const App = () => {
                     <HamburgerNavbar />
                 </header>
 
-                <main>
+                <main className="pt-3">
                     <Route exact path="/" component={Home} />
                     <Route path="/about" component={AboutPage} />
                 </main>

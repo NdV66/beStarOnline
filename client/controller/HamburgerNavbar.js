@@ -1,11 +1,11 @@
 import React from 'react';
-import { Collapse,
+import { Link } from 'react-router-dom';
+import {
+    Collapse,
     Navbar,
     NavbarToggler,
     Nav,
     NavItem } from 'reactstrap';
-import { Link } from 'react-router-dom'
-
 import IconElement from '../presentation/IconElement';
 
 export default class HamburgerNavbar extends React.Component {
