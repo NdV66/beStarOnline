@@ -1,0 +1,30 @@
+@import "_variables.scss";
+
+.custom-toggler.navbar-toggler {
+    border: none;
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,205,2,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.logo {
+    font-size: $BASE_FONT_SIZE;
+}
+
+.navbar {
+    background-color: $THEME_COLOR_PRIMARY;
+
+    a:active, a:visited,
+    a:link, a:hover, a {
+        color: $THEME_COLOR_TEXT !important;
+    }
+}
+
+.navbar-nav {
+    font-size: $BASE_FONT_SIZE;
+}
+
+.navbar-nav .icon {
+    font-size: $BASE_FONT_SIZE;
+}
