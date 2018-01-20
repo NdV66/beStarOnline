@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const webpack = require('webpack');
 
 const HtmlWebpackPluginConfig_Index = new HtmlWebpackPlugin({
-    template: './client/index.html',
+    template: './src/index.html',
     filename: 'index.html',
     inject: 'body',
     chunks: ['index']
@@ -18,7 +18,7 @@ const styleLoader = {
 
 module.exports = {
     entry: {
-        index: path.resolve(__dirname, './client/index.js')
+        index: path.resolve(__dirname, './src/index.js')
     },
     output: {
         path: path.resolve(__dirname, './dist'),
@@ -64,7 +64,7 @@ module.exports = {
         ]
     },
     devServer: {
-        contentBase: path.join(__dirname, 'client'),
+        contentBase: path.join(__dirname, 'src'),
         noInfo: false,
         watchContentBase: true,
         hot: true,
