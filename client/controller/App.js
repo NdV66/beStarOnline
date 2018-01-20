@@ -3,15 +3,9 @@ import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import { Container } from 'reactstrap';
 import HamburgerNavbar from './HamburgerNavbar';
 import AboutPage from '../presentation/AboutPage';
+import HomePage from '../presentation/HomePage';
 import FooterElement from '../presentation/FooterElement';
 
-const Home = () => {
-    return (
-            <div className="container">
-              <h1>It's good to be home</h1>
-            </div>
-            );
-};
 
 const App = () => {
     return (
@@ -22,7 +16,7 @@ const App = () => {
                 </header>
 
                 <main className="pt-3">
-                    <Route exact path="/" component={Home} />
+                    <Route exact path="/" component={HomePage} />
                     <Route path="/about" component={AboutPage} />
                 </main>
 
