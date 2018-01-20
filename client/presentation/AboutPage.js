@@ -4,28 +4,28 @@ import {
     Row,
     Col } from 'reactstrap';
 
+const AboutPageLink = (props) => {
+    return (<a className="d-block mt-2" href={props.href} target="_blank">{props.text}</a>);
+};
+
+const HeaderAboutPage = (props) => {
+    return(<Col xs="12"><h2>{props.text}</h2></Col>);
+};
+
+const DescriptionAboutPage = (props) => {
+    return(<Col xs="12">{props.text}<AboutPageLink text={props.linkText} href={props.href} /></Col>);
+};
+
 const ModuleAbout = (props) => {
-    const AboutPageLink = (props) => {
-        return (<a className="d-block mt-2" href="{props.href}" target="_blank">{props.text}</a>);
-    };
-
-    const HeaderAboutPage = (props) => {
-        return(<Col xs="12"><h2>{props.text}</h2></Col>);
-    };
-
-    const DescriptionAboutPage = (props) => {
-        return(<Col xs="12">{props.text}<AboutPageLink text={props.linkText} href={props.href} /></Col>);
-    };
-
     return(
-            <div>
-                <HeaderAboutPage text={props.header} />
-                <DescriptionAboutPage
-                    linkText={props.linkText}
-                    href={props.href}
-                    text={props.text} />
-            </div>
-            );
+        <div>
+            <HeaderAboutPage text={props.header} />
+            <DescriptionAboutPage
+                linkText={props.linkText}
+                href={props.href}
+                text={props.text} />
+        </div>
+        );
 };
 
 const AboutPage = () => {
