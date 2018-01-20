@@ -8,6 +8,7 @@ const HtmlWebpackPluginConfig_Index = new HtmlWebpackPlugin({
     inject: 'body',
     chunks: ['index']
 });
+
 const styleLoader = {
     loader: 'style-loader',
     options: {
@@ -17,7 +18,7 @@ const styleLoader = {
 
 module.exports = {
     entry: {
-        index: './client/index.js'
+        index: path.resolve(__dirname, './client/index.js')
     },
     output: {
         path: path.resolve(__dirname, './dist'),
@@ -64,17 +65,20 @@ module.exports = {
     },
     devServer: {
         contentBase: path.join(__dirname, 'client'),
-        noInfo: true,
+        noInfo: false,
         watchContentBase: true,
         hot: true,
         inline: true,
         port: 3000,
         stats: 'minimal',
+        historyApiFallback: true,
         headers: {
             'Access-Control-Allow-Origin': '*'
         }
     },
-    plugins: [HtmlWebpackPluginConfig_Index,
+    plugins: [
+        HtmlWebpackPluginConfig_Index,
         new webpack.NamedModulesPlugin(),
-        new webpack.HotModuleReplacementPlugin()]
+        new webpack.HotModuleReplacementPlugin()
+    ]
 };
