@@ -2,6 +2,10 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const webpack = require('webpack');
 
+const productionPublicPath = '/beStarOnline';
+const devPublicPath = '/';
+const isDevMode = true;
+
 const HtmlWebpackPluginConfig_Index = new HtmlWebpackPlugin({
     template: './src/index.html',
     filename: 'index.html',
@@ -16,6 +20,20 @@ const styleLoader = {
     }
 };
 
+const devServerConf = {
+    contentBase: path.join(__dirname, 'src'),
+    noInfo: false,
+    watchContentBase: true,
+    hot: true,
+    inline: true,
+    port: 3000,
+    stats: 'minimal',
+    historyApiFallback: true,
+    headers: {
+        'Access-Control-Allow-Origin': '*'
+    }
+};
+
 module.exports = {
     entry: {
         index: path.resolve(__dirname, './src/index.js')
@@ -23,9 +41,9 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, './dist'),
         filename: '[name].bundle.js',
-        publicPath: '/'
+        publicPath: (isDevMode) ? devPublicPath : productionPublicPath
     },
-    watch: true,
+    watch: isDevMode,
     module: {
         rules: [
             {
@@ -63,19 +81,7 @@ module.exports = {
             }
         ]
     },
-    devServer: {
-        contentBase: path.join(__dirname, 'src'),
-        noInfo: false,
-        watchContentBase: true,
-        hot: true,
-        inline: true,
-        port: 3000,
-        stats: 'minimal',
-        historyApiFallback: true,
-        headers: {
-            'Access-Control-Allow-Origin': '*'
-        }
-    },
+    devServer: devServerConf,
     plugins: [
         HtmlWebpackPluginConfig_Index,
         new webpack.NamedModulesPlugin(),

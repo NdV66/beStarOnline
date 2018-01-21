@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { HashRouter as Router, Route, Link } from 'react-router-dom';
 import { Container } from 'reactstrap';
 import HamburgerNavbar from './HamburgerNavbar';
 import AboutPage from '../presentation/AboutPage';
