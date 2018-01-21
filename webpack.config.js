@@ -4,7 +4,7 @@ const webpack = require('webpack');
 
 const productionPublicPath = '/beStarOnline';
 const devPublicPath = '/';
-const isDevMode = true;
+const isDevMode = false;
 
 const HtmlWebpackPluginConfig_Index = new HtmlWebpackPlugin({
     template: './src/index.html',
