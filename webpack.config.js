@@ -36,7 +36,7 @@ const devServerConf = {
 
 module.exports = {
     entry: {
-        index: path.resolve(__dirname, './src/index.js')
+        index: './src/index.js'
     },
     output: {
         path: path.resolve(__dirname, './dist'),
@@ -81,7 +81,6 @@ module.exports = {
             }
         ]
     },
-    devServer: devServerConf,
     plugins: [
         HtmlWebpackPluginConfig_Index,
         new webpack.NamedModulesPlugin(),
