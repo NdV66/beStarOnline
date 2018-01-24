@@ -35,26 +35,19 @@ const AboutPage = () => {
                     header="What is beStar?"
                     linkText="Clik here for full beStar sources."
                     href="#"
-                    text={
-                    < span > It is a simple tool to create a text using BBcode.
-                    You can see your changes and finished work.<br />
-                    beStar is a module implemented using JavaScript.<br /> < /span>} />
+                    text={[<span key="1">It is a simple tool to create a text using BBcode. You can see your changes and finished work.</span>, <br key="2"/>, <span key="3">beStar is a module implemented using JavaScript.</span>]} />
 
                 <ModuleAbout
                     header="Ok, so what is BBcode?"
                     linkText="Clik here for more information about BBcode."
                     href="https://en.wikipedia.org/wiki/BBCode"
-                    text={
-                    < span >It's a very useful markup language.
-                    It can be using for creating post or messages. <br />
-                    The BBcode was created in 1998 and implemented in Perl. < /span>} />
+                    text={[<span key="1">It's a very useful markup language. It can be using for creating post or messages.</span>, <br key="2" />, <span key="3">The BBcode was created in 1998 and implemented in Perl.</span>]} />
 
                 <ModuleAbout
                     header="What about beStar license?"
                     linkText="Clik here for more information about MIT License."
                     href="#"
-                    text={
-                    < span >beStar is under MIT License, so you can use it for free, even in commercial projects.< /span>} />
+                    text={[<span key="1">beStar is under MIT License, so you can use it for free, even in commercial projects.</span>]} />
             </Container>
             );
 };

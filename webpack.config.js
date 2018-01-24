@@ -4,7 +4,7 @@ const webpack = require('webpack');
 
 const productionPublicPath = '/beStarOnline';
 const devPublicPath = '/';
-const isDevMode = false;
+const isDevMode = true;
 
 const HtmlWebpackPluginConfig_Index = new HtmlWebpackPlugin({
     template: './src/index.html',
@@ -44,6 +44,7 @@ module.exports = {
         publicPath: (isDevMode) ? devPublicPath : productionPublicPath
     },
     watch: isDevMode,
+    devServer: devServerConf,
     module: {
         rules: [
             {
