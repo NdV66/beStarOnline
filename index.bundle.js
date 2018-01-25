@@ -61,7 +61,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "9c254ad7ff28c2328250"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "a6653d74ada44584d8c5"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -854,7 +854,7 @@ exports = module.exports = __webpack_require__("./node_modules/css-loader/lib/cs
 
 
 // module
-exports.push([module.i, "@font-face {\n  font-family: Roboto;\n  src: url(" + escape(__webpack_require__("./src/fonts/Roboto-Light.ttf")) + ");\n  font-weight: 200; }\n\n@font-face {\n  font-family: Roboto;\n  src: url(" + escape(__webpack_require__("./src/fonts/Roboto-Regular.ttf")) + ");\n  font-weight: 400; }\n\n@font-face {\n  font-family: Icons;\n  src: url(" + escape(__webpack_require__("./src/fonts/heydings_icons.ttf")) + "); }\n\n.icon {\n  font-family: Icons; }\n\n.icon-settings:after {\n  content: 'C'; }\n\n.icon-cake:after {\n  content: 'Y'; }\n\n.icon-paper:after {\n  content: 'D'; }\n\n.icon-bulb:after {\n  content: 'l'; }\n\n.icon-compass:after {\n  content: 'N'; }\n\n.icon-ask:after {\n  content: 'Q'; }\n\n.icon-bookmark:after {\n  content: 'B'; }\n\n.icon-key:after {\n  content: 'K'; }\n\n.icon-copy:after {\n  content: 'e'; }\n\n.icon-viewfinder:after {\n  content: '@'; }\n\n.icon-magnifier:after {\n  content: 'M'; }\n\n.no-padding {\n  padding: 0px !important; }\n\n.no-margin {\n  margin: 0px !important; }\n\n.bg-color {\n  background-color: #5E335E; }\n\n.bg-color-dark {\n  background-color: #422442; }\n\n.bg-color-light {\n  background-color: #8D44AD; }\n\n.bg-neutral {\n  background-color: #F2F2F2; }\n\n.bg-neutral-darker {\n  background-color: #EFEFEF; }\n\n.bg-neutral-more-dark {\n  background-color: #dedede; }\n\n.font-primary {\n  color: #FFFFFF; }\n\n.full-height {\n  height: calc(100vh - 126px); }\n\n.font-headers {\n  color: #FFCD02; }\n\n.font-headers-dark {\n  color: #FFA800; }\n\n.content-padding {\n  padding: 0px 30px; }\n\n* {\n  font-family: Roboto;\n  font-weight: 200;\n  outline: 0 !important;\n  -webkit-tap-highlight-color: transparent; }\n\nbody {\n  background-color: #EFEFEF;\n  font-size: 14pt;\n  min-height: 100vh;\n  overflow-x: hidden; }\n\nh2 {\n  margin: 0;\n  font-size: 16.8pt;\n  width: 100%;\n  padding: 20px 0 10px 0 !important;\n  font-weight: 200;\n  padding-left: 16px;\n  font-size: 18.2pt;\n  font-weight: 400; }\n\nh3 {\n  font-size: 14pt;\n  width: 100%;\n  font-weight: 200;\n  padding: 8px 16px !important; }\n\ntextarea {\n  width: 100%;\n  background-color: #EFEFEF;\n  border: 1px solid rgba(94, 51, 94, 0.2);\n  font-weight: 400;\n  font-size: 14pt;\n  resize: none; }\n\n.btn:focus, .btn:active {\n  outline: none !important;\n  box-shadow: none; }\n\na:active, a:visited,\na:link, a:hover, a {\n  color: #8D44AD !important; }\n\nmain {\n  /*100vh - navbarHeight - footerHeight*/\n  min-height: calc(100vh - 67px - 65px); }\n\n.custom-toggler.navbar-toggler {\n  border: none; }\n\n.custom-toggler .navbar-toggler-icon {\n  background-image: url(\"data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,205,2,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E\"); }\n\n.logo {\n  font-size: 14pt; }\n\n.navbar {\n  background-color: #422442; }\n  .navbar a:active, .navbar a:visited,\n  .navbar a:link, .navbar a:hover, .navbar a {\n    color: #FFCD02 !important; }\n\n.navbar-nav {\n  font-size: 14pt; }\n\n.navbar-nav .icon {\n  font-size: 14pt; }\n\n@font-face {\n  font-family: Roboto;\n  src: url(" + escape(__webpack_require__("./src/fonts/Roboto-Light.ttf")) + ");\n  font-weight: 200; }\n\n@font-face {\n  font-family: Roboto;\n  src: url(" + escape(__webpack_require__("./src/fonts/Roboto-Regular.ttf")) + ");\n  font-weight: 400; }\n\n@font-face {\n  font-family: Icons;\n  src: url(" + escape(__webpack_require__("./src/fonts/heydings_icons.ttf")) + "); }\n\n.icon {\n  font-family: Icons; }\n\n.icon-settings:after {\n  content: 'C'; }\n\n.icon-cake:after {\n  content: 'Y'; }\n\n.icon-paper:after {\n  content: 'D'; }\n\n.icon-bulb:after {\n  content: 'l'; }\n\n.icon-compass:after {\n  content: 'N'; }\n\n.icon-ask:after {\n  content: 'Q'; }\n\n.icon-bookmark:after {\n  content: 'B'; }\n\n.icon-key:after {\n  content: 'K'; }\n\n.icon-copy:after {\n  content: 'e'; }\n\n.icon-viewfinder:after {\n  content: '@'; }\n\n.icon-magnifier:after {\n  content: 'M'; }\n\n.no-padding {\n  padding: 0px !important; }\n\n.no-margin {\n  margin: 0px !important; }\n\n.bg-color {\n  background-color: #5E335E; }\n\n.bg-color-dark {\n  background-color: #422442; }\n\n.bg-color-light {\n  background-color: #8D44AD; }\n\n.bg-neutral {\n  background-color: #F2F2F2; }\n\n.bg-neutral-darker {\n  background-color: #EFEFEF; }\n\n.bg-neutral-more-dark {\n  background-color: #dedede; }\n\n.font-primary {\n  color: #FFFFFF; }\n\n.full-height {\n  height: calc(100vh - 126px); }\n\n.font-headers {\n  color: #FFCD02; }\n\n.font-headers-dark {\n  color: #FFA800; }\n\n.content-padding {\n  padding: 0px 30px; }\n\n.footer {\n  padding-top: 8.4pt;\n  padding-bottom: 8.4pt;\n  background-color: #E6E6E6;\n  text-align: center;\n  font-size: 14pt; }\n\n.bb-tag {\n  font-weight: 600; }\n\n.dropdown {\n  z-index: 999999; }\n\n.dropdown .btn {\n  background: none;\n  border: none;\n  color: #FFCD02;\n  font-weight: 200;\n  font-size: 14pt;\n  line-height: 24px;\n  font-family: Roboto; }\n\n.dropdown-menu {\n  background-color: #422442;\n  color: #FFCD02;\n  border: none;\n  border-radius: 0px;\n  padding: .25rem 0; }\n\n.dropdown-item {\n  padding: 3px 0.8rem; }\n\n.dropdown-item:hover,\n.dropdown-item:active {\n  background-color: #5E335E; }\n\n.content {\n  font-family: Roboto;\n  font-weight: 400; }\n\n#preview-bb-content {\n  position: absolute;\n  left: 0;\n  right: 0;\n  z-index: 999;\n  height: calc(100vh - 88px);\n  background-color: #dedede;\n  border: none;\n  border-radius: 0;\n  font-size: 14pt;\n  color: #422442; }\n", ""]);
+exports.push([module.i, "@font-face {\n  font-family: Roboto;\n  src: url(" + escape(__webpack_require__("./src/fonts/Roboto-Light.ttf")) + ");\n  font-weight: 200; }\n\n@font-face {\n  font-family: Roboto;\n  src: url(" + escape(__webpack_require__("./src/fonts/Roboto-Regular.ttf")) + ");\n  font-weight: 400; }\n\n@font-face {\n  font-family: Icons;\n  src: url(" + escape(__webpack_require__("./src/fonts/heydings_icons.ttf")) + "); }\n\n.icon {\n  font-family: Icons; }\n\n.icon-settings:after {\n  content: 'C'; }\n\n.icon-cake:after {\n  content: 'Y'; }\n\n.icon-paper:after {\n  content: 'D'; }\n\n.icon-bulb:after {\n  content: 'l'; }\n\n.icon-compass:after {\n  content: 'N'; }\n\n.icon-ask:after {\n  content: 'Q'; }\n\n.icon-bookmark:after {\n  content: 'B'; }\n\n.icon-key:after {\n  content: 'K'; }\n\n.icon-copy:after {\n  content: 'e'; }\n\n.icon-viewfinder:after {\n  content: '@'; }\n\n.icon-magnifier:after {\n  content: 'M'; }\n\n.no-padding {\n  padding: 0px !important; }\n\n.no-margin {\n  margin: 0px !important; }\n\n.bg-color {\n  background-color: #5E335E; }\n\n.bg-color-dark {\n  background-color: #422442; }\n\n.bg-color-light {\n  background-color: #8D44AD; }\n\n.bg-neutral {\n  background-color: #F2F2F2; }\n\n.bg-neutral-darker {\n  background-color: #EFEFEF; }\n\n.bg-neutral-more-dark {\n  background-color: #dedede; }\n\n.font-primary {\n  color: #FFFFFF; }\n\n.full-height {\n  height: calc(100vh - 126px); }\n\n.font-headers {\n  color: #FFCD02; }\n\n.font-headers-dark {\n  color: #FFA800; }\n\n.content-padding {\n  padding: 0px 30px; }\n\n* {\n  font-family: Roboto;\n  font-weight: 200;\n  outline: 0 !important;\n  -webkit-tap-highlight-color: transparent; }\n\nbody {\n  background-color: #EFEFEF;\n  font-size: 18px;\n  min-height: 100vh;\n  overflow-x: hidden;\n  position: relative; }\n\nh2 {\n  margin: 0;\n  font-size: 21.6px;\n  width: 100%;\n  padding: 20px 0 10px 0 !important;\n  font-weight: 200;\n  padding-left: 16px;\n  font-size: 23.4px;\n  font-weight: 400; }\n\nh3 {\n  font-size: 18px;\n  width: 100%;\n  font-weight: 200;\n  padding: 8px 16px !important; }\n\ntextarea {\n  width: 100%;\n  height: calc(100vh - 190px);\n  background-color: #EFEFEF;\n  border: 1px solid rgba(94, 51, 94, 0.2);\n  font-weight: 400;\n  font-size: 18px;\n  resize: none; }\n\nmain {\n  min-height: calc(100vh - 190px); }\n\n.btn:focus, .btn:active {\n  outline: none !important;\n  box-shadow: none; }\n\na:active, a:visited,\na:link, a:hover, a {\n  color: #7a427a !important; }\n\n.custom-toggler.navbar-toggler {\n  border: none; }\n\n.custom-toggler .navbar-toggler-icon {\n  background-image: url(\"data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,205,2,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E\"); }\n\n.logo {\n  font-size: 18px; }\n\n.navbar {\n  background-color: #422442; }\n  .navbar a:active, .navbar a:visited,\n  .navbar a:link, .navbar a:hover, .navbar a {\n    color: #FFCD02 !important; }\n\n.navbar-nav {\n  font-size: 18px; }\n\n.navbar-nav .icon {\n  font-size: 18px; }\n\n@font-face {\n  font-family: Roboto;\n  src: url(" + escape(__webpack_require__("./src/fonts/Roboto-Light.ttf")) + ");\n  font-weight: 200; }\n\n@font-face {\n  font-family: Roboto;\n  src: url(" + escape(__webpack_require__("./src/fonts/Roboto-Regular.ttf")) + ");\n  font-weight: 400; }\n\n@font-face {\n  font-family: Icons;\n  src: url(" + escape(__webpack_require__("./src/fonts/heydings_icons.ttf")) + "); }\n\n.icon {\n  font-family: Icons; }\n\n.icon-settings:after {\n  content: 'C'; }\n\n.icon-cake:after {\n  content: 'Y'; }\n\n.icon-paper:after {\n  content: 'D'; }\n\n.icon-bulb:after {\n  content: 'l'; }\n\n.icon-compass:after {\n  content: 'N'; }\n\n.icon-ask:after {\n  content: 'Q'; }\n\n.icon-bookmark:after {\n  content: 'B'; }\n\n.icon-key:after {\n  content: 'K'; }\n\n.icon-copy:after {\n  content: 'e'; }\n\n.icon-viewfinder:after {\n  content: '@'; }\n\n.icon-magnifier:after {\n  content: 'M'; }\n\n.no-padding {\n  padding: 0px !important; }\n\n.no-margin {\n  margin: 0px !important; }\n\n.bg-color {\n  background-color: #5E335E; }\n\n.bg-color-dark {\n  background-color: #422442; }\n\n.bg-color-light {\n  background-color: #8D44AD; }\n\n.bg-neutral {\n  background-color: #F2F2F2; }\n\n.bg-neutral-darker {\n  background-color: #EFEFEF; }\n\n.bg-neutral-more-dark {\n  background-color: #dedede; }\n\n.font-primary {\n  color: #FFFFFF; }\n\n.full-height {\n  height: calc(100vh - 126px); }\n\n.font-headers {\n  color: #FFCD02; }\n\n.font-headers-dark {\n  color: #FFA800; }\n\n.content-padding {\n  padding: 0px 30px; }\n\n.footer {\n  padding-top: 10.8px;\n  padding-bottom: 10.8px;\n  background-color: #e1e1e1;\n  text-align: center;\n  font-size: 18px;\n  position: absolute;\n  right: 0;\n  bottom: 0;\n  left: 0; }\n\n.bb-tag {\n  font-weight: 600; }\n\n.dropdown {\n  z-index: 999999; }\n\n.dropdown .btn {\n  background: none;\n  border: none;\n  color: #FFCD02;\n  font-weight: 200;\n  font-size: 18px;\n  line-height: 24px;\n  font-family: Roboto; }\n\n.dropdown-menu {\n  background-color: #422442;\n  color: #FFCD02;\n  border: none;\n  border-radius: 0px;\n  padding: .25rem 0; }\n\n.dropdown-item {\n  padding: 3px 0.8rem; }\n\n.dropdown-item:hover,\n.dropdown-item:active {\n  background-color: #5E335E; }\n\n.content {\n  font-family: Roboto;\n  font-weight: 400; }\n\n#preview-bb-content {\n  position: absolute;\n  left: 0;\n  right: 0;\n  z-index: 999;\n  height: calc(100vh - 88px);\n  background-color: #dedede;\n  border: none;\n  border-radius: 0;\n  font-size: 18px;\n  color: #422442; }\n\n.btn-primary {\n  background-color: #422442;\n  color: #FFCD02;\n  border: none; }\n  .btn-primary:hover, .btn-primary:active {\n    background-color: #7a427a;\n    color: #FFCD02;\n    outline: none; }\n\n.alert-preview {\n  background-color: #d8bfd8; }\n", ""]);
 
 // exports
 
@@ -33696,8 +33696,8 @@ var HamburgerNavbar = function (_React$Component) {
                             _reactstrap.NavItem,
                             null,
                             _react2.default.createElement(
-                                _reactRouterDom.Link,
-                                { className: 'nav-link', to: '#' },
+                                'a',
+                                { className: 'nav-link', href: 'https://github.com/NdV66/beStarOnline', target: '_blank' },
                                 _react2.default.createElement(_IconElement2.default, { icon: 'cake' }),
                                 'Get sources'
                             )
@@ -33787,6 +33787,173 @@ _reactDom2.default.render(_react2.default.createElement(_App2.default, null), do
 
 /***/ }),
 
+/***/ "./src/lib/BBcode-interpreter.js":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+var BBCodeInterpreter = function () {
+    var _bbText = '';
+    var BASE_HTML_ELEMENT_TYPE = 'div';
+    var SIMPLE_SYMBOLS_PARSER = {
+        italic: {
+            parse: simpleReplace(/\[i\]/g, /\[\/i\]/g, 'bb-italic')
+        },
+        strong: {
+            parse: simpleReplace(/\[b\]/g, /\[\/b\]/g, 'bb-strong')
+        },
+        underlined: {
+            parse: simpleReplace(/\[u\]/g, /\[\/u\]/g, 'bb-underlined')
+        },
+        strikethrough: {
+            parse: simpleReplace(/\[s\]/g, /\[\/s\]/g, 'bb-strikethrough')
+        },
+        code: {
+            parse: function parse() {
+                var bbText = _bbText;
+                bbText = bbText.replace(/\[code\]/g, '<code>');
+                bbText = bbText.replace(/\[\/code\]/g, '</code>');
+
+                if (bbText) {
+                    _bbText = bbText;
+                }
+            }
+        },
+        link: {
+            parse: function parse() {
+                var PATTERNS = {
+                    href: {
+                        pattern: /\[url\](.*?)\[\/url\]/g,
+                        parse: function parse(link) {
+                            var newLink = link.replace(/\[\/url\]/, '</a>');
+                            newLink = newLink.replace(/\[\url\]/, '<a href="' + link.substring(5, link.length - 6) + '">');
+                            var replace = _bbText.replace(link, newLink);
+                            if (replace) {
+                                _bbText = replace;
+                            }
+                        }
+                    },
+                    descHref: {
+                        pattern: /\[url\=\"(.*?)\"\](.*?)\[\/url\]/g,
+                        parse: function parse(link) {
+                            var linkName = link.match(/\](.*?)\[/);
+                            var linkHref = link.match(/\="(.*?)"/);
+                            var replace = _bbText.replace(link, '<a href="' + linkHref[1] + '">' + linkName[1] + '</a>');
+                            if (replace) {
+                                _bbText = replace;
+                            }
+                        }
+                    }
+                };
+
+                for (var key in PATTERNS) {
+                    createHTMLelement(PATTERNS[key].pattern, PATTERNS[key].parse);
+                }
+            } },
+        image: {
+            parse: function parse() {
+                createHTMLelement(/\[img\](.*?)\[\/img\]/g, function (link) {
+                    var imgLink = link.match(/\[img\](.*?)\[\/img\]/);
+                    var replace = _bbText.replace(link, '<img src="' + imgLink[1] + '" />');
+                    if (replace) {
+                        _bbText = replace;
+                    }
+                });
+            }
+        },
+        quote: {
+            parse: function parse() {
+                createHTMLelement(/\[quote\](.*?)\[\/quote\]/g, function (link) {
+                    var qouteLink = link.match(/\[quote\](.*?)\[\/quote\]/);
+                    var replace = _bbText.replace(link, '<blockquote><p>' + qouteLink[1] + '</p></<blockquote>');
+                    if (replace) {
+                        _bbText = replace;
+                    }
+                });
+            }
+        },
+        table: {
+            parse: function parse() {
+                var bbText = _bbText;
+                bbText = bbText.replace(/\[table\]/g, '<table>');
+                bbText = bbText.replace(/\[\/table\]/g, '</table>');
+                bbText = bbText.replace(/\[tr\]/g, '<tr>');
+                bbText = bbText.replace(/\[\/tr\]/g, '</tr>');
+                bbText = bbText.replace(/\[td\]/g, '<td>');
+                bbText = bbText.replace(/\[\/td\]/g, '</td>');
+
+                if (bbText) {
+                    _bbText = bbText;
+                }
+            }
+        }
+        //        baseList: {
+        //            parse: function () {
+        //                var bbText = _bbText;
+        ////                bbText = bbText.replace(/\[tr\]/g, '<tr>');
+        ////                bbText = bbText.replace(/\[\/tr\]/g, '</tr>');
+        //
+        //                var lists = bbText.match(/\[\*\](.*?)\[\*\]/g);
+        //
+        //                console.log('@@@ x: ' + );
+        //
+        //                bbText = bbText.replace(/\[list\]/g, '<ul>');
+        //                bbText = bbText.replace(/\[\/list\]/g, '</ul>');
+        //
+        //                if (bbText) {
+        //                    _bbText = bbText;
+        //                }
+        //            }
+        //        }
+    };
+
+    function createHTMLelement(regexp, callback) {
+        var links = _bbText.match(regexp);
+        if (links) {
+            for (var i = 0; i < links.length; i++) {
+                callback(links[i]);
+            }
+        }
+    }
+
+    function simpleReplace(startRegexp, endRegexp, cssClass) {
+        return function () {
+            var classTag = 'class';
+            var bbText = _bbText;
+            bbText = bbText.replace(startRegexp, '<' + BASE_HTML_ELEMENT_TYPE + ' ' + classTag + '="bb-display-inline ' + cssClass + '">');
+            bbText = bbText.replace(endRegexp, '</' + BASE_HTML_ELEMENT_TYPE + '>');
+
+            if (bbText) {
+                _bbText = bbText;
+            }
+        };
+    }
+
+    /* ------ ------ MAIN ------ ------ */
+    function decodeToHTML(_bbTextRef) {
+        _bbText = _bbTextRef;
+        _bbText = _bbText.replace(/\r|\n/g, '</br>');
+
+        for (var key in SIMPLE_SYMBOLS_PARSER) {
+            SIMPLE_SYMBOLS_PARSER[key].parse();
+        }
+
+        return '<' + BASE_HTML_ELEMENT_TYPE + '>' + _bbText + '</' + BASE_HTML_ELEMENT_TYPE + '>';
+    }
+
+    return {
+        decodeToHTML: decodeToHTML
+    };
+}();
+
+exports.default = BBCodeInterpreter;
+
+/***/ }),
+
 /***/ "./src/presentation/AboutPage.js":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -33853,36 +34020,55 @@ var AboutPage = function AboutPage() {
         _react2.default.createElement(ModuleAbout, {
             header: 'What is beStar?',
             linkText: 'Clik here for full beStar sources.',
-            href: '#',
-            text: _react2.default.createElement(
+            href: 'https://github.com/NdV66/beStarOnline',
+            text: [_react2.default.createElement(
                 'span',
-                null,
-                ' It is a simple tool to create a text using BBcode. You can see your changes and finished work.',
-                _react2.default.createElement('br', null),
-                'beStar is a module implemented using JavaScript.',
-                _react2.default.createElement('br', null),
-                ' '
-            ) }),
+                { key: '1' },
+                'It is a simple tool to create a text using BBcode.'
+            ), _react2.default.createElement('br', null), _react2.default.createElement(
+                'span',
+                { key: '1.1' },
+                'You can see your changes and finished work using "Preview" button on the top of Home Page.'
+            ), _react2.default.createElement('br', { key: '2' }), _react2.default.createElement(
+                'span',
+                { key: '3' },
+                'beStar is based on a module implemented using JavaScript.'
+            ), _react2.default.createElement('br', null), _react2.default.createElement(
+                'span',
+                { key: '4' },
+                'In the future will be an option to save you work (automatic or not) in localstorage and to choose a font size etc.'
+            )] }),
         _react2.default.createElement(ModuleAbout, {
             header: 'Ok, so what is BBcode?',
             linkText: 'Clik here for more information about BBcode.',
             href: 'https://en.wikipedia.org/wiki/BBCode',
-            text: _react2.default.createElement(
+            text: [_react2.default.createElement(
                 'span',
-                null,
-                'It\'s a very useful markup language. It can be using for creating post or messages. ',
-                _react2.default.createElement('br', null),
-                'The BBcode was created in 1998 and implemented in Perl. '
-            ) }),
+                { key: '1' },
+                'It\'s a very useful markup language. It can be using for creating post or messages.'
+            ), _react2.default.createElement('br', { key: '2' }), _react2.default.createElement(
+                'span',
+                { key: '3' },
+                'The BBcode was created in 1998 and implemented in Perl.'
+            )] }),
         _react2.default.createElement(ModuleAbout, {
             header: 'What about beStar license?',
             linkText: 'Clik here for more information about MIT License.',
-            href: '#',
-            text: _react2.default.createElement(
+            href: 'https://opensource.org/licenses/MIT',
+            text: [_react2.default.createElement(
                 'span',
-                null,
+                { key: '1' },
                 'beStar is under MIT License, so you can use it for free, even in commercial projects.'
-            ) })
+            )] }),
+        _react2.default.createElement(ModuleAbout, {
+            header: 'What about beStar license?',
+            linkText: 'Clik here for more information about MIT License.',
+            href: 'https://opensource.org/licenses/MIT',
+            text: [_react2.default.createElement(
+                'span',
+                { key: '1' },
+                'beStar is under MIT License, so you can use it for free, even in commercial projects.'
+            )] })
     );
 };
 
@@ -33918,22 +34104,35 @@ var FooterElement = function FooterElement() {
             _react2.default.createElement(
                 _reactstrap.Col,
                 { md: '3', xs: '6' },
-                'Narin'
+                _react2.default.createElement(
+                    'strong',
+                    null,
+                    'Narin (NdV66)'
+                )
             ),
             _react2.default.createElement(
                 _reactstrap.Col,
                 { md: '3', xs: '6' },
-                'Github'
+                _react2.default.createElement(
+                    'a',
+                    { target: '_blank', href: 'https://github.com/NdV66/beStarOnline' },
+                    'Github'
+                )
             ),
             _react2.default.createElement(
                 _reactstrap.Col,
-                { md: '3', xs: '6' },
-                '?? License'
+                { md: '3', xs: '6', className: 'd-none d-md-block' },
+                'under ',
+                _react2.default.createElement(
+                    'a',
+                    { target: '_blank', href: 'https://opensource.org/licenses/MIT' },
+                    'MIT License'
+                )
             ),
             _react2.default.createElement(
                 _reactstrap.Col,
-                { md: '3', xs: '6' },
-                '1.0.0v'
+                { md: '3', xs: '6', className: 'd-none d-md-block' },
+                'v1.0.1'
             )
         )
     );
@@ -33953,33 +34152,196 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
 var _react = __webpack_require__("./node_modules/react/index.js");
 
 var _react2 = _interopRequireDefault(_react);
 
 var _reactstrap = __webpack_require__("./node_modules/reactstrap/dist/reactstrap.es.js");
 
+var _IconElement = __webpack_require__("./src/presentation/IconElement.js");
+
+var _IconElement2 = _interopRequireDefault(_IconElement);
+
+var _BBcodeInterpreter = __webpack_require__("./src/lib/BBcode-interpreter.js");
+
+var _BBcodeInterpreter2 = _interopRequireDefault(_BBcodeInterpreter);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var HomePage = function HomePage() {
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Preview = function Preview(props) {
     return _react2.default.createElement(
-        _reactstrap.Container,
-        { fluid: true },
+        _reactstrap.Col,
+        { className: 'preview-content no-margin' },
         _react2.default.createElement(
-            _reactstrap.Row,
-            null,
-            _react2.default.createElement(
-                _reactstrap.Col,
-                null,
-                _react2.default.createElement(
-                    _reactstrap.Alert,
-                    { color: 'danger' },
-                    'Page in progress! Comming soon :)'
-                )
-            )
+            _reactstrap.Alert,
+            { color: "preview", isOpen: props.displayAlert, toggle: props.onAlertDismiss },
+            _react2.default.createElement('div', { dangerouslySetInnerHTML: { __html: props.text } })
         )
     );
 };
+
+var HomeAlert = function HomeAlert(props) {
+    return _react2.default.createElement(
+        _reactstrap.Col,
+        null,
+        _react2.default.createElement(
+            _reactstrap.Alert,
+            { color: props.color, isOpen: props.displayAlert, toggle: props.onAlertDismiss },
+            props.text
+        )
+    );
+};
+
+var HomeTextArea = function HomeTextArea(props) {
+    return _react2.default.createElement(
+        _reactstrap.Col,
+        { id: 'texarea-wrapper' },
+        _react2.default.createElement('textarea', { id: 'bbcode-text', placeholder: props.placeholder, onChange: props.onChange, ref: function ref(textarea) {
+                return props.onRef(textarea);
+            } })
+    );
+};
+
+var HomeMenu = function HomeMenu(props) {
+    return _react2.default.createElement(
+        _reactstrap.Col,
+        null,
+        _react2.default.createElement(
+            _reactstrap.Button,
+            { color: 'primary', onClick: props.previewAction, className: 'mr-3' },
+            _react2.default.createElement(_IconElement2.default, { icon: "magnifier" }),
+            'Preview'
+        ),
+        _react2.default.createElement(
+            _reactstrap.Button,
+            { color: 'primary', onClick: props.copyAction },
+            _react2.default.createElement(_IconElement2.default, { icon: "copy" }),
+            'Copy'
+        )
+    );
+};
+
+var HomePage = function (_React$Component) {
+    _inherits(HomePage, _React$Component);
+
+    function HomePage(props) {
+        _classCallCheck(this, HomePage);
+
+        var _this = _possibleConstructorReturn(this, (HomePage.__proto__ || Object.getPrototypeOf(HomePage)).call(this, props));
+
+        _this.textArea = null;
+        _this.currentText = '';
+        _this.parseBBcodeText = '';
+        _this.state = {
+            displayAlert: false,
+            alertText: "Page in progress! Next updates comming soon :)",
+            alertColor: "danger",
+            displayPreview: false
+        };
+        return _this;
+    }
+
+    _createClass(HomePage, [{
+        key: 'handleCopyButtonAction',
+        value: function handleCopyButtonAction(event) {
+            this.textArea.select();
+            document.execCommand('copy');
+            event.target.focus();
+
+            this.setState({
+                displayAlert: true,
+                alertText: [_react2.default.createElement(_IconElement2.default, { key: '1', icon: "copy" }), _react2.default.createElement(
+                    'span',
+                    { key: '2' },
+                    '"Text copied"'
+                )],
+                alertColor: "success"
+            });
+        }
+    }, {
+        key: 'handlePreviewButtonAction',
+        value: function handlePreviewButtonAction() {
+            if (this.currentText === '') {
+                this.currentText = '&nbsp;';
+            }
+            this.parseBBcodeText = _BBcodeInterpreter2.default.decodeToHTML(this.currentText);
+            console.log(this.currentText);
+            this.setState({ displayPreview: !this.state.displayPreview });
+        }
+    }, {
+        key: 'render',
+        value: function render() {
+            var _this2 = this;
+
+            var alert = this.state.displayAlert ? _react2.default.createElement(HomeAlert, { text: this.state.alertText, color: this.state.alertColor, onAlertDismiss: function onAlertDismiss() {
+                    return _this2.setState({ displayAlert: false });
+                }, displayAlert: this.state.displayAlert }) : null;
+            var preview = this.state.displayPreview ? _react2.default.createElement(Preview, { text: this.parseBBcodeText, onAlertDismiss: function onAlertDismiss() {
+                    return _this2.setState({ displayPreview: false });
+                }, displayAlert: this.state.displayPreview }) : null;
+
+            return _react2.default.createElement(
+                _reactstrap.Container,
+                { fluid: true },
+                _react2.default.createElement(
+                    _reactstrap.Row,
+                    null,
+                    _react2.default.createElement(
+                        _reactstrap.Col,
+                        null,
+                        _react2.default.createElement(
+                            _reactstrap.Row,
+                            { className: 'pb-3' },
+                            _react2.default.createElement(HomeMenu, {
+                                previewAction: function previewAction() {
+                                    return _this2.handlePreviewButtonAction();
+                                },
+                                copyAction: function copyAction(event) {
+                                    return _this2.handleCopyButtonAction(event);
+                                }
+                            })
+                        ),
+                        _react2.default.createElement(
+                            _reactstrap.Row,
+                            null,
+                            alert
+                        ),
+                        _react2.default.createElement(
+                            _reactstrap.Row,
+                            null,
+                            preview
+                        ),
+                        _react2.default.createElement(
+                            _reactstrap.Row,
+                            null,
+                            _react2.default.createElement(HomeTextArea, {
+                                placeholder: "Write some BBCode here :)",
+                                onChange: function onChange(event) {
+                                    return _this2.currentText = event.target.value;
+                                },
+                                onRef: function onRef(textarea) {
+                                    return _this2.textArea = textarea;
+                                }
+                            })
+                        )
+                    )
+                )
+            );
+        }
+    }]);
+
+    return HomePage;
+}(_react2.default.Component);
+
+;
 
 exports.default = HomePage;
 
