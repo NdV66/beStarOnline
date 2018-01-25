@@ -34,8 +34,12 @@ const AboutPage = () => {
                 <ModuleAbout
                     header="What is beStar?"
                     linkText="Clik here for full beStar sources."
-                    href="#"
-                    text={[<span key="1">It is a simple tool to create a text using BBcode. You can see your changes and finished work.</span>, <br key="2"/>, <span key="3">beStar is a module implemented using JavaScript.</span>]} />
+                    href="https://github.com/NdV66/beStarOnline"
+                    text={[ <span key="1">It is a simple tool to create a text using BBcode.</span>, <br />,
+                            <span key="1.1">You can see your changes and finished work using "Preview" button on the top of Home Page.</span>, <br key="2"/>,
+                            <span key="3">beStar is based on a module implemented using JavaScript.</span>, <br />,
+                            <span key="4">In the future will be an option to save you work (automatic or not) in localstorage and to choose a font size etc.</span>
+                    ]} />
 
                 <ModuleAbout
                     header="Ok, so what is BBcode?"
@@ -46,7 +50,13 @@ const AboutPage = () => {
                 <ModuleAbout
                     header="What about beStar license?"
                     linkText="Clik here for more information about MIT License."
-                    href="#"
+                    href="https://opensource.org/licenses/MIT"
+                    text={[<span key="1">beStar is under MIT License, so you can use it for free, even in commercial projects.</span>]} />
+
+                <ModuleAbout
+                    header="What about beStar license?"
+                    linkText="Clik here for more information about MIT License."
+                    href="https://opensource.org/licenses/MIT"
                     text={[<span key="1">beStar is under MIT License, so you can use it for free, even in commercial projects.</span>]} />
             </Container>
             );

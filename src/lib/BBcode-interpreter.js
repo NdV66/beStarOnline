@@ -1,7 +1,7 @@
-var BBcodeInterpreter = (function () {
+const BBCodeInterpreter = (() => {
     var _bbText = '';
-    var BASE_HTML_ELEMENT_TYPE = 'div';
-    var SIMPLE_SYMBOLS_PARSER = {
+    const BASE_HTML_ELEMENT_TYPE = 'div';
+    const SIMPLE_SYMBOLS_PARSER = {
         italic: {
             parse: simpleReplace(/\[i\]/g, /\[\/i\]/g, 'bb-italic')
         },
@@ -32,7 +32,7 @@ var BBcodeInterpreter = (function () {
                         pattern: /\[url\](.*?)\[\/url\]/g,
                         parse: function (link) {
                             var newLink = link.replace(/\[\/url\]/, '</a>');
-                            newLink = newLink.replace(/\[\url\]/, '<a href="' + link.substring(5, link.length - 6) + '">');
+                            newLink = newLink.replace(/\[\url\]/, `<a href="${link.substring(5, link.length - 6)}">`);
                             var replace = _bbText.replace(link, newLink);
                             if (replace) {
                                 _bbText = replace;
@@ -44,7 +44,7 @@ var BBcodeInterpreter = (function () {
                         parse: function (link) {
                             var linkName = link.match(/\](.*?)\[/);
                             var linkHref = link.match(/\="(.*?)"/);
-                            var replace = _bbText.replace(link, '<a href="' + linkHref[1] + '">' + linkName[1] + '</a>');
+                            var replace = _bbText.replace(link, `<a href="${linkHref[1]}">${linkName[1]}</a>`);
                             if (replace) {
                                 _bbText = replace;
                             }
@@ -60,7 +60,7 @@ var BBcodeInterpreter = (function () {
             parse: function () {
                 createHTMLelement(/\[img\](.*?)\[\/img\]/g, function (link) {
                     var imgLink = link.match(/\[img\](.*?)\[\/img\]/);
-                    var replace = _bbText.replace(link, '<img src="' + imgLink[1] + '" />');
+                    var replace = _bbText.replace(link, `<img src="${imgLink[1]}" />`);
                     if (replace) {
                         _bbText = replace;
                     }
@@ -71,7 +71,7 @@ var BBcodeInterpreter = (function () {
             parse: function () {
                 createHTMLelement(/\[quote\](.*?)\[\/quote\]/g, function (link) {
                     var qouteLink = link.match(/\[quote\](.*?)\[\/quote\]/);
-                    var replace = _bbText.replace(link, '<blockquote><p>' + qouteLink[1] + '</p></<blockquote>');
+                    var replace = _bbText.replace(link, `<blockquote><p>${qouteLink[1]}</p></<blockquote>`);
                     if (replace) {
                         _bbText = replace;
                     }
@@ -124,9 +124,10 @@ var BBcodeInterpreter = (function () {
 
     function simpleReplace(startRegexp, endRegexp, cssClass) {
         return function () {
+            var classTag = 'class';
             var bbText = _bbText;
-            bbText = bbText.replace(startRegexp, '<' + BASE_HTML_ELEMENT_TYPE + ' class="bb-display-inline ' + cssClass + '">');
-            bbText = bbText.replace(endRegexp, '</' + BASE_HTML_ELEMENT_TYPE + '>');
+            bbText = bbText.replace(startRegexp, `<${BASE_HTML_ELEMENT_TYPE} ${classTag}="bb-display-inline ${cssClass}">`);
+            bbText = bbText.replace(endRegexp, `</${BASE_HTML_ELEMENT_TYPE}>`);
 
             if (bbText) {
                 _bbText = bbText;
@@ -143,12 +144,12 @@ var BBcodeInterpreter = (function () {
             SIMPLE_SYMBOLS_PARSER[key].parse();
         }
 
-        console.log(_bbText);
-        return _bbText;
+        return `<${BASE_HTML_ELEMENT_TYPE}>${_bbText}</${BASE_HTML_ELEMENT_TYPE}>`;
     }
 
-    //[b][i]Narin is sweet and [s]cute[/s][/i][/b]
     return {
         decodeToHTML: decodeToHTML
     };
 })();
+
+export default BBCodeInterpreter;

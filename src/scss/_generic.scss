@@ -12,6 +12,7 @@ body {
     font-size: $BASE_FONT_SIZE;
     min-height: 100vh;
     overflow-x: hidden;
+    position: relative;
 }
 
 h2 {
@@ -34,11 +35,16 @@ h3 {
 
 textarea {
     width: 100%;
+    height: calc(100vh - 190px);
     background-color: $BACKGROUND_COLOR;
     border: 1px solid rgba(94, 51, 94, 0.2);
     font-weight: 400;
     font-size: $BASE_FONT_SIZE;
     resize: none;
+}
+
+main {
+    min-height: calc(100vh - 190px);
 }
 
 .btn:focus,.btn:active {
@@ -51,8 +57,4 @@ a:link, a:hover, a {
     color: $THEME_COLOR_LIGHT !important;
 }
 
-main {
-    /*100vh - navbarHeight - footerHeight*/
-    min-height: calc(100vh - 67px - 65px);
-}
 
