@@ -43,14 +43,14 @@ class HomePage extends React.Component {
 
         this.setState({
             displayAlert: true,
-            alertText: [<Icon key="1" icon={"copy"}/>, <span key="2">"Text copied"</span>],
+            alertText: [<Icon key="1" icon={"copy"}/>, <span key="2">Text copied</span>],
             alertColor: "success"
         });
     }
 
     handlePreviewButtonAction() {
         if(this.currentText === '') {
-            this.currentText = '&nbsp;';
+            this.currentText = 'This text field is empty :(';
         }
         this.parseBBcodeText = BBcodeInterpeter.decodeToHTML(this.currentText);
         console.log(this.currentText);
