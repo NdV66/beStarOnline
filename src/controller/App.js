@@ -1,9 +1,6 @@
 import React from 'react';
-<<<<<<< HEAD
+
 import { HashRouter as Router, Route, Link } from 'react-router-dom';
-=======
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
->>>>>>> master
 import { Container } from 'reactstrap';
 import HamburgerNavbar from './HamburgerNavbar';
 import AboutPage from '../presentation/AboutPage';
