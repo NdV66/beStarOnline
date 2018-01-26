@@ -29,7 +29,11 @@ export default class HamburgerNavbar extends React.Component {
                             <Link className="nav-link" to="#"><IconElement icon="settings"/>Settings</Link>
                         </NavItem>
                         <NavItem>
+<<<<<<< HEAD
                             <a className="nav-link" href="https://github.com/NdV66/beStarOnline" target="_blank"><IconElement icon="cake"/>Get sources</a>
+=======
+                            <Link className="nav-link" to="#"><IconElement icon="cake"/>Get sources</Link>
+>>>>>>> master
                         </NavItem>
                         <NavItem>
                             <Link className="nav-link" to="/about"><IconElement icon="compass"/>About</Link>
