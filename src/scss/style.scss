@@ -57,3 +57,19 @@
     font-size: $BASE_FONT_SIZE;
     color: #422442;
 }
+
+.btn-primary {
+    background-color: $THEME_COLOR_PRIMARY;
+    color: $THEME_COLOR_TEXT;
+    border: none;
+
+    &:hover, &:active {
+        background-color: $THEME_COLOR_LIGHT;
+        color: $THEME_COLOR_TEXT;
+        outline: none;
+    }
+}
+
+.alert-preview {
+    background-color: $THEME_COLOR_VERY_LIGHT;
+}

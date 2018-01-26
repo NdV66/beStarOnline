@@ -5,11 +5,16 @@
   "main": "index.js",
   "author": "Narin",
   "license": "MIT",
+  "private": true,
+  "homepage": "http://ndv66.github.io/beStarOnline",
   "scripts": {
-    "start": "webpack-dev-server"
+    "start": "webpack-dev-server",
+    "build": "webpack",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "bootstrap": "4.0.0-beta.3",
+    "gh-pages": "^1.1.0",
     "html-webpack-plugin": "^2.30.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
