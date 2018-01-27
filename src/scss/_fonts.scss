@@ -17,6 +17,7 @@
 
 .icon {
     font-family: Icons;
+    font-size: $BASE_FONT_SIZE;
 }
 
 .icon-settings:after {
@@ -61,4 +62,20 @@
 
 .icon-magnifier:after {
     content: 'M';
+}
+
+.icon-lightning:after {
+    content: 'r';
+}
+
+.icon-warning:after {
+    content: '!'
+}
+
+.icon-pen:after {
+    content: 'w'
+}
+
+.icon-folder:after {
+    content: 'F'
 }

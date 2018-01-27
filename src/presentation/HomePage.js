@@ -2,6 +2,8 @@ import React from 'react';
 import { Container, Row, Col, Alert, Button } from 'reactstrap';
 import Icon from './IconElement';
 import BBcodeInterpeter from '../lib/BBcode-interpreter';
+import HomeAlert from './Alert';
+import localStorageController from '../controller/LocalStorageController';
 
 const Preview = (props) =>
     <Col className="preview-content no-margin">
@@ -10,16 +12,14 @@ const Preview = (props) =>
         </Alert>
     </Col>;
 
-const HomeAlert = (props) =>
-    <Col><Alert color={props.color} isOpen={props.displayAlert} toggle={props.onAlertDismiss}>{props.text}</Alert></Col>;
-
 const HomeTextArea = (props) =>
-    <Col id="texarea-wrapper"><textarea id="bbcode-text" placeholder={props.placeholder} onChange={props.onChange} ref={(textarea) => props.onRef(textarea)}></textarea></Col>;
+    <Col id="texarea-wrapper"><textarea id="bbcode-text" placeholder={props.placeholder} onChange={props.onChange} ref={(textarea) => props.onRef(textarea)}>{props.value}</textarea></Col>;
 
 const HomeMenu = (props) =>
     <Col>
         <Button color="primary" onClick={props.previewAction} className="mr-3"><Icon icon={"magnifier"}/>Preview</Button>
-        <Button color="primary" onClick={props.copyAction}><Icon icon={"copy"}/>Copy</Button>
+        <Button color="primary" onClick={props.copyAction} className="mr-3"><Icon icon={"copy"}/>Copy</Button>
+        {props.additionals}
     </Col>;
 
 class HomePage extends React.Component {
@@ -36,16 +36,19 @@ class HomePage extends React.Component {
         };
     }
 
+    _setDisplayAlert(icon, text, color="success") {
+        this.setState({
+            displayAlert: true,
+            alertText: [<Icon key="1" icon={icon}/>, <span key="2">{text}</span>],
+            alertColor: color
+        });
+    }
+
     handleCopyButtonAction(event) {
         this.textArea.select();
         document.execCommand('copy');
         event.target.focus();
-
-        this.setState({
-            displayAlert: true,
-            alertText: [<Icon key="1" icon={"copy"}/>, <span key="2">Text copied</span>],
-            alertColor: "success"
-        });
+        this._setDisplayAlert("copy", "Text copied");
     }
 
     handlePreviewButtonAction() {
@@ -53,35 +56,40 @@ class HomePage extends React.Component {
             this.currentText = 'This text field is empty :(';
         }
         this.parseBBcodeText = BBcodeInterpeter.decodeToHTML(this.currentText);
-        console.log(this.currentText);
         this.setState({displayPreview: !this.state.displayPreview});
     }
 
+    handleSaveButtonAction() {
+        localStorageController.saveText(this.currentText);
+        this._setDisplayAlert("folder", "Text saved");
+    }
+
    render() {
-        const alert = (this.state.displayAlert) ? <HomeAlert text={this.state.alertText} color={this.state.alertColor} onAlertDismiss={() => this.setState({ displayAlert: false })} displayAlert={this.state.displayAlert}/> : null ;
-        const preview = (this.state.displayPreview) ? <Preview text={this.parseBBcodeText} onAlertDismiss={() => this.setState({ displayPreview: false })} displayAlert={this.state.displayPreview}/>: null;
+        const alert = this.state.displayAlert ? <HomeAlert text={this.state.alertText} color={this.state.alertColor} onAlertDismiss={() => this.setState({ displayAlert: false })} displayAlert={this.state.displayAlert}/> : null ;
+        const preview = this.state.displayPreview ? <Preview text={this.parseBBcodeText} onAlertDismiss={() => this.setState({ displayPreview: false })} displayAlert={this.state.displayPreview}/>: null;
+        const textareaValue = localStorageController.getLoadText() ? localStorageController.getText() : '';
+        localStorageController.setLoadText(false);
+        const saveTextButton = localStorageController.getAutoSave() ? null : <Button color="primary" onClick={() => this.handleSaveButtonAction()}><Icon icon={"folder"}/>Save text</Button>;
 
         return (
             <Container fluid={true}>
-                <Row>
-                    <Col>
-                        <Row className="pb-3">
-                            <HomeMenu
-                                previewAction={() => this.handlePreviewButtonAction()}
-                                copyAction={(event) => this.handleCopyButtonAction(event)}
-                            />
-                        </Row>
-                        <Row>{alert}</Row>
-                        <Row>{preview}</Row>
-                        <Row>
-                            <HomeTextArea
-                                placeholder={"Write some BBCode here :)"}
-                                onChange={(event) => this.currentText = event.target.value}
-                                onRef={(textarea) => this.textArea = textarea}
-                            />
-                        </Row>
-                    </Col>
-                </Row>
+                    <Row className="pb-3">
+                        <HomeMenu
+                            previewAction={() => this.handlePreviewButtonAction()}
+                            copyAction={(event) => this.handleCopyButtonAction(event)}
+                            additionals={saveTextButton}
+                        />
+                    </Row>
+                    <Row>{alert}</Row>
+                    <Row>{preview}</Row>
+                    <Row>
+                        <HomeTextArea
+                            placeholder={"Write some BBCode here :)"}
+                            onChange={(event) => this.currentText = event.target.value}
+                            onRef={(textarea) => this.textArea = textarea}
+                            value={textareaValue}
+                        />
+                    </Row>
             </Container>);
    }
 };

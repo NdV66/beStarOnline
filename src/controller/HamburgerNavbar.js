@@ -26,7 +26,7 @@ export default class HamburgerNavbar extends React.Component {
                 <Collapse isOpen={this.state.isOpen} navbar>
                     <Nav className="ml-auto" navbar>
                         <NavItem>
-                            <Link className="nav-link" to="#"><IconElement icon="settings"/>Settings</Link>
+                            <Link className="nav-link" to="/settings"><IconElement icon="settings"/>Settings</Link>
                         </NavItem>
                         <NavItem>
                             <a className="nav-link" href="https://github.com/NdV66/beStarOnline" target="_blank"><IconElement icon="cake"/>Get sources</a>
