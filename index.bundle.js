@@ -61,7 +61,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "d4bf055758ea2acaf4f6"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "affa0d4c562c978c709b"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -854,7 +854,7 @@ exports = module.exports = __webpack_require__("./node_modules/css-loader/lib/cs
 
 
 // module
-exports.push([module.i, "@font-face {\n  font-family: Roboto;\n  src: url(" + escape(__webpack_require__("./src/fonts/Roboto-Light.ttf")) + ");\n  font-weight: 200; }\n\n@font-face {\n  font-family: Roboto;\n  src: url(" + escape(__webpack_require__("./src/fonts/Roboto-Regular.ttf")) + ");\n  font-weight: 400; }\n\n@font-face {\n  font-family: Icons;\n  src: url(" + escape(__webpack_require__("./src/fonts/heydings_icons.ttf")) + "); }\n\n.icon {\n  font-family: Icons;\n  font-size: 18px; }\n\n.icon-settings:after {\n  content: 'C'; }\n\n.icon-cake:after {\n  content: 'Y'; }\n\n.icon-paper:after {\n  content: 'D'; }\n\n.icon-bulb:after {\n  content: 'l'; }\n\n.icon-compass:after {\n  content: 'N'; }\n\n.icon-ask:after {\n  content: 'Q'; }\n\n.icon-bookmark:after {\n  content: 'B'; }\n\n.icon-key:after {\n  content: 'K'; }\n\n.icon-copy:after {\n  content: 'e'; }\n\n.icon-viewfinder:after {\n  content: '@'; }\n\n.icon-magnifier:after {\n  content: 'M'; }\n\n.icon-lightning:after {\n  content: 'r'; }\n\n.icon-warning:after {\n  content: '!'; }\n\n.icon-pen:after {\n  content: 'w'; }\n\n.icon-folder:after {\n  content: 'F'; }\n\n.no-padding {\n  padding: 0px !important; }\n\n.no-margin {\n  margin: 0px !important; }\n\n.bg-color {\n  background-color: #5E335E; }\n\n.bg-color-dark {\n  background-color: #422442; }\n\n.bg-color-light {\n  background-color: #8D44AD; }\n\n.bg-neutral {\n  background-color: #F2F2F2; }\n\n.bg-neutral-darker {\n  background-color: #EFEFEF; }\n\n.bg-neutral-more-dark {\n  background-color: #dedede; }\n\n.font-primary {\n  color: #FFFFFF; }\n\n.full-height {\n  height: calc(100vh - 126px); }\n\n.font-headers {\n  color: #FFCD02; }\n\n.font-headers-dark {\n  color: #FFA800; }\n\n.content-padding {\n  padding: 0px 30px; }\n\n* {\n  font-family: Roboto;\n  font-weight: 200;\n  outline: 0 !important;\n  -webkit-tap-highlight-color: transparent; }\n\nbody {\n  background-color: #EFEFEF;\n  font-size: 18px;\n  min-height: 100vh;\n  overflow-x: hidden;\n  position: relative; }\n\nh2 {\n  margin: 0;\n  font-size: 21.6px;\n  width: 100%;\n  padding: 20px 0 10px 0 !important;\n  font-weight: 200;\n  padding-left: 16px;\n  font-size: 23.4px;\n  font-weight: 400; }\n\nh3 {\n  font-size: 18px;\n  width: 100%;\n  font-weight: 200;\n  padding: 8px 16px !important; }\n\ntextarea {\n  width: 100%;\n  height: calc(100vh - 190px);\n  background-color: #EFEFEF;\n  border: 1px solid rgba(94, 51, 94, 0.2);\n  font-weight: 400;\n  font-size: 18px;\n  resize: none; }\n\nmain {\n  min-height: calc(100vh - 190px); }\n\n.btn:focus, .btn:active {\n  outline: none !important;\n  box-shadow: none; }\n\na:active, a:visited,\na:link, a:hover, a {\n  color: #7a427a !important; }\n\n.custom-toggler.navbar-toggler {\n  border: none; }\n\n.custom-toggler .navbar-toggler-icon {\n  background-image: url(\"data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,205,2,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E\"); }\n\n.logo {\n  font-size: 18px; }\n\n.navbar {\n  background-color: #422442; }\n  .navbar a:active, .navbar a:visited,\n  .navbar a:link, .navbar a:hover, .navbar a {\n    color: #FFCD02 !important; }\n\n.navbar-nav {\n  font-size: 18px; }\n\n.navbar-nav .icon {\n  font-size: 18px; }\n\n@font-face {\n  font-family: Roboto;\n  src: url(" + escape(__webpack_require__("./src/fonts/Roboto-Light.ttf")) + ");\n  font-weight: 200; }\n\n@font-face {\n  font-family: Roboto;\n  src: url(" + escape(__webpack_require__("./src/fonts/Roboto-Regular.ttf")) + ");\n  font-weight: 400; }\n\n@font-face {\n  font-family: Icons;\n  src: url(" + escape(__webpack_require__("./src/fonts/heydings_icons.ttf")) + "); }\n\n.icon {\n  font-family: Icons;\n  font-size: 18px; }\n\n.icon-settings:after {\n  content: 'C'; }\n\n.icon-cake:after {\n  content: 'Y'; }\n\n.icon-paper:after {\n  content: 'D'; }\n\n.icon-bulb:after {\n  content: 'l'; }\n\n.icon-compass:after {\n  content: 'N'; }\n\n.icon-ask:after {\n  content: 'Q'; }\n\n.icon-bookmark:after {\n  content: 'B'; }\n\n.icon-key:after {\n  content: 'K'; }\n\n.icon-copy:after {\n  content: 'e'; }\n\n.icon-viewfinder:after {\n  content: '@'; }\n\n.icon-magnifier:after {\n  content: 'M'; }\n\n.icon-lightning:after {\n  content: 'r'; }\n\n.icon-warning:after {\n  content: '!'; }\n\n.icon-pen:after {\n  content: 'w'; }\n\n.icon-folder:after {\n  content: 'F'; }\n\n.no-padding {\n  padding: 0px !important; }\n\n.no-margin {\n  margin: 0px !important; }\n\n.bg-color {\n  background-color: #5E335E; }\n\n.bg-color-dark {\n  background-color: #422442; }\n\n.bg-color-light {\n  background-color: #8D44AD; }\n\n.bg-neutral {\n  background-color: #F2F2F2; }\n\n.bg-neutral-darker {\n  background-color: #EFEFEF; }\n\n.bg-neutral-more-dark {\n  background-color: #dedede; }\n\n.font-primary {\n  color: #FFFFFF; }\n\n.full-height {\n  height: calc(100vh - 126px); }\n\n.font-headers {\n  color: #FFCD02; }\n\n.font-headers-dark {\n  color: #FFA800; }\n\n.content-padding {\n  padding: 0px 30px; }\n\n.footer {\n  padding-top: 10.8px;\n  padding-bottom: 10.8px;\n  background-color: #e1e1e1;\n  text-align: center;\n  font-size: 18px;\n  position: absolute;\n  right: 0;\n  bottom: 0;\n  left: 0; }\n\n.bb-tag {\n  font-weight: 600; }\n\n.dropdown {\n  z-index: 999999; }\n\n.dropdown .btn {\n  background: none;\n  border: none;\n  color: #FFCD02;\n  font-weight: 200;\n  font-size: 18px;\n  line-height: 24px;\n  font-family: Roboto; }\n\n.dropdown-menu {\n  background-color: #422442;\n  color: #FFCD02;\n  border: none;\n  border-radius: 0px;\n  padding: .25rem 0; }\n\n.dropdown-item {\n  padding: 3px 0.8rem; }\n\n.dropdown-item:hover,\n.dropdown-item:active {\n  background-color: #5E335E; }\n\n.content {\n  font-family: Roboto;\n  font-weight: 400; }\n\n#preview-bb-content {\n  position: absolute;\n  left: 0;\n  right: 0;\n  z-index: 999;\n  height: calc(100vh - 88px);\n  background-color: #dedede;\n  border: none;\n  border-radius: 0;\n  font-size: 18px;\n  color: #422442; }\n\n.btn {\n  border: none; }\n  .btn:hover, .btn:active {\n    outline: none; }\n\n.btn-primary {\n  background-color: #422442;\n  color: #FFCD02; }\n  .btn-primary:hover, .btn-primary:active {\n    background-color: #7a427a;\n    color: #FFCD02; }\n\n.btn-danger {\n  background-color: #a12442;\n  color: #FFCD02; }\n  .btn-danger:hover, .btn-danger:active {\n    background-color: #d02f55;\n    color: #FFCD02; }\n\n.alert-preview {\n  background-color: #d8bfd8; }\n\n.text-danger {\n  color: #a12442; }\n", ""]);
+exports.push([module.i, "@font-face {\n  font-family: Roboto;\n  src: url(" + escape(__webpack_require__("./src/fonts/Roboto-Light.ttf")) + ");\n  font-weight: 200; }\n\n@font-face {\n  font-family: Roboto;\n  src: url(" + escape(__webpack_require__("./src/fonts/Roboto-Regular.ttf")) + ");\n  font-weight: 400; }\n\n@font-face {\n  font-family: Icons;\n  src: url(" + escape(__webpack_require__("./src/fonts/heydings_icons.ttf")) + "); }\n\n.icon {\n  font-family: Icons;\n  font-size: 18px; }\n\n.icon-settings:after {\n  content: 'C'; }\n\n.icon-cake:after {\n  content: 'Y'; }\n\n.icon-paper:after {\n  content: 'D'; }\n\n.icon-bulb:after {\n  content: 'l'; }\n\n.icon-compass:after {\n  content: 'N'; }\n\n.icon-ask:after {\n  content: 'Q'; }\n\n.icon-bookmark:after {\n  content: 'B'; }\n\n.icon-key:after {\n  content: 'K'; }\n\n.icon-copy:after {\n  content: 'e'; }\n\n.icon-viewfinder:after {\n  content: '@'; }\n\n.icon-magnifier:after {\n  content: 'M'; }\n\n.icon-lightning:after {\n  content: 'r'; }\n\n.icon-warning:after {\n  content: '!'; }\n\n.icon-pen:after {\n  content: 'w'; }\n\n.icon-folder:after {\n  content: 'F'; }\n\n.no-padding {\n  padding: 0px !important; }\n\n.no-margin {\n  margin: 0px !important; }\n\n.bg-color {\n  background-color: #5E335E; }\n\n.bg-color-dark {\n  background-color: #422442; }\n\n.bg-color-light {\n  background-color: #8D44AD; }\n\n.bg-neutral {\n  background-color: #F2F2F2; }\n\n.bg-neutral-darker {\n  background-color: #EFEFEF; }\n\n.bg-neutral-more-dark {\n  background-color: #dedede; }\n\n.font-primary {\n  color: #FFFFFF; }\n\n.full-height {\n  height: calc(100vh - 126px); }\n\n.font-headers {\n  color: #FFCD02; }\n\n.font-headers-dark {\n  color: #FFA800; }\n\n.content-padding {\n  padding: 0px 30px; }\n\n* {\n  font-family: Roboto;\n  font-weight: 200;\n  outline: 0 !important;\n  -webkit-tap-highlight-color: transparent; }\n\nbody {\n  background-color: #EFEFEF;\n  font-size: 18px;\n  min-height: 100vh;\n  overflow-x: hidden;\n  position: relative; }\n\nh2 {\n  margin: 0;\n  font-size: 21.6px;\n  width: 100%;\n  padding: 20px 0 10px 0 !important;\n  font-weight: 200;\n  padding-left: 16px;\n  font-size: 23.4px;\n  font-weight: 400; }\n\nh3 {\n  font-size: 18px;\n  width: 100%;\n  font-weight: 200;\n  padding: 8px 16px !important; }\n\ntextarea {\n  width: 100%;\n  height: calc(100vh - 190px);\n  background-color: #EFEFEF;\n  border: 1px solid rgba(94, 51, 94, 0.2);\n  font-weight: 400;\n  font-size: 18px;\n  resize: none; }\n\nmain {\n  min-height: calc(100vh - 190px); }\n\n.btn:focus, .btn:active {\n  outline: none !important;\n  box-shadow: none; }\n\na:active, a:visited,\na:link, a:hover, a {\n  color: #7a427a !important; }\n\n.custom-toggler.navbar-toggler {\n  border: none; }\n\n.custom-toggler .navbar-toggler-icon {\n  background-image: url(\"data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,205,2,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E\"); }\n\n.logo {\n  font-size: 18px; }\n\n.navbar {\n  background-color: #422442; }\n  .navbar a:active, .navbar a:visited,\n  .navbar a:link, .navbar a:hover, .navbar a {\n    color: #FFCD02 !important; }\n\n.navbar-nav {\n  font-size: 18px; }\n\n.navbar-nav .icon {\n  font-size: 18px; }\n\n@font-face {\n  font-family: Roboto;\n  src: url(" + escape(__webpack_require__("./src/fonts/Roboto-Light.ttf")) + ");\n  font-weight: 200; }\n\n@font-face {\n  font-family: Roboto;\n  src: url(" + escape(__webpack_require__("./src/fonts/Roboto-Regular.ttf")) + ");\n  font-weight: 400; }\n\n@font-face {\n  font-family: Icons;\n  src: url(" + escape(__webpack_require__("./src/fonts/heydings_icons.ttf")) + "); }\n\n.icon {\n  font-family: Icons;\n  font-size: 18px; }\n\n.icon-settings:after {\n  content: 'C'; }\n\n.icon-cake:after {\n  content: 'Y'; }\n\n.icon-paper:after {\n  content: 'D'; }\n\n.icon-bulb:after {\n  content: 'l'; }\n\n.icon-compass:after {\n  content: 'N'; }\n\n.icon-ask:after {\n  content: 'Q'; }\n\n.icon-bookmark:after {\n  content: 'B'; }\n\n.icon-key:after {\n  content: 'K'; }\n\n.icon-copy:after {\n  content: 'e'; }\n\n.icon-viewfinder:after {\n  content: '@'; }\n\n.icon-magnifier:after {\n  content: 'M'; }\n\n.icon-lightning:after {\n  content: 'r'; }\n\n.icon-warning:after {\n  content: '!'; }\n\n.icon-pen:after {\n  content: 'w'; }\n\n.icon-folder:after {\n  content: 'F'; }\n\n.no-padding {\n  padding: 0px !important; }\n\n.no-margin {\n  margin: 0px !important; }\n\n.bg-color {\n  background-color: #5E335E; }\n\n.bg-color-dark {\n  background-color: #422442; }\n\n.bg-color-light {\n  background-color: #8D44AD; }\n\n.bg-neutral {\n  background-color: #F2F2F2; }\n\n.bg-neutral-darker {\n  background-color: #EFEFEF; }\n\n.bg-neutral-more-dark {\n  background-color: #dedede; }\n\n.font-primary {\n  color: #FFFFFF; }\n\n.full-height {\n  height: calc(100vh - 126px); }\n\n.font-headers {\n  color: #FFCD02; }\n\n.font-headers-dark {\n  color: #FFA800; }\n\n.content-padding {\n  padding: 0px 30px; }\n\n.footer {\n  padding-top: 4.8px;\n  padding-bottom: 4.8px;\n  background-color: #e1e1e1;\n  text-align: center;\n  font-size: 16px;\n  position: absolute;\n  right: 0;\n  bottom: 0;\n  left: 0; }\n\n.bb-tag {\n  font-weight: 600; }\n\n.dropdown {\n  z-index: 999999; }\n\n.dropdown .btn {\n  background: none;\n  border: none;\n  color: #FFCD02;\n  font-weight: 200;\n  font-size: 18px;\n  line-height: 24px;\n  font-family: Roboto; }\n\n.dropdown-menu {\n  background-color: #422442;\n  color: #FFCD02;\n  border: none;\n  border-radius: 0px;\n  padding: .25rem 0; }\n\n.dropdown-item {\n  padding: 3px 0.8rem; }\n\n.dropdown-item:hover,\n.dropdown-item:active {\n  background-color: #5E335E; }\n\n.content {\n  font-family: Roboto;\n  font-weight: 400; }\n\n#preview-bb-content {\n  position: absolute;\n  left: 0;\n  right: 0;\n  z-index: 999;\n  height: calc(100vh - 88px);\n  background-color: #dedede;\n  border: none;\n  border-radius: 0;\n  font-size: 18px;\n  color: #422442; }\n\n.btn {\n  border: none; }\n  .btn:hover, .btn:active {\n    outline: none; }\n\n.btn-primary {\n  background-color: #422442;\n  color: #FFCD02; }\n  .btn-primary:hover, .btn-primary:active {\n    background-color: #7a427a;\n    color: #FFCD02; }\n\n.btn-danger {\n  background-color: #a12442;\n  color: #FFCD02; }\n  .btn-danger:hover, .btn-danger:active {\n    background-color: #d02f55;\n    color: #FFCD02; }\n\n.alert-preview {\n  background-color: #d8bfd8; }\n\n.text-danger {\n  color: #a12442; }\n", ""]);
 
 // exports
 
@@ -33744,33 +33744,22 @@ var localStorageController = function () {
     var textKey = "beStarText";
     var shouldTextBeLoaded = "beStarShouldTextBeLoaded";
 
-    function setLoadText(option) {
-        localStorage.setItem(shouldTextBeLoaded, option);
-    }
-
-    function getLoadText() {
-        return JSON.parse(localStorage.getItem(shouldTextBeLoaded));
-    }
-
-    function saveText(textToSave) {
-        localStorage.setItem(textKey, textToSave);
-    }
-
-    function removeText() {
-        localStorage.removeItem(textKey);
-    }
+    var saveText = function saveText(textToSave) {
+        return localStorage.setItem(textKey, textToSave);
+    };
+    var removeText = function removeText() {
+        return localStorage.removeItem(textKey);
+    };
+    var getAutoSave = function getAutoSave() {
+        return JSON.parse(localStorage.getItem(autoSaveKey));
+    };
+    var setAutoSave = function setAutoSave(option) {
+        return localStorage.setItem(autoSaveKey, option);
+    };
 
     function getText() {
         var text = localStorage.getItem(textKey);
         return text ? text : '';
-    }
-
-    function getAutoSave() {
-        return JSON.parse(localStorage.getItem(autoSaveKey));
-    }
-
-    function setAutoSave(option) {
-        localStorage.setItem(autoSaveKey, option);
     }
 
     return {
@@ -33778,9 +33767,7 @@ var localStorageController = function () {
         removeText: removeText,
         getText: getText,
         getAutoSave: getAutoSave,
-        setAutoSave: setAutoSave,
-        setLoadText: setLoadText,
-        getLoadText: getLoadText
+        setAutoSave: setAutoSave
     };
 }();
 
@@ -33954,23 +33941,8 @@ var BBCodeInterpreter = function () {
                 }
             }
         }
-        //        baseList: {
-        //            parse: function () {
-        //                var bbText = _bbText;
-        ////                bbText = bbText.replace(/\[tr\]/g, '<tr>');
-        ////                bbText = bbText.replace(/\[\/tr\]/g, '</tr>');
+        //        stars: {
         //
-        //                var lists = bbText.match(/\[\*\](.*?)\[\*\]/g);
-        //
-        //                console.log('@@@ x: ' + );
-        //
-        //                bbText = bbText.replace(/\[list\]/g, '<ul>');
-        //                bbText = bbText.replace(/\[\/list\]/g, '</ul>');
-        //
-        //                if (bbText) {
-        //                    _bbText = bbText;
-        //                }
-        //            }
         //        }
     };
 
@@ -34210,11 +34182,13 @@ var FooterElement = function FooterElement() {
             _react2.default.createElement(
                 _reactstrap.Col,
                 { md: '3', xs: '6' },
+                'Follow me on ',
                 _react2.default.createElement(
                     'a',
-                    { target: '_blank', href: 'https://github.com/NdV66/beStarOnline' },
+                    { target: '_blank', href: 'https://github.com/NdV66' },
                     'Github'
-                )
+                ),
+                ' :)'
             ),
             _react2.default.createElement(
                 _reactstrap.Col,
@@ -34229,13 +34203,79 @@ var FooterElement = function FooterElement() {
             _react2.default.createElement(
                 _reactstrap.Col,
                 { md: '3', xs: '6', className: 'd-none d-md-block' },
-                'v1.0.1'
+                'v1.0.2'
             )
         )
     );
 };
 
 exports.default = FooterElement;
+
+/***/ }),
+
+/***/ "./src/presentation/HomeElements.js":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.HomeMenu = exports.HomeMenuButton = exports.HomeTextArea = exports.Preview = undefined;
+
+var _react = __webpack_require__("./node_modules/react/index.js");
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactstrap = __webpack_require__("./node_modules/reactstrap/dist/reactstrap.es.js");
+
+var _IconElement = __webpack_require__("./src/presentation/IconElement.js");
+
+var _IconElement2 = _interopRequireDefault(_IconElement);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Preview = exports.Preview = function Preview(props) {
+    return _react2.default.createElement(
+        _reactstrap.Col,
+        { className: 'preview-content no-margin' },
+        _react2.default.createElement(
+            _reactstrap.Alert,
+            { color: "preview", isOpen: props.displayAlert, toggle: props.onAlertDismiss },
+            _react2.default.createElement('div', { dangerouslySetInnerHTML: { __html: props.text } })
+        )
+    );
+};
+
+var HomeTextArea = exports.HomeTextArea = function HomeTextArea(props) {
+    return _react2.default.createElement(
+        _reactstrap.Col,
+        { id: 'texarea-wrapper' },
+        _react2.default.createElement('textarea', { id: 'bbcode-text', placeholder: props.placeholder, onChange: props.onChange, ref: function ref(textarea) {
+                return props.onRef(textarea);
+            }, value: props.value })
+    );
+};
+
+var HomeMenuButton = exports.HomeMenuButton = function HomeMenuButton(props) {
+    return _react2.default.createElement(
+        _reactstrap.Button,
+        { color: 'primary', onClick: props.action, className: 'mr-3 mt-3' },
+        _react2.default.createElement(_IconElement2.default, { icon: props.icon }),
+        props.text
+    );
+};
+
+var HomeMenu = exports.HomeMenu = function HomeMenu(props) {
+    return _react2.default.createElement(
+        _reactstrap.Col,
+        null,
+        _react2.default.createElement(HomeMenuButton, { action: props.previewAction, icon: "magnifier", text: "Preview" }),
+        _react2.default.createElement(HomeMenuButton, { action: props.copyAction, icon: "copy", text: "Copy" }),
+        props.additionals
+    );
+};
 
 /***/ }),
 
@@ -34273,6 +34313,8 @@ var _LocalStorageController = __webpack_require__("./src/controller/LocalStorage
 
 var _LocalStorageController2 = _interopRequireDefault(_LocalStorageController);
 
+var _HomeElements = __webpack_require__("./src/presentation/HomeElements.js");
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -34280,52 +34322,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var Preview = function Preview(props) {
-    return _react2.default.createElement(
-        _reactstrap.Col,
-        { className: 'preview-content no-margin' },
-        _react2.default.createElement(
-            _reactstrap.Alert,
-            { color: "preview", isOpen: props.displayAlert, toggle: props.onAlertDismiss },
-            _react2.default.createElement('div', { dangerouslySetInnerHTML: { __html: props.text } })
-        )
-    );
-};
-
-var HomeTextArea = function HomeTextArea(props) {
-    return _react2.default.createElement(
-        _reactstrap.Col,
-        { id: 'texarea-wrapper' },
-        _react2.default.createElement(
-            'textarea',
-            { id: 'bbcode-text', placeholder: props.placeholder, onChange: props.onChange, ref: function ref(textarea) {
-                    return props.onRef(textarea);
-                } },
-            props.value
-        )
-    );
-};
-
-var HomeMenu = function HomeMenu(props) {
-    return _react2.default.createElement(
-        _reactstrap.Col,
-        null,
-        _react2.default.createElement(
-            _reactstrap.Button,
-            { color: 'primary', onClick: props.previewAction, className: 'mr-3' },
-            _react2.default.createElement(_IconElement2.default, { icon: "magnifier" }),
-            'Preview'
-        ),
-        _react2.default.createElement(
-            _reactstrap.Button,
-            { color: 'primary', onClick: props.copyAction, className: 'mr-3' },
-            _react2.default.createElement(_IconElement2.default, { icon: "copy" }),
-            'Copy'
-        ),
-        props.additionals
-    );
-};
 
 var HomePage = function (_React$Component) {
     _inherits(HomePage, _React$Component);
@@ -34336,13 +34332,13 @@ var HomePage = function (_React$Component) {
         var _this = _possibleConstructorReturn(this, (HomePage.__proto__ || Object.getPrototypeOf(HomePage)).call(this, props));
 
         _this.textArea = null;
-        _this.currentText = '';
         _this.parseBBcodeText = '';
         _this.state = {
             displayAlert: false,
             alertText: "Page in progress! Next updates comming soon :)",
             alertColor: "danger",
-            displayPreview: false
+            displayPreview: false,
+            currentText: _LocalStorageController2.default.getAutoSave() ? _LocalStorageController2.default.getText() : ''
         };
         return _this;
     }
@@ -34363,49 +34359,61 @@ var HomePage = function (_React$Component) {
             });
         }
     }, {
-        key: 'handleCopyButtonAction',
-        value: function handleCopyButtonAction(event) {
+        key: '_handleCopyButtonAction',
+        value: function _handleCopyButtonAction(event) {
             this.textArea.select();
-            document.execCommand('copy');
+            document.execCommand("copy");
             event.target.focus();
             this._setDisplayAlert("copy", "Text copied");
         }
     }, {
-        key: 'handlePreviewButtonAction',
-        value: function handlePreviewButtonAction() {
-            if (this.currentText === '') {
-                this.currentText = 'This text field is empty :(';
-            }
-            this.parseBBcodeText = _BBcodeInterpreter2.default.decodeToHTML(this.currentText);
-            this.setState({ displayPreview: !this.state.displayPreview });
+        key: '_handlePreviewButtonAction',
+        value: function _handlePreviewButtonAction() {
+            var textToParse = this.state.currentText !== '' ? this.state.currentText : "Write something :)";
+            this.parseBBcodeText = _BBcodeInterpreter2.default.decodeToHTML(textToParse);
+            this.setState({ displayPreview: true });
         }
     }, {
-        key: 'handleSaveButtonAction',
-        value: function handleSaveButtonAction() {
-            _LocalStorageController2.default.saveText(this.currentText);
+        key: '_handleSaveButtonAction',
+        value: function _handleSaveButtonAction() {
+            _LocalStorageController2.default.saveText(this.state.currentText);
             this._setDisplayAlert("folder", "Text saved");
+        }
+    }, {
+        key: '_handleLoadButtonAction',
+        value: function _handleLoadButtonAction() {
+            this._setDisplayAlert("pen", "Text loaded");
+
+            this.setState({
+                currentText: _LocalStorageController2.default.getText()
+            });
+        }
+    }, {
+        key: '_renderAdditionalMenuButtons',
+        value: function _renderAdditionalMenuButtons() {
+            var _this2 = this;
+
+            var additionalButtons = null;
+            if (!_LocalStorageController2.default.getAutoSave()) {
+                additionalButtons = [_react2.default.createElement(_HomeElements.HomeMenuButton, { key: '1', action: function action() {
+                        return _this2._handleSaveButtonAction();
+                    }, icon: "folder", text: "Save text" }), _react2.default.createElement(_HomeElements.HomeMenuButton, { key: '2', action: function action() {
+                        return _this2._handleLoadButtonAction();
+                    }, icon: "pen", text: "Load text" })];
+            }
+            return additionalButtons;
         }
     }, {
         key: 'render',
         value: function render() {
-            var _this2 = this;
+            var _this3 = this;
 
             var alert = this.state.displayAlert ? _react2.default.createElement(_Alert2.default, { text: this.state.alertText, color: this.state.alertColor, onAlertDismiss: function onAlertDismiss() {
-                    return _this2.setState({ displayAlert: false });
+                    return _this3.setState({ displayAlert: false });
                 }, displayAlert: this.state.displayAlert }) : null;
-            var preview = this.state.displayPreview ? _react2.default.createElement(Preview, { text: this.parseBBcodeText, onAlertDismiss: function onAlertDismiss() {
-                    return _this2.setState({ displayPreview: false });
+            var preview = this.state.displayPreview ? _react2.default.createElement(_HomeElements.Preview, { text: this.parseBBcodeText, onAlertDismiss: function onAlertDismiss() {
+                    return _this3.setState({ displayPreview: false });
                 }, displayAlert: this.state.displayPreview }) : null;
-            var textareaValue = _LocalStorageController2.default.getLoadText() ? _LocalStorageController2.default.getText() : '';
-            _LocalStorageController2.default.setLoadText(false);
-            var saveTextButton = _LocalStorageController2.default.getAutoSave() ? null : _react2.default.createElement(
-                _reactstrap.Button,
-                { color: 'primary', onClick: function onClick() {
-                        return _this2.handleSaveButtonAction();
-                    } },
-                _react2.default.createElement(_IconElement2.default, { icon: "folder" }),
-                'Save text'
-            );
 
             return _react2.default.createElement(
                 _reactstrap.Container,
@@ -34413,14 +34421,14 @@ var HomePage = function (_React$Component) {
                 _react2.default.createElement(
                     _reactstrap.Row,
                     { className: 'pb-3' },
-                    _react2.default.createElement(HomeMenu, {
+                    _react2.default.createElement(_HomeElements.HomeMenu, {
                         previewAction: function previewAction() {
-                            return _this2.handlePreviewButtonAction();
+                            return _this3._handlePreviewButtonAction();
                         },
                         copyAction: function copyAction(event) {
-                            return _this2.handleCopyButtonAction(event);
+                            return _this3._handleCopyButtonAction(event);
                         },
-                        additionals: saveTextButton
+                        additionals: this._renderAdditionalMenuButtons()
                     })
                 ),
                 _react2.default.createElement(
@@ -34436,15 +34444,15 @@ var HomePage = function (_React$Component) {
                 _react2.default.createElement(
                     _reactstrap.Row,
                     null,
-                    _react2.default.createElement(HomeTextArea, {
+                    _react2.default.createElement(_HomeElements.HomeTextArea, {
                         placeholder: "Write some BBCode here :)",
                         onChange: function onChange(event) {
-                            return _this2.currentText = event.target.value;
+                            return _this3.setState({ currentText: event.target.value });
                         },
                         onRef: function onRef(textarea) {
-                            return _this2.textArea = textarea;
+                            return _this3.textArea = textarea;
                         },
-                        value: textareaValue
+                        value: this.state.currentText
                     })
                 )
             );
@@ -34467,7 +34475,7 @@ exports.default = HomePage;
 
 
 Object.defineProperty(exports, "__esModule", {
-    value: true
+  value: true
 });
 
 var _react = __webpack_require__("./node_modules/react/index.js");
@@ -34477,7 +34485,7 @@ var _react2 = _interopRequireDefault(_react);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var IconElement = function IconElement(props) {
-    return _react2.default.createElement('span', { className: 'icon icon-' + props.icon + ' mr-3' });
+  return _react2.default.createElement('span', { className: 'icon icon-' + props.icon + ' mr-3' });
 };
 
 exports.default = IconElement;
@@ -34540,20 +34548,6 @@ var SettingsPage = function (_React$Component) {
     }
 
     _createClass(SettingsPage, [{
-        key: 'handleLoadButtonAction',
-        value: function handleLoadButtonAction() {
-            _LocalStorageController2.default.setLoadText(true);
-            this.setState({
-                displayAlert: true,
-                alertText: [_react2.default.createElement(_IconElement2.default, { key: '1', icon: "pen" }), _react2.default.createElement(
-                    'span',
-                    { key: '2' },
-                    'Text will be loaded'
-                )],
-                alertColor: "success"
-            });
-        }
-    }, {
         key: 'handleRemoveButtonAction',
         value: function handleRemoveButtonAction() {
             _LocalStorageController2.default.removeText();
@@ -34608,14 +34602,6 @@ var SettingsPage = function (_React$Component) {
                     _react2.default.createElement(
                         _reactstrap.Col,
                         { xs: '12' },
-                        _react2.default.createElement(
-                            _reactstrap.Button,
-                            { color: 'primary', className: 'mr-3 mt-3', onClick: function onClick() {
-                                    return _this2.handleLoadButtonAction();
-                                } },
-                            _react2.default.createElement(_IconElement2.default, { icon: "pen" }),
-                            'Load saved text'
-                        ),
                         _react2.default.createElement(
                             _reactstrap.Button,
                             { color: 'danger', className: 'mt-3', onClick: function onClick() {
