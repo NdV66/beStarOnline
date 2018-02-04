@@ -16,15 +16,6 @@ class SettingsPage extends React.Component {
         };
     }
 
-    handleLoadButtonAction() {
-        localStorageController.setLoadText(true);
-        this.setState({
-            displayAlert: true,
-            alertText: [<Icon key="1" icon={"pen"}/>, <span key="2">Text will be loaded</span>],
-            alertColor: "success"
-        });
-    }
-
     handleRemoveButtonAction() {
         localStorageController.removeText();
         this.setState({
@@ -47,7 +38,6 @@ class SettingsPage extends React.Component {
                     {support}
                     <Col xs="12">This options works in your localstorage. This means, that the text will be save only in your brower and you can remove it using the "remove" button on this site or using your browser tools.</Col>
                     <Col xs="12">
-                        <Button color="primary" className="mr-3 mt-3" onClick={() => this.handleLoadButtonAction()}><Icon icon={"pen"}/>Load saved text</Button>
                         <Button color="danger" className="mt-3" onClick={() => this.handleRemoveButtonAction()}><Icon icon={"warning"}/>Remove saved text</Button>
                     </Col>
                 </Row>

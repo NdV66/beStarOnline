@@ -1,5 +1,5 @@
 const BBCodeInterpreter = (() => {
-    var _bbText = '';
+    let _bbText = '';
     const BASE_HTML_ELEMENT_TYPE = 'div';
     const SIMPLE_SYMBOLS_PARSER = {
         italic: {
@@ -16,7 +16,7 @@ const BBCodeInterpreter = (() => {
         },
         code: {
             parse: function () {
-                var bbText = _bbText;
+                let bbText = _bbText;
                 bbText = bbText.replace(/\[code\]/g, '<code>');
                 bbText = bbText.replace(/\[\/code\]/g, '</code>');
 
@@ -31,9 +31,9 @@ const BBCodeInterpreter = (() => {
                     href: {
                         pattern: /\[url\](.*?)\[\/url\]/g,
                         parse: function (link) {
-                            var newLink = link.replace(/\[\/url\]/, '</a>');
+                            let newLink = link.replace(/\[\/url\]/, '</a>');
                             newLink = newLink.replace(/\[\url\]/, `<a href="${link.substring(5, link.length - 6)}">`);
-                            var replace = _bbText.replace(link, newLink);
+                            const replace = _bbText.replace(link, newLink);
                             if (replace) {
                                 _bbText = replace;
                             }
@@ -42,9 +42,9 @@ const BBCodeInterpreter = (() => {
                     descHref: {
                         pattern: /\[url\=\"(.*?)\"\](.*?)\[\/url\]/g,
                         parse: function (link) {
-                            var linkName = link.match(/\](.*?)\[/);
-                            var linkHref = link.match(/\="(.*?)"/);
-                            var replace = _bbText.replace(link, `<a href="${linkHref[1]}">${linkName[1]}</a>`);
+                            const linkName = link.match(/\](.*?)\[/);
+                            const linkHref = link.match(/\="(.*?)"/);
+                            const replace = _bbText.replace(link, `<a href="${linkHref[1]}">${linkName[1]}</a>`);
                             if (replace) {
                                 _bbText = replace;
                             }
@@ -52,15 +52,15 @@ const BBCodeInterpreter = (() => {
                     }
                 };
 
-                for (var key in PATTERNS) {
+                for (const key in PATTERNS) {
                     createHTMLelement(PATTERNS[key].pattern, PATTERNS[key].parse);
                 }
             }},
         image: {
             parse: function () {
                 createHTMLelement(/\[img\](.*?)\[\/img\]/g, function (link) {
-                    var imgLink = link.match(/\[img\](.*?)\[\/img\]/);
-                    var replace = _bbText.replace(link, `<img src="${imgLink[1]}" />`);
+                    const imgLink = link.match(/\[img\](.*?)\[\/img\]/);
+                    const replace = _bbText.replace(link, `<img src="${imgLink[1]}" />`);
                     if (replace) {
                         _bbText = replace;
                     }
@@ -70,8 +70,8 @@ const BBCodeInterpreter = (() => {
         quote: {
             parse: function () {
                 createHTMLelement(/\[quote\](.*?)\[\/quote\]/g, function (link) {
-                    var qouteLink = link.match(/\[quote\](.*?)\[\/quote\]/);
-                    var replace = _bbText.replace(link, `<blockquote><p>${qouteLink[1]}</p></<blockquote>`);
+                    const qouteLink = link.match(/\[quote\](.*?)\[\/quote\]/);
+                    const replace = _bbText.replace(link, `<blockquote><p>${qouteLink[1]}</p></<blockquote>`);
                     if (replace) {
                         _bbText = replace;
                     }
@@ -80,7 +80,7 @@ const BBCodeInterpreter = (() => {
         },
         table: {
             parse: function () {
-                var bbText = _bbText;
+                let bbText = _bbText;
                 bbText = bbText.replace(/\[table\]/g, '<table>');
                 bbText = bbText.replace(/\[\/table\]/g, '</table>');
                 bbText = bbText.replace(/\[tr\]/g, '<tr>');
@@ -93,28 +93,13 @@ const BBCodeInterpreter = (() => {
                 }
             }
         },
-//        baseList: {
-//            parse: function () {
-//                var bbText = _bbText;
-////                bbText = bbText.replace(/\[tr\]/g, '<tr>');
-////                bbText = bbText.replace(/\[\/tr\]/g, '</tr>');
+//        stars: {
 //
-//                var lists = bbText.match(/\[\*\](.*?)\[\*\]/g);
-//
-//                console.log('@@@ x: ' + );
-//
-//                bbText = bbText.replace(/\[list\]/g, '<ul>');
-//                bbText = bbText.replace(/\[\/list\]/g, '</ul>');
-//
-//                if (bbText) {
-//                    _bbText = bbText;
-//                }
-//            }
 //        }
     };
 
     function createHTMLelement(regexp, callback) {
-        var links = _bbText.match(regexp);
+        const links = _bbText.match(regexp);
         if (links) {
             for (var i = 0; i < links.length; i++) {
                 callback(links[i]);
@@ -124,8 +109,8 @@ const BBCodeInterpreter = (() => {
 
     function simpleReplace(startRegexp, endRegexp, cssClass) {
         return function () {
-            var classTag = 'class';
-            var bbText = _bbText;
+            const classTag = 'class';
+            let bbText = _bbText;
             bbText = bbText.replace(startRegexp, `<${BASE_HTML_ELEMENT_TYPE} ${classTag}="bb-display-inline ${cssClass}">`);
             bbText = bbText.replace(endRegexp, `</${BASE_HTML_ELEMENT_TYPE}>`);
 
@@ -140,7 +125,7 @@ const BBCodeInterpreter = (() => {
         _bbText = _bbTextRef;
         _bbText = _bbText.replace(/\r|\n/g, '</br>');
 
-        for (var key in SIMPLE_SYMBOLS_PARSER) {
+        for (const key in SIMPLE_SYMBOLS_PARSER) {
             SIMPLE_SYMBOLS_PARSER[key].parse();
         }
 

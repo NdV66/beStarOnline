@@ -10,6 +10,7 @@
   "scripts": {
     "start": "webpack-dev-server",
     "build": "webpack",
+    "release": "webpack --config webpackPROD.config",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
