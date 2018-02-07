@@ -1,7 +1,11 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const webpack = require('webpack');
+
 const productionPublicPath = '/beStarOnline';
+const devPublicPath = '/';
+const isDevMode = process.env.mode === 'DEV';
+console.log('------ webpack in mode: ' + process.env.mode);
 
 const HtmlWebpackPluginConfig_Index = new HtmlWebpackPlugin({
     template: './src/index.html',
@@ -17,15 +21,31 @@ const styleLoader = {
     }
 };
 
-module.exports = {
+const devServerConf = {
+    contentBase: path.join(__dirname, 'src'),
+    noInfo: false,
+    watchContentBase: true,
+    hot: true,
+    inline: true,
+    port: 3000,
+    stats: 'minimal',
+    historyApiFallback: true,
+    headers: {
+        'Access-Control-Allow-Origin': '*'
+    }
+};
+
+
+const baseConfig = {
     entry: {
         index: './src/index.js'
     },
     output: {
         path: path.resolve(__dirname, './dist'),
         filename: '[name].bundle.js',
-        publicPath: productionPublicPath
+        publicPath: (isDevMode) ? devPublicPath : productionPublicPath
     },
+    watch: isDevMode,
     module: {
         rules: [
             {
@@ -69,3 +89,11 @@ module.exports = {
         new webpack.HotModuleReplacementPlugin()
     ]
 };
+
+let result = baseConfig;
+
+if(isDevMode) {
+    result.devServer = devServerConf;
+}
+
+module.exports = result;

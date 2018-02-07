@@ -48,10 +48,7 @@ class HomePage extends React.Component {
 
     _handleLoadButtonAction() {
         this._setDisplayAlert("pen", "Text loaded");
-
-        this.setState({
-            currentText: localStorageController.getText()
-        });
+        this.setState({currentText: localStorageController.getText()});
     }
 
     _renderAdditionalMenuButtons() {
