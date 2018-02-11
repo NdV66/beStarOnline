@@ -3,13 +3,14 @@
 @import "_tools.scss";
 
 .footer {
-    $fontSize: $BASE_FONT_SIZE;
-    $padding: $fontSize * 0.6;
+    $fontSize: $BASE_FONT_SIZE - 2;
+    $padding: $fontSize * 0.3;
     padding-top: $padding;
     padding-bottom: $padding;
-    background-color: $BACKGROUND_COLOR_DARKER;
+    background-color: $THEME_COLOR_SECOND;
     text-align: center;
     font-size: $fontSize;
+    color: $THEME_COLOR_TEXT;
 
     position: absolute;
     right: 0;

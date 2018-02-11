@@ -41,6 +41,7 @@ textarea {
     font-weight: 400;
     font-size: $BASE_FONT_SIZE;
     resize: none;
+    padding: 4px;
 }
 
 main {
@@ -54,6 +55,17 @@ main {
 
 a:active, a:visited,
 a:link, a:hover, a {
-    color: $THEME_COLOR_LIGHT !important;
+    color: $THEME_COLOR_ACTIVE !important;
 }
 
+.alert-success {
+    color: $THEME_COLOR_TEXT;
+    background-color: $SUCCESS;
+    border: none;
+}
+
+.alert-danger {
+    color: $THEME_COLOR_TEXT;
+    background-color: $DANGER;
+    border: none;
+}

@@ -10,7 +10,7 @@
   "scripts": {
     "start": "webpack-dev-server",
     "build": "webpack",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist && rm -rf dist/"
   },
   "dependencies": {
     "bootstrap": "4.0.0-beta.3",

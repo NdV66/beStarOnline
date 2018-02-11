@@ -4,7 +4,8 @@ const webpack = require('webpack');
 
 const productionPublicPath = '/beStarOnline';
 const devPublicPath = '/';
-const isDevMode = true;
+const isDevMode = process.env.mode === 'DEV';
+console.log('------ webpack in mode: ' + process.env.mode);
 
 const HtmlWebpackPluginConfig_Index = new HtmlWebpackPlugin({
     template: './src/index.html',
@@ -34,7 +35,8 @@ const devServerConf = {
     }
 };
 
-module.exports = {
+
+const baseConfig = {
     entry: {
         index: './src/index.js'
     },
@@ -44,7 +46,6 @@ module.exports = {
         publicPath: (isDevMode) ? devPublicPath : productionPublicPath
     },
     watch: isDevMode,
-    devServer: devServerConf,
     module: {
         rules: [
             {
@@ -88,3 +89,11 @@ module.exports = {
         new webpack.HotModuleReplacementPlugin()
     ]
 };
+
+let result = baseConfig;
+
+if(isDevMode) {
+    result.devServer = devServerConf;
+}
+
+module.exports = result;

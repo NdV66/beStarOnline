@@ -58,18 +58,39 @@
     color: #422442;
 }
 
-.btn-primary {
-    background-color: $THEME_COLOR_PRIMARY;
-    color: $THEME_COLOR_TEXT;
+.btn {
     border: none;
 
     &:hover, &:active {
-        background-color: $THEME_COLOR_LIGHT;
-        color: $THEME_COLOR_TEXT;
         outline: none;
     }
 }
 
+.btn-primary {
+    background-color: $THEME_COLOR_PRIMARY;
+    color: $THEME_COLOR_TEXT;
+
+    &:hover, &:active {
+        background-color: $THEME_COLOR_ACTIVE;
+        color: $THEME_COLOR_TEXT;
+    }
+}
+
+.btn-danger {
+    background-color: $DANGER;
+    color: $THEME_COLOR_TEXT;
+
+    &:hover, &:active {
+        background-color: $DANGER_ACTIVE;
+        color: $THEME_COLOR_TEXT;
+    }
+}
+
 .alert-preview {
-    background-color: $THEME_COLOR_VERY_LIGHT;
+    background-color: $THEME_COLOR_SECOND;
+    color: $THEME_COLOR_TEXT;
+}
+
+.text-danger {
+    color: $DANGER;
 }
