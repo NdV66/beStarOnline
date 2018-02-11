@@ -94,7 +94,20 @@ const BBCodeInterpreter = (() => {
             }
         },
 //        stars: {
+//            parse: function() {
+//                let starsContent = '';
 //
+//                function detectStars() {
+//                    console.log('GWIAZDKI');
+//                    var extract = _bbText.exec(/\*(.*)\*/);
+//                    if(extract) {
+//                        starsContent = '<div class="">' + extract + '</div>';
+//                    }
+//                }
+//
+//                detectStars();
+//                console.log(starsContent);
+//            }
 //        }
     };
 

@@ -71,7 +71,7 @@
     color: $THEME_COLOR_TEXT;
 
     &:hover, &:active {
-        background-color: $THEME_COLOR_LIGHT;
+        background-color: $THEME_COLOR_ACTIVE;
         color: $THEME_COLOR_TEXT;
     }
 }
@@ -81,13 +81,14 @@
     color: $THEME_COLOR_TEXT;
 
     &:hover, &:active {
-        background-color: $DANGER_LIGHT;
+        background-color: $DANGER_ACTIVE;
         color: $THEME_COLOR_TEXT;
     }
 }
 
 .alert-preview {
-    background-color: $THEME_COLOR_VERY_LIGHT;
+    background-color: $THEME_COLOR_SECOND;
+    color: $THEME_COLOR_TEXT;
 }
 
 .text-danger {
