@@ -1,0 +1,14 @@
+{
+    "PAGE_IN_PROGRESS": "Page in progress! Next updates comming soon :)",
+    "TEXT_COPIED": "Text copied",
+    "TEXT_SAVED": "Text saved",
+    "TEXT_LOADED": "Text loaded",
+    "SAVE": "Save text",
+    "LOAD": "Load text",
+    "TEXTAREA_PLACEHOLDER": "Write something :)",
+    "TEXT_REMOVED": "Text removed",
+    "BROWSER_SUPPORT": "Your browser doesn't support HTML5 features and this site can't work. Update your browser to use this site :)",
+    "YOUR_ACTIONS": "Your actions",
+    "REMOVE": "Remove saved text",
+    "EXPLAIN_LOCALSTORAGE": "This options works in your localstorage. This means, that the text will be save only in your brower and you can remove it using the \"remove\" button on this site or using your browser tools."
+}

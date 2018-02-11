@@ -5,6 +5,8 @@ import BBcodeInterpeter from '../lib/BBcode-interpreter';
 import HomeAlert from './Alert';
 import localStorageController from '../controller/LocalStorageController';
 import { Preview, HomeTextArea, HomeMenuButton, HomeMenu } from './HomeElements';
+import LangController from '../lang/langController';
+const LANG = LangController.getDefaultLang();
 
 class HomePage extends React.Component {
     constructor(props) {
@@ -13,7 +15,7 @@ class HomePage extends React.Component {
         this.parseBBcodeText = '';
         this.state = {
             displayAlert: false,
-            alertText: "Page in progress! Next updates comming soon :)",
+            alertText: LANG.PAGE_IN_PROGRESS,
             alertColor: "danger",
             displayPreview: false,
             currentText: localStorageController.getAutoSave() ? localStorageController.getText() : ''
@@ -32,30 +34,30 @@ class HomePage extends React.Component {
         this.textArea.select();
         document.execCommand("copy");
         event.target.focus();
-        this._setDisplayAlert("copy", "Text copied");
+        this._setDisplayAlert("copy", LANG.TEXT_COPIED);
     }
 
     _handlePreviewButtonAction() {
-        const textToParse = this.state.currentText !== '' ? this.state.currentText : "Write something :)" ;
+        const textToParse = this.state.currentText !== '' ? this.state.currentText : LANG.TEXTAREA_PLACEHOLDER;
         this.parseBBcodeText = BBcodeInterpeter.decodeToHTML(textToParse);
         this.setState({displayPreview: true});
     }
 
     _handleSaveButtonAction() {
         localStorageController.saveText(this.state.currentText);
-        this._setDisplayAlert("folder", "Text saved");
+        this._setDisplayAlert("folder", LANG.TEXT_SAVED);
     }
 
     _handleLoadButtonAction() {
-        this._setDisplayAlert("pen", "Text loaded");
+        this._setDisplayAlert("pen", LANG.TEXT_LOADED);
         this.setState({currentText: localStorageController.getText()});
     }
 
     _renderAdditionalMenuButtons() {
         let additionalButtons = null;
         if(!localStorageController.getAutoSave()) {
-            additionalButtons = [<HomeMenuButton key="1" action={() => this._handleSaveButtonAction()} icon={"folder"} text={"Save text"} />,
-                                 <HomeMenuButton key="2" action={() => this._handleLoadButtonAction()} icon={"pen"} text={"Load text"} />];
+            additionalButtons = [<HomeMenuButton key="1" action={() => this._handleSaveButtonAction()} icon={"folder"} text={LANG.SAVE} />,
+                                 <HomeMenuButton key="2" action={() => this._handleLoadButtonAction()} icon={"pen"} text={LANG.LOAD} />];
         }
         return additionalButtons;
     }
@@ -77,7 +79,7 @@ class HomePage extends React.Component {
                     <Row>{preview}</Row>
                     <Row>
                         <HomeTextArea
-                            placeholder={"Write some BBCode here :)"}
+                            placeholder={LANG.TEXTAREA_PLACEHOLDER}
                             onChange={(event) => this.setState({currentText: event.target.value})}
                             onRef={(textarea) => this.textArea = textarea}
                             value={this.state.currentText}
