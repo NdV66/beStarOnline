@@ -61,7 +61,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "affa0d4c562c978c709b"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "2fdb342a3d860c408733"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -838,7 +838,7 @@ exports = module.exports = __webpack_require__("./node_modules/css-loader/lib/cs
 
 
 // module
-exports.push([module.i, ".bb-display-inline {\n  display: inline; }\n\n.bb-strong,\n.bb-strong > div {\n  font-weight: 400; }\n\n.bb-italic,\n.bb-italic > div {\n  font-style: italic; }\n\n.bb-underlined,\n.bb-underlined > div {\n  text-decoration: underline; }\n\n.bb-strikethrough,\n.bb-strikethrough > div {\n  text-decoration: line-through; }\n", ""]);
+exports.push([module.i, ".bb-display-inline {\n  display: inline; }\n\n.bb-strong,\n.bb-strong > div {\n  font-weight: 400; }\n\n.bb-italic,\n.bb-italic > div {\n  font-style: italic; }\n\n.bb-underlined,\n.bb-underlined > div {\n  text-decoration: underline; }\n\n.bb-strikethrough,\n.bb-strikethrough > div {\n  text-decoration: line-through; }\n\n.star,\n.star > div {\n  background: red; }\n", ""]);
 
 // exports
 
@@ -854,7 +854,7 @@ exports = module.exports = __webpack_require__("./node_modules/css-loader/lib/cs
 
 
 // module
-exports.push([module.i, "@font-face {\n  font-family: Roboto;\n  src: url(" + escape(__webpack_require__("./src/fonts/Roboto-Light.ttf")) + ");\n  font-weight: 200; }\n\n@font-face {\n  font-family: Roboto;\n  src: url(" + escape(__webpack_require__("./src/fonts/Roboto-Regular.ttf")) + ");\n  font-weight: 400; }\n\n@font-face {\n  font-family: Icons;\n  src: url(" + escape(__webpack_require__("./src/fonts/heydings_icons.ttf")) + "); }\n\n.icon {\n  font-family: Icons;\n  font-size: 18px; }\n\n.icon-settings:after {\n  content: 'C'; }\n\n.icon-cake:after {\n  content: 'Y'; }\n\n.icon-paper:after {\n  content: 'D'; }\n\n.icon-bulb:after {\n  content: 'l'; }\n\n.icon-compass:after {\n  content: 'N'; }\n\n.icon-ask:after {\n  content: 'Q'; }\n\n.icon-bookmark:after {\n  content: 'B'; }\n\n.icon-key:after {\n  content: 'K'; }\n\n.icon-copy:after {\n  content: 'e'; }\n\n.icon-viewfinder:after {\n  content: '@'; }\n\n.icon-magnifier:after {\n  content: 'M'; }\n\n.icon-lightning:after {\n  content: 'r'; }\n\n.icon-warning:after {\n  content: '!'; }\n\n.icon-pen:after {\n  content: 'w'; }\n\n.icon-folder:after {\n  content: 'F'; }\n\n.no-padding {\n  padding: 0px !important; }\n\n.no-margin {\n  margin: 0px !important; }\n\n.bg-color {\n  background-color: #5E335E; }\n\n.bg-color-dark {\n  background-color: #422442; }\n\n.bg-color-light {\n  background-color: #8D44AD; }\n\n.bg-neutral {\n  background-color: #F2F2F2; }\n\n.bg-neutral-darker {\n  background-color: #EFEFEF; }\n\n.bg-neutral-more-dark {\n  background-color: #dedede; }\n\n.font-primary {\n  color: #FFFFFF; }\n\n.full-height {\n  height: calc(100vh - 126px); }\n\n.font-headers {\n  color: #FFCD02; }\n\n.font-headers-dark {\n  color: #FFA800; }\n\n.content-padding {\n  padding: 0px 30px; }\n\n* {\n  font-family: Roboto;\n  font-weight: 200;\n  outline: 0 !important;\n  -webkit-tap-highlight-color: transparent; }\n\nbody {\n  background-color: #EFEFEF;\n  font-size: 18px;\n  min-height: 100vh;\n  overflow-x: hidden;\n  position: relative; }\n\nh2 {\n  margin: 0;\n  font-size: 21.6px;\n  width: 100%;\n  padding: 20px 0 10px 0 !important;\n  font-weight: 200;\n  padding-left: 16px;\n  font-size: 23.4px;\n  font-weight: 400; }\n\nh3 {\n  font-size: 18px;\n  width: 100%;\n  font-weight: 200;\n  padding: 8px 16px !important; }\n\ntextarea {\n  width: 100%;\n  height: calc(100vh - 190px);\n  background-color: #EFEFEF;\n  border: 1px solid rgba(94, 51, 94, 0.2);\n  font-weight: 400;\n  font-size: 18px;\n  resize: none; }\n\nmain {\n  min-height: calc(100vh - 190px); }\n\n.btn:focus, .btn:active {\n  outline: none !important;\n  box-shadow: none; }\n\na:active, a:visited,\na:link, a:hover, a {\n  color: #7a427a !important; }\n\n.custom-toggler.navbar-toggler {\n  border: none; }\n\n.custom-toggler .navbar-toggler-icon {\n  background-image: url(\"data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,205,2,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E\"); }\n\n.logo {\n  font-size: 18px; }\n\n.navbar {\n  background-color: #422442; }\n  .navbar a:active, .navbar a:visited,\n  .navbar a:link, .navbar a:hover, .navbar a {\n    color: #FFCD02 !important; }\n\n.navbar-nav {\n  font-size: 18px; }\n\n.navbar-nav .icon {\n  font-size: 18px; }\n\n@font-face {\n  font-family: Roboto;\n  src: url(" + escape(__webpack_require__("./src/fonts/Roboto-Light.ttf")) + ");\n  font-weight: 200; }\n\n@font-face {\n  font-family: Roboto;\n  src: url(" + escape(__webpack_require__("./src/fonts/Roboto-Regular.ttf")) + ");\n  font-weight: 400; }\n\n@font-face {\n  font-family: Icons;\n  src: url(" + escape(__webpack_require__("./src/fonts/heydings_icons.ttf")) + "); }\n\n.icon {\n  font-family: Icons;\n  font-size: 18px; }\n\n.icon-settings:after {\n  content: 'C'; }\n\n.icon-cake:after {\n  content: 'Y'; }\n\n.icon-paper:after {\n  content: 'D'; }\n\n.icon-bulb:after {\n  content: 'l'; }\n\n.icon-compass:after {\n  content: 'N'; }\n\n.icon-ask:after {\n  content: 'Q'; }\n\n.icon-bookmark:after {\n  content: 'B'; }\n\n.icon-key:after {\n  content: 'K'; }\n\n.icon-copy:after {\n  content: 'e'; }\n\n.icon-viewfinder:after {\n  content: '@'; }\n\n.icon-magnifier:after {\n  content: 'M'; }\n\n.icon-lightning:after {\n  content: 'r'; }\n\n.icon-warning:after {\n  content: '!'; }\n\n.icon-pen:after {\n  content: 'w'; }\n\n.icon-folder:after {\n  content: 'F'; }\n\n.no-padding {\n  padding: 0px !important; }\n\n.no-margin {\n  margin: 0px !important; }\n\n.bg-color {\n  background-color: #5E335E; }\n\n.bg-color-dark {\n  background-color: #422442; }\n\n.bg-color-light {\n  background-color: #8D44AD; }\n\n.bg-neutral {\n  background-color: #F2F2F2; }\n\n.bg-neutral-darker {\n  background-color: #EFEFEF; }\n\n.bg-neutral-more-dark {\n  background-color: #dedede; }\n\n.font-primary {\n  color: #FFFFFF; }\n\n.full-height {\n  height: calc(100vh - 126px); }\n\n.font-headers {\n  color: #FFCD02; }\n\n.font-headers-dark {\n  color: #FFA800; }\n\n.content-padding {\n  padding: 0px 30px; }\n\n.footer {\n  padding-top: 4.8px;\n  padding-bottom: 4.8px;\n  background-color: #e1e1e1;\n  text-align: center;\n  font-size: 16px;\n  position: absolute;\n  right: 0;\n  bottom: 0;\n  left: 0; }\n\n.bb-tag {\n  font-weight: 600; }\n\n.dropdown {\n  z-index: 999999; }\n\n.dropdown .btn {\n  background: none;\n  border: none;\n  color: #FFCD02;\n  font-weight: 200;\n  font-size: 18px;\n  line-height: 24px;\n  font-family: Roboto; }\n\n.dropdown-menu {\n  background-color: #422442;\n  color: #FFCD02;\n  border: none;\n  border-radius: 0px;\n  padding: .25rem 0; }\n\n.dropdown-item {\n  padding: 3px 0.8rem; }\n\n.dropdown-item:hover,\n.dropdown-item:active {\n  background-color: #5E335E; }\n\n.content {\n  font-family: Roboto;\n  font-weight: 400; }\n\n#preview-bb-content {\n  position: absolute;\n  left: 0;\n  right: 0;\n  z-index: 999;\n  height: calc(100vh - 88px);\n  background-color: #dedede;\n  border: none;\n  border-radius: 0;\n  font-size: 18px;\n  color: #422442; }\n\n.btn {\n  border: none; }\n  .btn:hover, .btn:active {\n    outline: none; }\n\n.btn-primary {\n  background-color: #422442;\n  color: #FFCD02; }\n  .btn-primary:hover, .btn-primary:active {\n    background-color: #7a427a;\n    color: #FFCD02; }\n\n.btn-danger {\n  background-color: #a12442;\n  color: #FFCD02; }\n  .btn-danger:hover, .btn-danger:active {\n    background-color: #d02f55;\n    color: #FFCD02; }\n\n.alert-preview {\n  background-color: #d8bfd8; }\n\n.text-danger {\n  color: #a12442; }\n", ""]);
+exports.push([module.i, "@font-face {\n  font-family: Roboto;\n  src: url(" + escape(__webpack_require__("./src/fonts/Roboto-Light.ttf")) + ");\n  font-weight: 200; }\n\n@font-face {\n  font-family: Roboto;\n  src: url(" + escape(__webpack_require__("./src/fonts/Roboto-Regular.ttf")) + ");\n  font-weight: 400; }\n\n@font-face {\n  font-family: Icons;\n  src: url(" + escape(__webpack_require__("./src/fonts/heydings_icons.ttf")) + "); }\n\n.icon {\n  font-family: Icons;\n  font-size: 18px; }\n\n.icon-settings:after {\n  content: 'C'; }\n\n.icon-cake:after {\n  content: 'Y'; }\n\n.icon-paper:after {\n  content: 'D'; }\n\n.icon-bulb:after {\n  content: 'l'; }\n\n.icon-compass:after {\n  content: 'N'; }\n\n.icon-ask:after {\n  content: 'Q'; }\n\n.icon-bookmark:after {\n  content: 'B'; }\n\n.icon-key:after {\n  content: 'K'; }\n\n.icon-copy:after {\n  content: 'e'; }\n\n.icon-viewfinder:after {\n  content: '@'; }\n\n.icon-magnifier:after {\n  content: 'M'; }\n\n.icon-lightning:after {\n  content: 'r'; }\n\n.icon-warning:after {\n  content: '!'; }\n\n.icon-pen:after {\n  content: 'w'; }\n\n.icon-folder:after {\n  content: 'F'; }\n\n.no-padding {\n  padding: 0px !important; }\n\n.no-margin {\n  margin: 0px !important; }\n\n.bg-color {\n  background-color: #5E335E; }\n\n.bg-color-dark {\n  background-color: #422442; }\n\n.bg-color-light {\n  background-color: #8D44AD; }\n\n.bg-neutral {\n  background-color: #F2F2F2; }\n\n.bg-neutral-darker {\n  background-color: #EFEFEF; }\n\n.bg-neutral-more-dark {\n  background-color: #dedede; }\n\n.font-primary {\n  color: #FFFFFF; }\n\n.full-height {\n  height: calc(100vh - 126px); }\n\n.font-headers {\n  color: #fff; }\n\n.font-headers-dark {\n  color: #FFA800; }\n\n.content-padding {\n  padding: 0px 30px; }\n\n* {\n  font-family: Roboto;\n  font-weight: 200;\n  outline: 0 !important;\n  -webkit-tap-highlight-color: transparent; }\n\nbody {\n  background-color: #EFEFEF;\n  font-size: 18px;\n  min-height: 100vh;\n  overflow-x: hidden;\n  position: relative; }\n\nh2 {\n  margin: 0;\n  font-size: 21.6px;\n  width: 100%;\n  padding: 20px 0 10px 0 !important;\n  font-weight: 200;\n  padding-left: 16px;\n  font-size: 23.4px;\n  font-weight: 400; }\n\nh3 {\n  font-size: 18px;\n  width: 100%;\n  font-weight: 200;\n  padding: 8px 16px !important; }\n\ntextarea {\n  width: 100%;\n  height: calc(100vh - 190px);\n  background-color: #EFEFEF;\n  border: 1px solid rgba(94, 51, 94, 0.2);\n  font-weight: 400;\n  font-size: 18px;\n  resize: none;\n  padding: 4px; }\n\nmain {\n  min-height: calc(100vh - 190px); }\n\n.btn:focus, .btn:active {\n  outline: none !important;\n  box-shadow: none; }\n\na:active, a:visited,\na:link, a:hover, a {\n  color: #7092a9 !important; }\n\n.alert-success {\n  color: #fff;\n  background-color: #6ab04c;\n  border: none; }\n\n.alert-danger {\n  color: #fff;\n  background-color: #ff7979;\n  border: none; }\n\n.custom-toggler.navbar-toggler {\n  border: none; }\n\n.custom-toggler .navbar-toggler-icon {\n  background-image: url(\"data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,205,2,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E\"); }\n\n.logo {\n  font-size: 18px; }\n\n.navbar {\n  background-color: #95afc0;\n  padding-top: 0;\n  padding-bottom: 0; }\n  .navbar a:active, .navbar a:visited,\n  .navbar a:link, .navbar a:hover, .navbar a {\n    color: #fff !important; }\n\n.navbar-nav {\n  font-size: 18px; }\n\n.navbar-nav .icon {\n  font-size: 18px; }\n\n.active {\n  background-color: #535c68; }\n\n.nav-link {\n  padding-top: 12px;\n  padding-bottom: 12px; }\n\n@font-face {\n  font-family: Roboto;\n  src: url(" + escape(__webpack_require__("./src/fonts/Roboto-Light.ttf")) + ");\n  font-weight: 200; }\n\n@font-face {\n  font-family: Roboto;\n  src: url(" + escape(__webpack_require__("./src/fonts/Roboto-Regular.ttf")) + ");\n  font-weight: 400; }\n\n@font-face {\n  font-family: Icons;\n  src: url(" + escape(__webpack_require__("./src/fonts/heydings_icons.ttf")) + "); }\n\n.icon {\n  font-family: Icons;\n  font-size: 18px; }\n\n.icon-settings:after {\n  content: 'C'; }\n\n.icon-cake:after {\n  content: 'Y'; }\n\n.icon-paper:after {\n  content: 'D'; }\n\n.icon-bulb:after {\n  content: 'l'; }\n\n.icon-compass:after {\n  content: 'N'; }\n\n.icon-ask:after {\n  content: 'Q'; }\n\n.icon-bookmark:after {\n  content: 'B'; }\n\n.icon-key:after {\n  content: 'K'; }\n\n.icon-copy:after {\n  content: 'e'; }\n\n.icon-viewfinder:after {\n  content: '@'; }\n\n.icon-magnifier:after {\n  content: 'M'; }\n\n.icon-lightning:after {\n  content: 'r'; }\n\n.icon-warning:after {\n  content: '!'; }\n\n.icon-pen:after {\n  content: 'w'; }\n\n.icon-folder:after {\n  content: 'F'; }\n\n.no-padding {\n  padding: 0px !important; }\n\n.no-margin {\n  margin: 0px !important; }\n\n.bg-color {\n  background-color: #5E335E; }\n\n.bg-color-dark {\n  background-color: #422442; }\n\n.bg-color-light {\n  background-color: #8D44AD; }\n\n.bg-neutral {\n  background-color: #F2F2F2; }\n\n.bg-neutral-darker {\n  background-color: #EFEFEF; }\n\n.bg-neutral-more-dark {\n  background-color: #dedede; }\n\n.font-primary {\n  color: #FFFFFF; }\n\n.full-height {\n  height: calc(100vh - 126px); }\n\n.font-headers {\n  color: #fff; }\n\n.font-headers-dark {\n  color: #FFA800; }\n\n.content-padding {\n  padding: 0px 30px; }\n\n.footer {\n  padding-top: 4.8px;\n  padding-bottom: 4.8px;\n  background-color: #535c68;\n  text-align: center;\n  font-size: 16px;\n  color: #fff;\n  position: absolute;\n  right: 0;\n  bottom: 0;\n  left: 0; }\n\n.bb-tag {\n  font-weight: 600; }\n\n.dropdown {\n  z-index: 999999; }\n\n.dropdown .btn {\n  background: none;\n  border: none;\n  color: #fff;\n  font-weight: 200;\n  font-size: 18px;\n  line-height: 24px;\n  font-family: Roboto; }\n\n.dropdown-menu {\n  background-color: #422442;\n  color: #fff;\n  border: none;\n  border-radius: 0px;\n  padding: .25rem 0; }\n\n.dropdown-item {\n  padding: 3px 0.8rem; }\n\n.dropdown-item:hover,\n.dropdown-item:active {\n  background-color: #5E335E; }\n\n.content {\n  font-family: Roboto;\n  font-weight: 400; }\n\n#preview-bb-content {\n  position: absolute;\n  left: 0;\n  right: 0;\n  z-index: 999;\n  height: calc(100vh - 88px);\n  background-color: #dedede;\n  border: none;\n  border-radius: 0;\n  font-size: 18px;\n  color: #422442; }\n\n.btn {\n  border: none; }\n  .btn:hover, .btn:active {\n    outline: none; }\n\n.btn-primary {\n  background-color: #95afc0;\n  color: #fff; }\n  .btn-primary:hover, .btn-primary:active {\n    background-color: #7092a9;\n    color: #fff; }\n\n.btn-danger {\n  background-color: #ff7979;\n  color: #fff; }\n  .btn-danger:hover, .btn-danger:active {\n    background-color: #eb4d4b;\n    color: #fff; }\n\n.alert-preview {\n  background-color: #535c68;\n  color: #fff; }\n\n.text-danger {\n  color: #ff7979; }\n", ""]);
 
 // exports
 
@@ -33648,6 +33648,28 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
+var NavbarItem = function NavbarItem(props) {
+    var className = props.id === props.activeId ? "nav-link active" : "nav-link";
+
+    var _onClick = function _onClick(event) {
+        event.preventDefault();
+        props.onClick(props.id);
+    };
+
+    return _react2.default.createElement(
+        _reactstrap.NavItem,
+        { onClick: function onClick(event) {
+                return _onClick(event);
+            } },
+        _react2.default.createElement(
+            _reactRouterDom.Link,
+            { id: props.id, className: className, to: props.link },
+            _react2.default.createElement(_IconElement2.default, { icon: props.icon }),
+            props.text
+        )
+    );
+};
+
 var HamburgerNavbar = function (_React$Component) {
     _inherits(HamburgerNavbar, _React$Component);
 
@@ -33656,7 +33678,10 @@ var HamburgerNavbar = function (_React$Component) {
 
         var _this = _possibleConstructorReturn(this, (HamburgerNavbar.__proto__ || Object.getPrototypeOf(HamburgerNavbar)).call(this, props));
 
-        _this.state = { isOpen: false };
+        _this.state = {
+            isOpen: false,
+            active: ''
+        };
         return _this;
     }
 
@@ -33664,6 +33689,11 @@ var HamburgerNavbar = function (_React$Component) {
         key: 'toggle',
         value: function toggle() {
             this.setState({ isOpen: !this.state.isOpen });
+        }
+    }, {
+        key: 'onNavbarItemClick',
+        value: function onNavbarItemClick(activeId) {
+            this.setState({ active: activeId });
         }
     }, {
         key: 'render',
@@ -33675,7 +33705,9 @@ var HamburgerNavbar = function (_React$Component) {
                 { color: 'faded', light: true, expand: 'md', className: 'custom-toggler' },
                 _react2.default.createElement(
                     _reactRouterDom.Link,
-                    { className: 'navbar-brand', to: '/' },
+                    { className: 'navbar-brand', to: '/', onClick: function onClick() {
+                            return _this2.onNavbarItemClick('');
+                        } },
                     '[b]Star[/b]'
                 ),
                 _react2.default.createElement(_reactstrap.NavbarToggler, { onClick: function onClick() {
@@ -33687,36 +33719,12 @@ var HamburgerNavbar = function (_React$Component) {
                     _react2.default.createElement(
                         _reactstrap.Nav,
                         { className: 'ml-auto', navbar: true },
-                        _react2.default.createElement(
-                            _reactstrap.NavItem,
-                            null,
-                            _react2.default.createElement(
-                                _reactRouterDom.Link,
-                                { className: 'nav-link', to: '/settings' },
-                                _react2.default.createElement(_IconElement2.default, { icon: 'settings' }),
-                                'Settings'
-                            )
-                        ),
-                        _react2.default.createElement(
-                            _reactstrap.NavItem,
-                            null,
-                            _react2.default.createElement(
-                                'a',
-                                { className: 'nav-link', href: 'https://github.com/NdV66/beStarOnline', target: '_blank' },
-                                _react2.default.createElement(_IconElement2.default, { icon: 'cake' }),
-                                'Get sources'
-                            )
-                        ),
-                        _react2.default.createElement(
-                            _reactstrap.NavItem,
-                            null,
-                            _react2.default.createElement(
-                                _reactRouterDom.Link,
-                                { className: 'nav-link', to: '/about' },
-                                _react2.default.createElement(_IconElement2.default, { icon: 'compass' }),
-                                'About'
-                            )
-                        )
+                        _react2.default.createElement(NavbarItem, { link: "/settings", text: "Settings", icon: "settings", id: "settings", activeId: this.state.active, onClick: function onClick(activeId) {
+                                return _this2.onNavbarItemClick(activeId);
+                            } }),
+                        _react2.default.createElement(NavbarItem, { link: "/about", text: "About", icon: "compass", id: "about", activeId: this.state.active, onClick: function onClick(activeId) {
+                                return _this2.onNavbarItemClick(activeId);
+                            } })
                     )
                 )
             );
@@ -33837,6 +33845,37 @@ _reactDom2.default.render(_react2.default.createElement(_App2.default, null), do
 
 /***/ }),
 
+/***/ "./src/lang/en.json":
+/***/ (function(module, exports) {
+
+module.exports = {"PAGE_IN_PROGRESS":"Page in progress! Next updates comming soon :)","TEXT_COPIED":"Text copied","TEXT_SAVED":"Text saved","TEXT_LOADED":"Text loaded","SAVE":"Save text","LOAD":"Load text","TEXTAREA_PLACEHOLDER":"Write something :)","TEXT_REMOVED":"Text removed","BROWSER_SUPPORT":"Your browser doesn't support HTML5 features and this site can't work. Update your browser to use this site :)","YOUR_ACTIONS":"Your actions","REMOVE":"Remove saved text","EXPLAIN_LOCALSTORAGE":"This options works in your localstorage. This means, that the text will be save only in your brower and you can remove it using the \"remove\" button on this site or using your browser tools."}
+
+/***/ }),
+
+/***/ "./src/lang/langController.js":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _en = __webpack_require__("./src/lang/en.json");
+
+var _en2 = _interopRequireDefault(_en);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+module.exports = function () {
+    var getDefaultLang = function getDefaultLang() {
+        return _en2.default;
+    };
+
+    return {
+        getDefaultLang: getDefaultLang
+    };
+}();
+
+/***/ }),
+
 /***/ "./src/lib/BBcode-interpreter.js":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -33942,7 +33981,20 @@ var BBCodeInterpreter = function () {
             }
         }
         //        stars: {
+        //            parse: function() {
+        //                let starsContent = '';
         //
+        //                function detectStars() {
+        //                    console.log('GWIAZDKI');
+        //                    var extract = _bbText.exec(/\*(.*)\*/);
+        //                    if(extract) {
+        //                        starsContent = '<div class="">' + extract + '</div>';
+        //                    }
+        //                }
+        //
+        //                detectStars();
+        //                console.log(starsContent);
+        //            }
         //        }
     };
 
@@ -34315,6 +34367,10 @@ var _LocalStorageController2 = _interopRequireDefault(_LocalStorageController);
 
 var _HomeElements = __webpack_require__("./src/presentation/HomeElements.js");
 
+var _langController = __webpack_require__("./src/lang/langController.js");
+
+var _langController2 = _interopRequireDefault(_langController);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -34322,6 +34378,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var LANG = _langController2.default.getDefaultLang();
 
 var HomePage = function (_React$Component) {
     _inherits(HomePage, _React$Component);
@@ -34335,7 +34393,7 @@ var HomePage = function (_React$Component) {
         _this.parseBBcodeText = '';
         _this.state = {
             displayAlert: false,
-            alertText: "Page in progress! Next updates comming soon :)",
+            alertText: LANG.PAGE_IN_PROGRESS,
             alertColor: "danger",
             displayPreview: false,
             currentText: _LocalStorageController2.default.getAutoSave() ? _LocalStorageController2.default.getText() : ''
@@ -34364,12 +34422,12 @@ var HomePage = function (_React$Component) {
             this.textArea.select();
             document.execCommand("copy");
             event.target.focus();
-            this._setDisplayAlert("copy", "Text copied");
+            this._setDisplayAlert("copy", LANG.TEXT_COPIED);
         }
     }, {
         key: '_handlePreviewButtonAction',
         value: function _handlePreviewButtonAction() {
-            var textToParse = this.state.currentText !== '' ? this.state.currentText : "Write something :)";
+            var textToParse = this.state.currentText !== '' ? this.state.currentText : LANG.TEXTAREA_PLACEHOLDER;
             this.parseBBcodeText = _BBcodeInterpreter2.default.decodeToHTML(textToParse);
             this.setState({ displayPreview: true });
         }
@@ -34377,16 +34435,13 @@ var HomePage = function (_React$Component) {
         key: '_handleSaveButtonAction',
         value: function _handleSaveButtonAction() {
             _LocalStorageController2.default.saveText(this.state.currentText);
-            this._setDisplayAlert("folder", "Text saved");
+            this._setDisplayAlert("folder", LANG.TEXT_SAVED);
         }
     }, {
         key: '_handleLoadButtonAction',
         value: function _handleLoadButtonAction() {
-            this._setDisplayAlert("pen", "Text loaded");
-
-            this.setState({
-                currentText: _LocalStorageController2.default.getText()
-            });
+            this._setDisplayAlert("pen", LANG.TEXT_LOADED);
+            this.setState({ currentText: _LocalStorageController2.default.getText() });
         }
     }, {
         key: '_renderAdditionalMenuButtons',
@@ -34397,9 +34452,9 @@ var HomePage = function (_React$Component) {
             if (!_LocalStorageController2.default.getAutoSave()) {
                 additionalButtons = [_react2.default.createElement(_HomeElements.HomeMenuButton, { key: '1', action: function action() {
                         return _this2._handleSaveButtonAction();
-                    }, icon: "folder", text: "Save text" }), _react2.default.createElement(_HomeElements.HomeMenuButton, { key: '2', action: function action() {
+                    }, icon: "folder", text: LANG.SAVE }), _react2.default.createElement(_HomeElements.HomeMenuButton, { key: '2', action: function action() {
                         return _this2._handleLoadButtonAction();
-                    }, icon: "pen", text: "Load text" })];
+                    }, icon: "pen", text: LANG.LOAD })];
             }
             return additionalButtons;
         }
@@ -34445,7 +34500,7 @@ var HomePage = function (_React$Component) {
                     _reactstrap.Row,
                     null,
                     _react2.default.createElement(_HomeElements.HomeTextArea, {
-                        placeholder: "Write some BBCode here :)",
+                        placeholder: LANG.TEXTAREA_PLACEHOLDER,
                         onChange: function onChange(event) {
                             return _this3.setState({ currentText: event.target.value });
                         },
@@ -34522,6 +34577,10 @@ var _LocalStorageController = __webpack_require__("./src/controller/LocalStorage
 
 var _LocalStorageController2 = _interopRequireDefault(_LocalStorageController);
 
+var _langController = __webpack_require__("./src/lang/langController.js");
+
+var _langController2 = _interopRequireDefault(_langController);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -34529,6 +34588,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var LANG = _langController2.default.getDefaultLang();
 
 var SettingsPage = function (_React$Component) {
     _inherits(SettingsPage, _React$Component);
@@ -34556,7 +34617,7 @@ var SettingsPage = function (_React$Component) {
                 alertText: [_react2.default.createElement(_IconElement2.default, { key: '1', icon: "warning" }), _react2.default.createElement(
                     'span',
                     { key: '2' },
-                    'Text removed'
+                    LANG.TEXT_REMOVED
                 )],
                 alertColor: "danger"
             });
@@ -34573,7 +34634,7 @@ var SettingsPage = function (_React$Component) {
                 _reactstrap.Col,
                 { xs: '12', className: 'text-danger mb-3' },
                 _react2.default.createElement(_IconElement2.default, { icon: 'warning' }),
-                'Your browser doesn\'t support HTML5 features and this site can\'t work. Update your browser to use this site :)'
+                LANG.BROWSER_SUPPORT
             ) : null;
 
             return _react2.default.createElement(
@@ -34590,14 +34651,14 @@ var SettingsPage = function (_React$Component) {
                             'h2',
                             null,
                             _react2.default.createElement(_IconElement2.default, { icon: "bookmark" }),
-                            'Your actions'
+                            LANG.YOUR_ACTIONS
                         )
                     ),
                     support,
                     _react2.default.createElement(
                         _reactstrap.Col,
                         { xs: '12' },
-                        'This options works in your localstorage. This means, that the text will be save only in your brower and you can remove it using the "remove" button on this site or using your browser tools.'
+                        LANG.EXPLAIN_LOCALSTORAGE
                     ),
                     _react2.default.createElement(
                         _reactstrap.Col,
@@ -34608,7 +34669,7 @@ var SettingsPage = function (_React$Component) {
                                     return _this2.handleRemoveButtonAction();
                                 } },
                             _react2.default.createElement(_IconElement2.default, { icon: "warning" }),
-                            'Remove saved text'
+                            LANG.REMOVE
                         )
                     )
                 )
