@@ -94,3 +94,14 @@
 .text-danger {
     color: $DANGER;
 }
+
+.syntax-desc {
+    line-height: 2;
+}
+
+h5 {
+    $margin: 10px;
+    color: $THEME_COLOR_PRIMARY;
+    margin-top: $margin;
+    margin-bottom: $margin;
+}

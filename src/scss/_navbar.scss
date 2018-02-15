@@ -14,8 +14,7 @@
 
 .navbar {
     background-color: $THEME_COLOR_PRIMARY;
-    padding-top: 0;
-    padding-bottom: 0;
+    padding: 0;
 
     a:active, a:visited,
     a:link, a:hover, a {
@@ -39,4 +38,11 @@
     $padding: 12px;
     padding-top: $padding;
     padding-bottom: $padding;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
 }
+
+.navbar-brand {
+    padding-left: 16px;
+}
+
