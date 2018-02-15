@@ -93,22 +93,21 @@ const BBCodeInterpreter = (() => {
                 }
             }
         },
-//        stars: {
-//            parse: function() {
-//                let starsContent = '';
-//
-//                function detectStars() {
-//                    console.log('GWIAZDKI');
-//                    var extract = _bbText.exec(/\*(.*)\*/);
-//                    if(extract) {
-//                        starsContent = '<div class="">' + extract + '</div>';
-//                    }
-//                }
-//
-//                detectStars();
-//                console.log(starsContent);
-//            }
-//        }
+        stars: {
+            parse: function() {
+                const textArray  = _bbText.split('');
+                let starsIndex = textArray.map((letter, index) => letter === '*' ? index : undefined);
+                starsIndex = starsIndex.filter((tmp) => tmp !== undefined);
+                let isStart = true;
+
+                starsIndex.map((index) => {
+                    textArray[index] = isStart ? '<div class="bb-star bb-display-inline">' : '</div>';
+                    isStart = !isStart;
+                });
+
+                _bbText = textArray.join('');
+            }
+        }
     };
 
     function createHTMLelement(regexp, callback) {

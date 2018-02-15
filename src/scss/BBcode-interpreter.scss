@@ -4,7 +4,7 @@
 
 .bb-strong,
 .bb-strong > div {
-    font-weight: 400;
+    font-weight: 600;
 }
 
 .bb-italic,
@@ -22,7 +22,7 @@
     text-decoration: line-through;
 }
 
-.star,
-.star > div {
-    background: red;
+.bb-star,
+.bb-star > div {
+    font-weight: 600;
 }
