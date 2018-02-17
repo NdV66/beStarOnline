@@ -61,7 +61,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "455a9a058934620c7618"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "77c8d47a0d1eb59debfd"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -854,7 +854,7 @@ exports = module.exports = __webpack_require__("./node_modules/css-loader/lib/cs
 
 
 // module
-exports.push([module.i, "@font-face {\n  font-family: Roboto;\n  src: url(" + escape(__webpack_require__("./src/fonts/Roboto-Light.ttf")) + ");\n  font-weight: 200; }\n\n@font-face {\n  font-family: Roboto;\n  src: url(" + escape(__webpack_require__("./src/fonts/Roboto-Regular.ttf")) + ");\n  font-weight: 400; }\n\n@font-face {\n  font-family: Icons;\n  src: url(" + escape(__webpack_require__("./src/fonts/heydings_icons.ttf")) + "); }\n\n.icon {\n  font-family: Icons;\n  font-size: 18px; }\n\n.icon-settings:after {\n  content: 'C'; }\n\n.icon-cake:after {\n  content: 'Y'; }\n\n.icon-paper:after {\n  content: 'D'; }\n\n.icon-bulb:after {\n  content: 'l'; }\n\n.icon-compass:after {\n  content: 'N'; }\n\n.icon-ask:after {\n  content: 'Q'; }\n\n.icon-bookmark:after {\n  content: 'B'; }\n\n.icon-key:after {\n  content: 'K'; }\n\n.icon-copy:after {\n  content: 'e'; }\n\n.icon-viewfinder:after {\n  content: '@'; }\n\n.icon-magnifier:after {\n  content: 'M'; }\n\n.icon-lightning:after {\n  content: 'r'; }\n\n.icon-warning:after {\n  content: '!'; }\n\n.icon-pen:after {\n  content: 'w'; }\n\n.icon-folder:after {\n  content: 'F'; }\n\n.no-padding {\n  padding: 0px !important; }\n\n.no-margin {\n  margin: 0px !important; }\n\n.bg-color {\n  background-color: #5E335E; }\n\n.bg-color-dark {\n  background-color: #422442; }\n\n.bg-color-light {\n  background-color: #8D44AD; }\n\n.bg-neutral {\n  background-color: #F2F2F2; }\n\n.bg-neutral-darker {\n  background-color: #EFEFEF; }\n\n.bg-neutral-more-dark {\n  background-color: #dedede; }\n\n.font-primary {\n  color: #FFFFFF; }\n\n.full-height {\n  height: calc(100vh - 126px); }\n\n.font-headers {\n  color: #fff; }\n\n.font-headers-dark {\n  color: #FFA800; }\n\n.content-padding {\n  padding: 0px 30px; }\n\n* {\n  font-family: Roboto;\n  font-weight: 200;\n  outline: 0 !important;\n  -webkit-tap-highlight-color: transparent; }\n\nbody {\n  background-color: #EFEFEF;\n  font-size: 18px;\n  min-height: 100vh;\n  overflow-x: hidden;\n  position: relative; }\n\nh2 {\n  margin: 0;\n  font-size: 21.6px;\n  width: 100%;\n  padding: 20px 0 10px 0 !important;\n  font-weight: 200;\n  padding-left: 16px;\n  font-size: 23.4px;\n  font-weight: 400; }\n\nh3 {\n  font-size: 18px;\n  width: 100%;\n  font-weight: 200;\n  padding: 8px 16px !important; }\n\ntextarea {\n  width: 100%;\n  height: calc(100vh - 190px);\n  background-color: #EFEFEF;\n  border: 1px solid rgba(94, 51, 94, 0.2);\n  font-weight: 400;\n  font-size: 18px;\n  resize: none;\n  padding: 4px; }\n\nmain {\n  min-height: calc(100vh - 87px); }\n\n.btn:focus, .btn:active {\n  outline: none !important;\n  box-shadow: none; }\n\na:active, a:visited,\na:link, a:hover, a {\n  color: #7092a9 !important; }\n\n.alert-success {\n  color: #fff;\n  background-color: #6ab04c;\n  border: none; }\n\n.alert-danger {\n  color: #fff;\n  background-color: #ff7979;\n  border: none; }\n\n.custom-toggler.navbar-toggler {\n  border: none; }\n\n.custom-toggler .navbar-toggler-icon {\n  background-image: url(\"data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E\"); }\n\n.logo {\n  font-size: 18px; }\n\n.navbar {\n  background-color: #95afc0;\n  padding: 0; }\n  .navbar a:active, .navbar a:visited,\n  .navbar a:link, .navbar a:hover, .navbar a {\n    color: #fff !important; }\n\n.navbar-nav {\n  font-size: 18px; }\n\n.navbar-nav .icon {\n  font-size: 18px; }\n\n.active {\n  background-color: #535c68; }\n\n.nav-link {\n  padding-top: 12px;\n  padding-bottom: 12px;\n  padding-left: 16px !important;\n  padding-right: 16px !important; }\n\n.navbar-brand {\n  padding-left: 16px; }\n\n@font-face {\n  font-family: Roboto;\n  src: url(" + escape(__webpack_require__("./src/fonts/Roboto-Light.ttf")) + ");\n  font-weight: 200; }\n\n@font-face {\n  font-family: Roboto;\n  src: url(" + escape(__webpack_require__("./src/fonts/Roboto-Regular.ttf")) + ");\n  font-weight: 400; }\n\n@font-face {\n  font-family: Icons;\n  src: url(" + escape(__webpack_require__("./src/fonts/heydings_icons.ttf")) + "); }\n\n.icon {\n  font-family: Icons;\n  font-size: 18px; }\n\n.icon-settings:after {\n  content: 'C'; }\n\n.icon-cake:after {\n  content: 'Y'; }\n\n.icon-paper:after {\n  content: 'D'; }\n\n.icon-bulb:after {\n  content: 'l'; }\n\n.icon-compass:after {\n  content: 'N'; }\n\n.icon-ask:after {\n  content: 'Q'; }\n\n.icon-bookmark:after {\n  content: 'B'; }\n\n.icon-key:after {\n  content: 'K'; }\n\n.icon-copy:after {\n  content: 'e'; }\n\n.icon-viewfinder:after {\n  content: '@'; }\n\n.icon-magnifier:after {\n  content: 'M'; }\n\n.icon-lightning:after {\n  content: 'r'; }\n\n.icon-warning:after {\n  content: '!'; }\n\n.icon-pen:after {\n  content: 'w'; }\n\n.icon-folder:after {\n  content: 'F'; }\n\n.no-padding {\n  padding: 0px !important; }\n\n.no-margin {\n  margin: 0px !important; }\n\n.bg-color {\n  background-color: #5E335E; }\n\n.bg-color-dark {\n  background-color: #422442; }\n\n.bg-color-light {\n  background-color: #8D44AD; }\n\n.bg-neutral {\n  background-color: #F2F2F2; }\n\n.bg-neutral-darker {\n  background-color: #EFEFEF; }\n\n.bg-neutral-more-dark {\n  background-color: #dedede; }\n\n.font-primary {\n  color: #FFFFFF; }\n\n.full-height {\n  height: calc(100vh - 126px); }\n\n.font-headers {\n  color: #fff; }\n\n.font-headers-dark {\n  color: #FFA800; }\n\n.content-padding {\n  padding: 0px 30px; }\n\n.footer {\n  padding-top: 4.8px;\n  padding-bottom: 4.8px;\n  background-color: #535c68;\n  text-align: center;\n  font-size: 16px;\n  color: #fff;\n  position: absolute;\n  right: 0;\n  left: 0; }\n\n.bb-tag {\n  font-weight: 600; }\n\n.dropdown {\n  z-index: 999999; }\n\n.dropdown .btn {\n  background: none;\n  border: none;\n  color: #fff;\n  font-weight: 200;\n  font-size: 18px;\n  line-height: 24px;\n  font-family: Roboto; }\n\n.dropdown-menu {\n  background-color: #422442;\n  color: #fff;\n  border: none;\n  border-radius: 0px;\n  padding: .25rem 0; }\n\n.dropdown-item {\n  padding: 3px 0.8rem; }\n\n.dropdown-item:hover,\n.dropdown-item:active {\n  background-color: #5E335E; }\n\n.content {\n  font-family: Roboto;\n  font-weight: 400; }\n\n#preview-bb-content {\n  position: absolute;\n  left: 0;\n  right: 0;\n  z-index: 999;\n  height: calc(100vh - 88px);\n  background-color: #dedede;\n  border: none;\n  border-radius: 0;\n  font-size: 18px;\n  color: #422442; }\n\n.btn {\n  border: none; }\n  .btn:hover, .btn:active {\n    outline: none; }\n\n.btn-primary {\n  background-color: #95afc0;\n  color: #fff; }\n  .btn-primary:hover, .btn-primary:active {\n    background-color: #7092a9;\n    color: #fff; }\n\n.btn-danger {\n  background-color: #ff7979;\n  color: #fff; }\n  .btn-danger:hover, .btn-danger:active {\n    background-color: #eb4d4b;\n    color: #fff; }\n\n.alert-preview {\n  background-color: #535c68;\n  color: #fff; }\n\n.text-danger {\n  color: #ff7979; }\n\n.syntax-desc {\n  line-height: 2; }\n\nh5 {\n  color: #95afc0;\n  margin-top: 10px;\n  margin-bottom: 10px; }\n", ""]);
+exports.push([module.i, "@font-face {\n  font-family: Roboto;\n  src: url(" + escape(__webpack_require__("./src/fonts/Roboto-Light.ttf")) + ");\n  font-weight: 200; }\n\n@font-face {\n  font-family: Roboto;\n  src: url(" + escape(__webpack_require__("./src/fonts/Roboto-Regular.ttf")) + ");\n  font-weight: 400; }\n\n@font-face {\n  font-family: Icons;\n  src: url(" + escape(__webpack_require__("./src/fonts/heydings_icons.ttf")) + "); }\n\n.icon {\n  font-family: Icons;\n  font-size: 18px; }\n\n.icon-settings:after {\n  content: 'C'; }\n\n.icon-cake:after {\n  content: 'Y'; }\n\n.icon-paper:after {\n  content: 'D'; }\n\n.icon-bulb:after {\n  content: 'l'; }\n\n.icon-compass:after {\n  content: 'N'; }\n\n.icon-ask:after {\n  content: 'Q'; }\n\n.icon-bookmark:after {\n  content: 'B'; }\n\n.icon-key:after {\n  content: 'K'; }\n\n.icon-copy:after {\n  content: 'e'; }\n\n.icon-viewfinder:after {\n  content: '@'; }\n\n.icon-magnifier:after {\n  content: 'M'; }\n\n.icon-lightning:after {\n  content: 'r'; }\n\n.icon-warning:after {\n  content: '!'; }\n\n.icon-pen:after {\n  content: 'w'; }\n\n.icon-folder:after {\n  content: 'F'; }\n\n.icon-arrow-up:after {\n  content: 'u'; }\n\n.icon-arrow-down:after {\n  content: 'd'; }\n\n.no-padding {\n  padding: 0px !important; }\n\n.no-margin {\n  margin: 0px !important; }\n\n.bg-color {\n  background-color: #5E335E; }\n\n.bg-color-dark {\n  background-color: #422442; }\n\n.bg-color-light {\n  background-color: #8D44AD; }\n\n.bg-neutral {\n  background-color: #F2F2F2; }\n\n.bg-neutral-darker {\n  background-color: #EFEFEF; }\n\n.bg-neutral-more-dark {\n  background-color: #dedede; }\n\n.font-primary {\n  color: #FFFFFF; }\n\n.full-height {\n  height: calc(100vh - 126px); }\n\n.font-headers {\n  color: #fff; }\n\n.font-headers-dark {\n  color: #FFA800; }\n\n.content-padding {\n  padding: 0px 30px; }\n\n* {\n  font-family: Roboto;\n  font-weight: 200;\n  outline: 0 !important;\n  -webkit-tap-highlight-color: transparent; }\n\nbody {\n  background-color: #EFEFEF;\n  font-size: 18px;\n  min-height: 100vh;\n  overflow-x: hidden;\n  position: relative; }\n\nh2 {\n  margin: 0;\n  font-size: 21.6px;\n  width: 100%;\n  padding: 20px 0 10px 0 !important;\n  font-weight: 200;\n  padding-left: 16px;\n  font-size: 23.4px;\n  font-weight: 400; }\n\nh3 {\n  font-size: 18px;\n  width: 100%;\n  font-weight: 200;\n  padding: 8px 16px !important; }\n\ntextarea {\n  width: 100%;\n  height: calc(100vh - 190px);\n  background-color: #EFEFEF;\n  border: 1px solid rgba(94, 51, 94, 0.2);\n  font-weight: 400;\n  font-size: 18px;\n  resize: none;\n  padding: 4px; }\n\nmain {\n  min-height: calc(100vh - 87px); }\n\n.btn:focus, .btn:active {\n  outline: none !important;\n  box-shadow: none; }\n\na:active, a:visited,\na:link, a:hover, a {\n  color: #7092a9 !important; }\n\n.alert-success {\n  color: #fff;\n  background-color: #6ab04c;\n  border: none; }\n\n.alert-danger {\n  color: #fff;\n  background-color: #ff7979;\n  border: none; }\n\n.custom-toggler.navbar-toggler {\n  border: none; }\n\n.custom-toggler .navbar-toggler-icon {\n  background-image: url(\"data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E\"); }\n\n.logo {\n  font-size: 18px; }\n\n.navbar {\n  background-color: #95afc0;\n  padding: 0; }\n  .navbar a:active, .navbar a:visited,\n  .navbar a:link, .navbar a:hover, .navbar a {\n    color: #fff !important; }\n\n.navbar-nav {\n  font-size: 18px; }\n\n.navbar-nav .icon {\n  font-size: 18px; }\n\n.active {\n  background-color: #535c68; }\n\n.nav-link {\n  padding-top: 12px;\n  padding-bottom: 12px;\n  padding-left: 16px !important;\n  padding-right: 16px !important; }\n\n.navbar-brand {\n  padding-left: 16px; }\n\n@font-face {\n  font-family: Roboto;\n  src: url(" + escape(__webpack_require__("./src/fonts/Roboto-Light.ttf")) + ");\n  font-weight: 200; }\n\n@font-face {\n  font-family: Roboto;\n  src: url(" + escape(__webpack_require__("./src/fonts/Roboto-Regular.ttf")) + ");\n  font-weight: 400; }\n\n@font-face {\n  font-family: Icons;\n  src: url(" + escape(__webpack_require__("./src/fonts/heydings_icons.ttf")) + "); }\n\n.icon {\n  font-family: Icons;\n  font-size: 18px; }\n\n.icon-settings:after {\n  content: 'C'; }\n\n.icon-cake:after {\n  content: 'Y'; }\n\n.icon-paper:after {\n  content: 'D'; }\n\n.icon-bulb:after {\n  content: 'l'; }\n\n.icon-compass:after {\n  content: 'N'; }\n\n.icon-ask:after {\n  content: 'Q'; }\n\n.icon-bookmark:after {\n  content: 'B'; }\n\n.icon-key:after {\n  content: 'K'; }\n\n.icon-copy:after {\n  content: 'e'; }\n\n.icon-viewfinder:after {\n  content: '@'; }\n\n.icon-magnifier:after {\n  content: 'M'; }\n\n.icon-lightning:after {\n  content: 'r'; }\n\n.icon-warning:after {\n  content: '!'; }\n\n.icon-pen:after {\n  content: 'w'; }\n\n.icon-folder:after {\n  content: 'F'; }\n\n.icon-arrow-up:after {\n  content: 'u'; }\n\n.icon-arrow-down:after {\n  content: 'd'; }\n\n.no-padding {\n  padding: 0px !important; }\n\n.no-margin {\n  margin: 0px !important; }\n\n.bg-color {\n  background-color: #5E335E; }\n\n.bg-color-dark {\n  background-color: #422442; }\n\n.bg-color-light {\n  background-color: #8D44AD; }\n\n.bg-neutral {\n  background-color: #F2F2F2; }\n\n.bg-neutral-darker {\n  background-color: #EFEFEF; }\n\n.bg-neutral-more-dark {\n  background-color: #dedede; }\n\n.font-primary {\n  color: #FFFFFF; }\n\n.full-height {\n  height: calc(100vh - 126px); }\n\n.font-headers {\n  color: #fff; }\n\n.font-headers-dark {\n  color: #FFA800; }\n\n.content-padding {\n  padding: 0px 30px; }\n\n.footer {\n  padding-top: 4.8px;\n  padding-bottom: 4.8px;\n  background-color: #535c68;\n  text-align: center;\n  font-size: 16px;\n  color: #fff;\n  position: absolute;\n  right: 0;\n  left: 0; }\n\n.bb-tag {\n  font-weight: 600; }\n\n.dropdown {\n  z-index: 999999; }\n\n.dropdown .btn {\n  background: none;\n  border: none;\n  color: #fff;\n  font-weight: 200;\n  font-size: 18px;\n  line-height: 24px;\n  font-family: Roboto; }\n\n.dropdown-menu {\n  background-color: #422442;\n  color: #fff;\n  border: none;\n  border-radius: 0px;\n  padding: .25rem 0; }\n\n.dropdown-item {\n  padding: 3px 0.8rem; }\n\n.dropdown-item:hover,\n.dropdown-item:active {\n  background-color: #5E335E; }\n\n.content {\n  font-family: Roboto;\n  font-weight: 400; }\n\n#preview-bb-content {\n  position: absolute;\n  left: 0;\n  right: 0;\n  z-index: 999;\n  height: calc(100vh - 88px);\n  background-color: #dedede;\n  border: none;\n  border-radius: 0;\n  font-size: 18px;\n  color: #422442; }\n\n.btn {\n  border: none; }\n  .btn:hover, .btn:active {\n    outline: none; }\n\n.btn-primary {\n  background-color: #95afc0;\n  color: #fff; }\n  .btn-primary:hover, .btn-primary:active {\n    background-color: #7092a9;\n    color: #fff; }\n\n.btn-danger {\n  background-color: #ff7979;\n  color: #fff; }\n  .btn-danger:hover, .btn-danger:active {\n    background-color: #eb4d4b;\n    color: #fff; }\n\n.alert-preview {\n  background-color: #535c68;\n  color: #fff; }\n\n.text-danger {\n  color: #ff7979; }\n\n.syntax-desc {\n  line-height: 2; }\n\nh5 {\n  color: #95afc0;\n  margin-top: 10px;\n  margin-bottom: 10px; }\n\ninput[type=\"file\"] {\n  display: none; }\n", ""]);
 
 // exports
 
@@ -23989,6 +23989,43 @@ if (process.env.NODE_ENV === 'production') {
 
 /***/ }),
 
+/***/ "./node_modules/react-file-download/file-download.js":
+/***/ (function(module, exports) {
+
+module.exports = function(data, filename, mime) {
+    var blob = new Blob([data], {type: mime || 'application/octet-stream'});
+    if (typeof window.navigator.msSaveBlob !== 'undefined') {
+        // IE workaround for "HTML7007: One or more blob URLs were 
+        // revoked by closing the blob for which they were created. 
+        // These URLs will no longer resolve as the data backing 
+        // the URL has been freed."
+        window.navigator.msSaveBlob(blob, filename);
+    }
+    else {
+        var blobURL = window.URL.createObjectURL(blob);
+        var tempLink = document.createElement('a');
+        tempLink.style.display = 'none';
+        tempLink.href = blobURL;
+        tempLink.setAttribute('download', filename); 
+        
+        // Safari thinks _blank anchor are pop ups. We only want to set _blank
+        // target if the browser does not support the HTML5 download attribute.
+        // This allows you to download files in desktop safari if pop up blocking 
+        // is enabled.
+        if (typeof tempLink.download === 'undefined') {
+            tempLink.setAttribute('target', '_blank');
+        }
+        
+        document.body.appendChild(tempLink);
+        tempLink.click();
+        document.body.removeChild(tempLink);
+        window.URL.revokeObjectURL(blobURL);
+    }
+}
+
+
+/***/ }),
+
 /***/ "./node_modules/react-popper/lib/Arrow.js":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -33598,7 +33635,7 @@ var App = function App() {
             ),
             _react2.default.createElement(
                 'main',
-                { className: 'pt-3' },
+                null,
                 _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/', component: _HomePage2.default }),
                 _react2.default.createElement(_reactRouterDom.Route, { path: '/about', component: _AboutPage2.default }),
                 _react2.default.createElement(_reactRouterDom.Route, { path: '/settings', component: _SettingsPage2.default })
@@ -33639,6 +33676,10 @@ var _reactstrap = __webpack_require__("./node_modules/reactstrap/dist/reactstrap
 var _IconElement = __webpack_require__("./src/presentation/IconElement.js");
 
 var _IconElement2 = _interopRequireDefault(_IconElement);
+
+var _LocalStorageController = __webpack_require__("./src/controller/LocalStorageController.js");
+
+var _LocalStorageController2 = _interopRequireDefault(_LocalStorageController);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -33804,13 +33845,6 @@ module.exports = "data:font/ttf;base64,AAEAAAANAIAAAwBQRkZUTVyK0NYAAADcAAAAHEdER
 
 /***/ }),
 
-/***/ "./src/images/bStar.jpeg":
-/***/ (function(module, exports) {
-
-module.exports = "data:image/jpeg;base64,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"
-
-/***/ }),
-
 /***/ "./src/index.js":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -33824,10 +33858,6 @@ var _react2 = _interopRequireDefault(_react);
 var _reactDom = __webpack_require__("./node_modules/react-dom/index.js");
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
-
-var _bStar = __webpack_require__("./src/images/bStar.jpeg");
-
-var _bStar2 = _interopRequireDefault(_bStar);
 
 var _App = __webpack_require__("./src/controller/App.js");
 
@@ -33848,7 +33878,7 @@ _reactDom2.default.render(_react2.default.createElement(_App2.default, null), do
 /***/ "./src/lang/en.json":
 /***/ (function(module, exports) {
 
-module.exports = {"PAGE_IN_PROGRESS":"Page in progress! Next updates comming soon :)","TEXT_COPIED":"Text copied","TEXT_SAVED":"Text saved","TEXT_LOADED":"Text loaded","SAVE":"Save text","LOAD":"Load text","TEXTAREA_PLACEHOLDER":"Write something :)","TEXT_REMOVED":"Text removed","BROWSER_SUPPORT":"Your browser doesn't support HTML5 features and this site can't work. Update your browser to use this site :)","YOUR_ACTIONS":"Your actions","REMOVE":"Remove saved text","EXPLAIN_LOCALSTORAGE":"This options works in your localstorage. This means, that the text will be save only in your brower and you can remove it using the \"remove\" button on this site or using your browser tools."}
+module.exports = {"PAGE_IN_PROGRESS":"Page in progress! Next updates comming soon :)","TEXT_COPIED":"Text copied","TEXT_SAVED":"Text saved","TEXT_LOADED":"Text loaded","SAVE":"Save","LOAD":"Load","EXPORT":"Export","EXPORT_WARNING":"You have no text to export","IMPORT":"Import","TEXT_IMPORTED":"Text imported","TEXT_IMPORTED_WARNING":"Cannot import text :(","TEXTAREA_PLACEHOLDER":"Write something :)","TEXT_REMOVED":"Text removed","BROWSER_SUPPORT":"Your browser doesn't support HTML5 features and this site can't work. Update your browser to use this site :)","YOUR_ACTIONS":"Your actions","REMOVE":"Remove saved text","EXPLAIN_LOCALSTORAGE":"This options works in your localstorage. This means, that the text will be save only in your brower and you can remove it using the \"remove\" button on this site or using your browser tools."}
 
 /***/ }),
 
@@ -34412,6 +34442,19 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var LANG = _langController2.default.getDefaultLang();
+var fileDownload = __webpack_require__("./node_modules/react-file-download/file-download.js");
+
+var ImportFile = function ImportFile(props) {
+    return _react2.default.createElement(
+        'label',
+        { className: 'custom-file-upload mt-3 mr-3 btn btn-primary mb-0' },
+        _react2.default.createElement(_IconElement2.default, { icon: props.icon }),
+        _react2.default.createElement('input', { type: 'file', accept: 'text/plain', onChange: function onChange(event) {
+                return props.onChange(event);
+            } }),
+        props.text
+    );
+};
 
 var HomePage = function (_React$Component) {
     _inherits(HomePage, _React$Component);
@@ -34476,30 +34519,61 @@ var HomePage = function (_React$Component) {
             this.setState({ currentText: _LocalStorageController2.default.getText() });
         }
     }, {
+        key: '_handleExportButtonAction',
+        value: function _handleExportButtonAction() {
+            var textToExport = this.state.currentText;
+            if (textToExport !== '') {
+                fileDownload(textToExport, 'beStarSession.txt');
+            } else {
+                this._setDisplayAlert("warning", LANG.EXPORT_WARNING, "danger");
+            }
+        }
+    }, {
+        key: '_handleImportButtonAction',
+        value: function _handleImportButtonAction(event) {
+            var _this2 = this;
+
+            var file = event.target.files[0];
+            var reader = new FileReader();
+            reader.readAsText(file, "UTF-8");
+
+            reader.onload = function (event) {
+                _this2.setState({ currentText: event.target.result });
+                _this2._setDisplayAlert("arrow-down", LANG.TEXT_IMPORTED);
+            };
+            reader.onerror = function () {
+                return _this2._setDisplayAlert("warning", LANG.TEXT_IMPORTED_WARNING, "danger");
+            };
+        }
+    }, {
         key: '_renderAdditionalMenuButtons',
         value: function _renderAdditionalMenuButtons() {
-            var _this2 = this;
+            var _this3 = this;
 
             var additionalButtons = null;
             if (!_LocalStorageController2.default.getAutoSave()) {
                 additionalButtons = [_react2.default.createElement(_HomeElements.HomeMenuButton, { key: '1', action: function action() {
-                        return _this2._handleSaveButtonAction();
+                        return _this3._handleSaveButtonAction();
                     }, icon: "folder", text: LANG.SAVE }), _react2.default.createElement(_HomeElements.HomeMenuButton, { key: '2', action: function action() {
-                        return _this2._handleLoadButtonAction();
-                    }, icon: "pen", text: LANG.LOAD })];
+                        return _this3._handleLoadButtonAction();
+                    }, icon: "pen", text: LANG.LOAD }), _react2.default.createElement(_HomeElements.HomeMenuButton, { key: '3', action: function action() {
+                        return _this3._handleExportButtonAction();
+                    }, icon: "arrow-up", text: LANG.EXPORT }), _react2.default.createElement(ImportFile, { key: '4', onChange: function onChange(event) {
+                        return _this3._handleImportButtonAction(event);
+                    }, icon: "arrow-down", text: LANG.IMPORT })];
             }
             return additionalButtons;
         }
     }, {
         key: 'render',
         value: function render() {
-            var _this3 = this;
+            var _this4 = this;
 
             var alert = this.state.displayAlert ? _react2.default.createElement(_Alert2.default, { text: this.state.alertText, color: this.state.alertColor, onAlertDismiss: function onAlertDismiss() {
-                    return _this3.setState({ displayAlert: false });
+                    return _this4.setState({ displayAlert: false });
                 }, displayAlert: this.state.displayAlert }) : null;
             var preview = this.state.displayPreview ? _react2.default.createElement(_HomeElements.Preview, { text: this.parseBBcodeText, onAlertDismiss: function onAlertDismiss() {
-                    return _this3.setState({ displayPreview: false });
+                    return _this4.setState({ displayPreview: false });
                 }, displayAlert: this.state.displayPreview }) : null;
 
             return _react2.default.createElement(
@@ -34510,10 +34584,10 @@ var HomePage = function (_React$Component) {
                     { className: 'pb-3' },
                     _react2.default.createElement(_HomeElements.HomeMenu, {
                         previewAction: function previewAction() {
-                            return _this3._handlePreviewButtonAction();
+                            return _this4._handlePreviewButtonAction();
                         },
                         copyAction: function copyAction(event) {
-                            return _this3._handleCopyButtonAction(event);
+                            return _this4._handleCopyButtonAction(event);
                         },
                         additionals: this._renderAdditionalMenuButtons()
                     })
@@ -34534,10 +34608,10 @@ var HomePage = function (_React$Component) {
                     _react2.default.createElement(_HomeElements.HomeTextArea, {
                         placeholder: LANG.TEXTAREA_PLACEHOLDER,
                         onChange: function onChange(event) {
-                            return _this3.setState({ currentText: event.target.value });
+                            return _this4.setState({ currentText: event.target.value });
                         },
                         onRef: function onRef(textarea) {
-                            return _this3.textArea = textarea;
+                            return _this4.textArea = textarea;
                         },
                         value: this.state.currentText
                     })
