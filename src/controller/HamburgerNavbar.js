@@ -1,12 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import {
-    Collapse,
-    Navbar,
-    NavbarToggler,
-    Nav,
-    NavItem } from 'reactstrap';
+import { Collapse, Navbar, NavbarToggler, Nav, NavItem, Alert } from 'reactstrap';
 import IconElement from '../presentation/IconElement';
+import localStorageController from './LocalStorageController';
 
 const NavbarItem = (props) => {
     const className = props.id === props.activeId ? "nav-link active": "nav-link";

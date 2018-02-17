@@ -71,7 +71,7 @@ const baseConfig = {
                 loader: 'url-loader'
             },
             {
-                test: /\.(png|jpg|gif|jpeg|svg)$/,
+                test: /\.(png|jpg|gif|jpeg|svg|ico)$/,
                 use: [
                     {
                         loader: 'url-loader',

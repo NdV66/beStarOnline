@@ -8,7 +8,6 @@ import SettingsPage from '../presentation/SettingsPage';
 import HomePage from '../presentation/HomePage';
 import FooterElement from '../presentation/FooterElement';
 
-
 const App = () => {
     return (
         <Router>
@@ -17,7 +16,7 @@ const App = () => {
                     <HamburgerNavbar />
                 </header>
 
-                <main className="pt-3">
+                <main>
                     <Route exact path="/" component={HomePage} />
                     <Route path="/about" component={AboutPage} />
                     <Route path="/settings" component={SettingsPage} />
