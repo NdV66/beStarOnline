@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Collapse, Navbar, NavbarToggler, Nav, NavItem, Alert } from 'reactstrap';
-import IconElement from '../presentation/IconElement';
+import IconElement from '../presentation/elements/IconElement';
 import localStorageController from './LocalStorageController';
 
 const NavbarItem = (props) => {
@@ -41,8 +41,8 @@ export default class HamburgerNavbar extends React.Component {
                 <NavbarToggler onClick={() => this.toggle()} />
                 <Collapse isOpen={this.state.isOpen} navbar>
                     <Nav className="ml-auto" navbar>
-                        <NavbarItem link={"/settings"} text={"Settings"} icon={"settings"} id={"settings"} activeId={this.state.active} onClick={(activeId) => this.onNavbarItemClick(activeId)}/>
-                        <NavbarItem link={"/about"} text={"About"} icon={"compass"} id={"about"} activeId={this.state.active} onClick={(activeId) => this.onNavbarItemClick(activeId)}/>
+                        <NavbarItem link={"/settings"} text={"Settings"} icon={"cog"} id={"settings"} activeId={this.state.active} onClick={(activeId) => this.onNavbarItemClick(activeId)}/>
+                        <NavbarItem link={"/about"} text={"About"} icon={"question-circle"} id={"about"} activeId={this.state.active} onClick={(activeId) => this.onNavbarItemClick(activeId)}/>
                     </Nav>
                 </Collapse>
             </Navbar>

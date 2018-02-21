@@ -6,6 +6,7 @@
     "SAVE": "Save",
     "LOAD": "Load",
     "EXPORT": "Export",
+    "TOGGLE_TOOLBOX": "Toolbox",
     "EXPORT_WARNING": "You have no text to export",
     "IMPORT": "Import",
     "TEXT_IMPORTED": "Text imported",

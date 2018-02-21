@@ -10,13 +10,7 @@
     font-weight: 400;
 }
 
-@font-face {
-    font-family: Icons;
-    src: url(../fonts/heydings_icons.ttf);
-}
-
-.icon {
-    font-family: Icons;
+.fas {
     font-size: $BASE_FONT_SIZE;
 }
 

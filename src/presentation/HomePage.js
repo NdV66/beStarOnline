@@ -1,18 +1,14 @@
 import React from 'react';
-import { Container, Row, Col, Alert, Button } from 'reactstrap';
-import Icon from './IconElement';
+import { Container, Row, Col, Alert, Button, Collapse, Card, CardBody } from 'reactstrap';
+import { Navbar, NavbarToggler, Nav } from 'reactstrap';
+import Icon from './elements/IconElement';
 import BBcodeInterpeter from '../lib/BBcode-interpreter';
-import HomeAlert from './Alert';
+import HomeAlert from './elements/Alert';
 import localStorageController from '../controller/LocalStorageController';
-import { Preview, HomeTextArea, HomeMenuButton, HomeMenu } from './HomeElements';
+import { Preview, HomeTextArea, HomeMenuButton, HomeMenu, GuiToolbox, ImportFile } from './elements/HomeElements';
 import LangController from '../lang/langController';
 const LANG = LangController.getDefaultLang();
 const fileDownload = require('react-file-download');
-
-const ImportFile = (props) =>
-    <label className="custom-file-upload mt-3 mr-3 btn btn-primary mb-0">
-        <Icon icon={props.icon}/><input type="file" accept="text/plain" onChange={(event) => props.onChange(event)}/>{props.text}
-    </label>;
 
 class HomePage extends React.Component {
     constructor(props) {
@@ -24,7 +20,9 @@ class HomePage extends React.Component {
             alertText: LANG.PAGE_IN_PROGRESS,
             alertColor: "danger",
             displayPreview: false,
-            currentText: localStorageController.getAutoSave() ? localStorageController.getText() : ''
+            currentText: localStorageController.getAutoSave() ? localStorageController.getText() : '',
+            collapseMainEditButtons: false,
+            collapseToolbox: false
         };
     }
 
@@ -51,11 +49,11 @@ class HomePage extends React.Component {
 
     _handleSaveButtonAction() {
         localStorageController.saveText(this.state.currentText);
-        this._setDisplayAlert("folder", LANG.TEXT_SAVED);
+        this._setDisplayAlert("save", LANG.TEXT_SAVED);
     }
 
     _handleLoadButtonAction() {
-        this._setDisplayAlert("pen", LANG.TEXT_LOADED);
+        this._setDisplayAlert("arrow-alt-circle-down", LANG.TEXT_LOADED);
         this.setState({currentText: localStorageController.getText()});
     }
 
@@ -64,7 +62,7 @@ class HomePage extends React.Component {
         if(textToExport !== '') {
             fileDownload(textToExport, 'beStarSession.txt');
         } else {
-            this._setDisplayAlert("warning", LANG.EXPORT_WARNING, "danger");
+            this._setDisplayAlert("exclamation-triangle", LANG.EXPORT_WARNING, "danger");
         }
     }
 
@@ -75,18 +73,23 @@ class HomePage extends React.Component {
 
         reader.onload = (event) => {
             this.setState({currentText: event.target.result});
-            this._setDisplayAlert("arrow-down", LANG.TEXT_IMPORTED);
+            this._setDisplayAlert("download", LANG.TEXT_IMPORTED);
         };
-        reader.onerror = () => this._setDisplayAlert("warning", LANG.TEXT_IMPORTED_WARNING, "danger");
+        reader.onerror = () => this._setDisplayAlert("exclamation-triangle", LANG.TEXT_IMPORTED_WARNING, "danger");
+    }
+
+    _toggle() {
+        this.setState({ collapseToolbox: !this.state.collapseToolbox });
     }
 
     _renderAdditionalMenuButtons() {
         let additionalButtons = null;
         if(!localStorageController.getAutoSave()) {
-            additionalButtons = [<HomeMenuButton key="1" action={() => this._handleSaveButtonAction()} icon={"folder"} text={LANG.SAVE} />,
-                                <HomeMenuButton key="2" action={() => this._handleLoadButtonAction()} icon={"pen"} text={LANG.LOAD} />,
-                                <HomeMenuButton key="3" action={() => this._handleExportButtonAction()} icon={"arrow-up"} text={LANG.EXPORT} />,
-                                <ImportFile key="4" onChange={(event) => this._handleImportButtonAction(event)} icon={"arrow-down"} text={LANG.IMPORT} />];
+            additionalButtons = [<HomeMenuButton key="1" action={() => this._handleSaveButtonAction()} icon={"save"} text={LANG.SAVE} />,
+                                <HomeMenuButton key="2" action={() => this._handleLoadButtonAction()} icon={"arrow-alt-circle-down"} text={LANG.LOAD} />,
+                                <HomeMenuButton key="3" action={() => this._handleExportButtonAction()} icon={"upload"} text={LANG.EXPORT} />,
+                                <ImportFile key="4" onChange={(event) => this._handleImportButtonAction(event)} icon={"download"} text={LANG.IMPORT} />,
+                                <HomeMenuButton key="5" action={() => this._toggle()} icon={"pencil-alt"} text={LANG.TOGGLE_TOOLBOX} />];
         }
         return additionalButtons;
     }
@@ -97,12 +100,19 @@ class HomePage extends React.Component {
 
         return (
             <Container fluid={true}>
-                    <Row className="pb-3">
-                        <HomeMenu
-                            previewAction={() => this._handlePreviewButtonAction()}
-                            copyAction={(event) => this._handleCopyButtonAction(event)}
-                            additionals={this._renderAdditionalMenuButtons()}
-                        />
+                    <Row>
+                        <Col className="mb-3">
+                            <HomeMenu
+                                previewAction={() => this._handlePreviewButtonAction()}
+                                copyAction={(event) => this._handleCopyButtonAction(event)}
+                                additionals={this._renderAdditionalMenuButtons()}
+                                isOpen={this.state.collapseMainEditButtons}
+                                toggleButtons={() => this.setState({ collapseMainEditButtons: !this.state.collapseMainEditButtons })}
+                            />
+                        </Col>
+                    </Row>
+                    <Row>
+                        <GuiToolbox isOpen={this.state.collapseToolbox} className="mt-3"/>
                     </Row>
                     <Row>{alert}</Row>
                     <Row>{preview}</Row>
