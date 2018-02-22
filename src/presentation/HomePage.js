@@ -7,6 +7,7 @@ import HomeAlert from './elements/Alert';
 import localStorageController from '../controller/LocalStorageController';
 import { Preview, HomeTextArea, HomeMenuButton, HomeMenu, GuiToolbox, ImportFile } from './elements/HomeElements';
 import LangController from '../lang/langController';
+import ICONS_TYPE from './iconsType.json';
 const LANG = LangController.getDefaultLang();
 const fileDownload = require('react-file-download');
 
@@ -26,7 +27,7 @@ class HomePage extends React.Component {
         };
     }
 
-    _setDisplayAlert(icon, text, color="success") {
+    _setDisplayAlert(icon, text, color = "success") {
         this.setState({
             displayAlert: true,
             alertText: [<Icon key="1" icon={icon}/>, <span key="2">{text}</span>],
@@ -38,7 +39,7 @@ class HomePage extends React.Component {
         this.textArea.select();
         document.execCommand("copy");
         event.target.focus();
-        this._setDisplayAlert("copy", LANG.TEXT_COPIED);
+        this._setDisplayAlert(ICONS_TYPE.COPY, LANG.TEXT_COPIED);
     }
 
     _handlePreviewButtonAction() {
@@ -49,11 +50,11 @@ class HomePage extends React.Component {
 
     _handleSaveButtonAction() {
         localStorageController.saveText(this.state.currentText);
-        this._setDisplayAlert("save", LANG.TEXT_SAVED);
+        this._setDisplayAlert(ICONS_TYPE.SAVE, LANG.TEXT_SAVED);
     }
 
     _handleLoadButtonAction() {
-        this._setDisplayAlert("arrow-alt-circle-down", LANG.TEXT_LOADED);
+        this._setDisplayAlert(ICONS_TYPE.LOAD, LANG.TEXT_LOADED);
         this.setState({currentText: localStorageController.getText()});
     }
 
@@ -62,7 +63,7 @@ class HomePage extends React.Component {
         if(textToExport !== '') {
             fileDownload(textToExport, 'beStarSession.txt');
         } else {
-            this._setDisplayAlert("exclamation-triangle", LANG.EXPORT_WARNING, "danger");
+            this._setDisplayAlert(ICONS_TYPE.WARNING, LANG.EXPORT_WARNING, "danger");
         }
     }
 
@@ -73,9 +74,9 @@ class HomePage extends React.Component {
 
         reader.onload = (event) => {
             this.setState({currentText: event.target.result});
-            this._setDisplayAlert("download", LANG.TEXT_IMPORTED);
+            this._setDisplayAlert(ICONS_TYPE.DOWNLOAD, LANG.TEXT_IMPORTED);
         };
-        reader.onerror = () => this._setDisplayAlert("exclamation-triangle", LANG.TEXT_IMPORTED_WARNING, "danger");
+        reader.onerror = () => this._setDisplayAlert(ICONS_TYPE.WARNING, LANG.TEXT_IMPORTED_WARNING, "danger");
     }
 
     _toggle() {
@@ -85,11 +86,11 @@ class HomePage extends React.Component {
     _renderAdditionalMenuButtons() {
         let additionalButtons = null;
         if(!localStorageController.getAutoSave()) {
-            additionalButtons = [<HomeMenuButton key="1" action={() => this._handleSaveButtonAction()} icon={"save"} text={LANG.SAVE} />,
-                                <HomeMenuButton key="2" action={() => this._handleLoadButtonAction()} icon={"arrow-alt-circle-down"} text={LANG.LOAD} />,
-                                <HomeMenuButton key="3" action={() => this._handleExportButtonAction()} icon={"upload"} text={LANG.EXPORT} />,
-                                <ImportFile key="4" onChange={(event) => this._handleImportButtonAction(event)} icon={"download"} text={LANG.IMPORT} />,
-                                <HomeMenuButton key="5" action={() => this._toggle()} icon={"pencil-alt"} text={LANG.TOGGLE_TOOLBOX} />];
+            additionalButtons = [<HomeMenuButton key="1" action={() => this._handleSaveButtonAction()} icon={ICONS_TYPE.SAVE} text={LANG.SAVE} />,
+                                <HomeMenuButton key="2" action={() => this._handleLoadButtonAction()} icon={ICONS_TYPE.LOAD} text={LANG.LOAD} />,
+                                <HomeMenuButton key="3" action={() => this._handleExportButtonAction()} icon={ICONS_TYPE.UPLOAD} text={LANG.EXPORT} />,
+                                <ImportFile key="4" onChange={(event) => this._handleImportButtonAction(event)} icon={ICONS_TYPE.DOWNLOAD} text={LANG.IMPORT} />,
+                                <HomeMenuButton key="5" action={() => this._toggle()} icon={ICONS_TYPE.TOOLBOX} text={LANG.TOGGLE_TOOLBOX} />];
         }
         return additionalButtons;
     }

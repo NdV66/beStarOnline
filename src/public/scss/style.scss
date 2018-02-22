@@ -2,6 +2,7 @@
 @import "_fonts.scss";
 @import "_tools.scss";
 @import "_generic.scss";
+@import "_editMenu.scss";
 @import "_navbar.scss";
 @import "_footer.scss";
 
@@ -104,12 +105,4 @@ h5 {
     color: $THEME_COLOR_PRIMARY;
     margin-top: $margin;
     margin-bottom: $margin;
-}
-
-input[type="file"] {
-    display: none;
-}
-
-.main-edit-menu {
-    
 }

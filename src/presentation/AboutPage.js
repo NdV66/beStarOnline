@@ -70,9 +70,3 @@ const AboutPage = () => {
 };
 
 export default AboutPage;
-
-
-//                            <div key="5">[code] <code>some code here</code> [/code]</div>,
-//                            <div key="6">[url] <a href="https://google.com">https://google.com</a> [/url]</div>,
-//                            <div key="7">[url="https://google.com"] <a href="https://google.com">Description link</a> [/url]</div>,
-//                            <div key="7">[img]image url[/img]<img src="../images/bStar.jpeg" className="img-fluid" /></div>,

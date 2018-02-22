@@ -4,6 +4,7 @@ import Icon from './elements/IconElement';
 import BaseAlert from './elements/Alert';
 import localStorageController from '../controller/LocalStorageController';
 import LangController from '../lang/langController';
+import ICONS_TYPE from './iconsType.json';
 const LANG = LangController.getDefaultLang();
 
 class SettingsPage extends React.Component {
@@ -22,7 +23,7 @@ class SettingsPage extends React.Component {
         localStorageController.removeText();
         this.setState({
             displayAlert: true,
-            alertText: [<Icon key="1" icon={"exclamation-triangle"}/>, <span key="2">{LANG.TEXT_REMOVED}</span>],
+            alertText: [<Icon key="1" icon={ICONS_TYPE.WARNING}/>, <span key="2">{LANG.TEXT_REMOVED}</span>],
             alertColor: "danger"
         });
     }

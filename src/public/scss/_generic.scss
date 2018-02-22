@@ -48,9 +48,16 @@ main {
     min-height: calc(100vh - 87px);
 }
 
-.btn:focus,.btn:active {
-   outline: none !important;
-   box-shadow: none;
+.btn {
+    &:focus, &:active {
+        outline: none !important;
+        box-shadow: none;
+    }
+
+    .home-button-text {
+        font-family: Roboto;
+        font-weight: 400;
+    }
 }
 
 a:active, a:visited,

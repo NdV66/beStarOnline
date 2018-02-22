@@ -1,0 +1,77 @@
+@import "_variables.scss";
+@import "_fonts.scss";
+@import "_tools.scss";
+
+input[type="file"] {
+    display: none;
+}
+
+.main-edit-menu {
+    background: none;
+}
+
+@media screen and (min-width: 768px) {
+    .main-edit-menu {
+        margin-top: 0 !important;
+        margin-right: 0 !important;
+        display: inline-block;
+    }
+
+    .important-buttons {
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .home-button {
+        width: 100%;
+        margin-right: 0 !important;
+    }
+
+    .main-edit-menu {
+        width:100%;
+    }
+
+    .main-edit-menu {
+        background: none !important;
+
+        .home-button {
+            width: 20%;
+            border-radius: 0;
+            border-right: 1px solid $THEME_COLOR_ACTIVE;
+        }
+
+        button:last-of-type {
+            border-right: 0;
+        }
+    }
+
+    .important-buttons {
+        width: 100%;
+
+        .home-button {
+            width: 33.333%;
+            border-radius: 0;
+            border-right: 1px solid $THEME_COLOR_ACTIVE;
+        }
+
+        button:last-of-type {
+            border-right: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .main-edit-menu {
+        .home-button {
+            .home-button-text {
+                display: none;
+            }
+
+            .fas {
+                margin-right: 0 !important;
+            }
+        }
+
+    }
+}
