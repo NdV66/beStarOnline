@@ -61,7 +61,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "410ef8510a119e9d08bf"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "4bb0f73a2ddd7139cc75"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -854,7 +854,7 @@ exports = module.exports = __webpack_require__("./node_modules/css-loader/lib/cs
 
 
 // module
-exports.push([module.i, "@font-face {\n  font-family: Roboto;\n  src: url(" + escape(__webpack_require__("./src/public/fonts/Roboto-Light.ttf")) + ");\n  font-weight: 200; }\n\n@font-face {\n  font-family: Roboto;\n  src: url(" + escape(__webpack_require__("./src/public/fonts/Roboto-Regular.ttf")) + ");\n  font-weight: 400; }\n\n.fas {\n  font-size: 18px; }\n\n.icon-settings:after {\n  content: 'C'; }\n\n.icon-cake:after {\n  content: 'Y'; }\n\n.icon-paper:after {\n  content: 'D'; }\n\n.icon-bulb:after {\n  content: 'l'; }\n\n.icon-compass:after {\n  content: 'N'; }\n\n.icon-ask:after {\n  content: 'Q'; }\n\n.icon-bookmark:after {\n  content: 'B'; }\n\n.icon-key:after {\n  content: 'K'; }\n\n.icon-copy:after {\n  content: 'e'; }\n\n.icon-viewfinder:after {\n  content: '@'; }\n\n.icon-magnifier:after {\n  content: 'M'; }\n\n.icon-lightning:after {\n  content: 'r'; }\n\n.icon-warning:after {\n  content: '!'; }\n\n.icon-pen:after {\n  content: 'w'; }\n\n.icon-folder:after {\n  content: 'F'; }\n\n.icon-arrow-up:after {\n  content: 'u'; }\n\n.icon-arrow-down:after {\n  content: 'd'; }\n\n.no-padding {\n  padding: 0px !important; }\n\n.no-margin {\n  margin: 0px !important; }\n\n.bg-color {\n  background-color: #5E335E; }\n\n.bg-color-dark {\n  background-color: #422442; }\n\n.bg-color-light {\n  background-color: #8D44AD; }\n\n.bg-neutral {\n  background-color: #F2F2F2; }\n\n.bg-neutral-darker {\n  background-color: #EFEFEF; }\n\n.bg-neutral-more-dark {\n  background-color: #dedede; }\n\n.font-primary {\n  color: #FFFFFF; }\n\n.full-height {\n  height: calc(100vh - 126px); }\n\n.font-headers {\n  color: #fff; }\n\n.font-headers-dark {\n  color: #FFA800; }\n\n.content-padding {\n  padding: 0px 30px; }\n\n* {\n  font-family: Roboto;\n  font-weight: 200;\n  outline: 0 !important;\n  -webkit-tap-highlight-color: transparent; }\n\nbody {\n  background-color: #EFEFEF;\n  font-size: 18px;\n  min-height: 100vh;\n  overflow-x: hidden;\n  position: relative; }\n\nh2 {\n  margin: 0;\n  font-size: 21.6px;\n  width: 100%;\n  padding: 20px 0 10px 0 !important;\n  font-weight: 200;\n  padding-left: 16px;\n  font-size: 23.4px;\n  font-weight: 400; }\n\nh3 {\n  font-size: 18px;\n  width: 100%;\n  font-weight: 200;\n  padding: 8px 16px !important; }\n\ntextarea {\n  width: 100%;\n  height: calc(100vh - 190px);\n  background-color: #EFEFEF;\n  border: 1px solid rgba(94, 51, 94, 0.2);\n  font-weight: 400;\n  font-size: 18px;\n  resize: none;\n  padding: 4px; }\n\nmain {\n  min-height: calc(100vh - 84px); }\n\n.btn:focus, .btn:active {\n  outline: none !important;\n  box-shadow: none; }\n\n.btn .home-button-text {\n  font-family: Roboto;\n  font-weight: 400; }\n\na:active, a:visited,\na:link, a:hover, a {\n  color: #7092a9 !important; }\n\n.alert-success {\n  color: #fff;\n  background-color: #6ab04c;\n  border: none; }\n\n.alert-danger {\n  color: #fff;\n  background-color: #ff7979;\n  border: none; }\n\n@font-face {\n  font-family: Roboto;\n  src: url(" + escape(__webpack_require__("./src/public/fonts/Roboto-Light.ttf")) + ");\n  font-weight: 200; }\n\n@font-face {\n  font-family: Roboto;\n  src: url(" + escape(__webpack_require__("./src/public/fonts/Roboto-Regular.ttf")) + ");\n  font-weight: 400; }\n\n.fas {\n  font-size: 18px; }\n\n.icon-settings:after {\n  content: 'C'; }\n\n.icon-cake:after {\n  content: 'Y'; }\n\n.icon-paper:after {\n  content: 'D'; }\n\n.icon-bulb:after {\n  content: 'l'; }\n\n.icon-compass:after {\n  content: 'N'; }\n\n.icon-ask:after {\n  content: 'Q'; }\n\n.icon-bookmark:after {\n  content: 'B'; }\n\n.icon-key:after {\n  content: 'K'; }\n\n.icon-copy:after {\n  content: 'e'; }\n\n.icon-viewfinder:after {\n  content: '@'; }\n\n.icon-magnifier:after {\n  content: 'M'; }\n\n.icon-lightning:after {\n  content: 'r'; }\n\n.icon-warning:after {\n  content: '!'; }\n\n.icon-pen:after {\n  content: 'w'; }\n\n.icon-folder:after {\n  content: 'F'; }\n\n.icon-arrow-up:after {\n  content: 'u'; }\n\n.icon-arrow-down:after {\n  content: 'd'; }\n\n.no-padding {\n  padding: 0px !important; }\n\n.no-margin {\n  margin: 0px !important; }\n\n.bg-color {\n  background-color: #5E335E; }\n\n.bg-color-dark {\n  background-color: #422442; }\n\n.bg-color-light {\n  background-color: #8D44AD; }\n\n.bg-neutral {\n  background-color: #F2F2F2; }\n\n.bg-neutral-darker {\n  background-color: #EFEFEF; }\n\n.bg-neutral-more-dark {\n  background-color: #dedede; }\n\n.font-primary {\n  color: #FFFFFF; }\n\n.full-height {\n  height: calc(100vh - 126px); }\n\n.font-headers {\n  color: #fff; }\n\n.font-headers-dark {\n  color: #FFA800; }\n\n.content-padding {\n  padding: 0px 30px; }\n\ninput[type=\"file\"] {\n  display: none; }\n\n.main-edit-menu {\n  background: none; }\n\n@media screen and (min-width: 768px) {\n  .main-edit-menu {\n    margin-top: 0 !important;\n    margin-right: 0 !important;\n    display: inline-block; }\n  .important-buttons {\n    display: inline-block; } }\n\n@media screen and (max-width: 768px) {\n  .home-button {\n    width: 100%;\n    margin-right: 0 !important; }\n  .main-edit-menu {\n    width: 100%; }\n  .main-edit-menu {\n    background: none !important; }\n    .main-edit-menu .home-button {\n      width: 20%;\n      border-radius: 0;\n      border-right: 1px solid #7092a9; }\n    .main-edit-menu button:last-of-type {\n      border-right: 0; }\n  .important-buttons {\n    width: 100%; }\n    .important-buttons .home-button {\n      width: 33.333%;\n      border-radius: 0;\n      border-right: 1px solid #7092a9; }\n    .important-buttons button:last-of-type {\n      border-right: 0; } }\n\n@media screen and (max-width: 575px) {\n  .main-edit-menu .home-button .home-button-text {\n    display: none; }\n  .main-edit-menu .home-button .fas {\n    margin-right: 0 !important; } }\n\n.custom-toggler.navbar-toggler {\n  border: none; }\n\n.custom-toggler .navbar-toggler-icon {\n  background-image: url(\"data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E\"); }\n\n.logo {\n  font-size: 18px; }\n\n.navbar {\n  background-color: #95afc0;\n  padding: 0; }\n  .navbar a:active, .navbar a:visited,\n  .navbar a:link, .navbar a:hover, .navbar a {\n    color: #fff !important; }\n\n.navbar-nav {\n  font-size: 18px; }\n\n.navbar-nav .icon {\n  font-size: 18px; }\n\n.active {\n  background-color: #535c68; }\n\n.nav-link {\n  padding-top: 12px;\n  padding-bottom: 12px;\n  padding-left: 16px !important;\n  padding-right: 16px !important; }\n\n.navbar-brand {\n  padding-left: 16px; }\n\n@font-face {\n  font-family: Roboto;\n  src: url(" + escape(__webpack_require__("./src/public/fonts/Roboto-Light.ttf")) + ");\n  font-weight: 200; }\n\n@font-face {\n  font-family: Roboto;\n  src: url(" + escape(__webpack_require__("./src/public/fonts/Roboto-Regular.ttf")) + ");\n  font-weight: 400; }\n\n.fas {\n  font-size: 18px; }\n\n.icon-settings:after {\n  content: 'C'; }\n\n.icon-cake:after {\n  content: 'Y'; }\n\n.icon-paper:after {\n  content: 'D'; }\n\n.icon-bulb:after {\n  content: 'l'; }\n\n.icon-compass:after {\n  content: 'N'; }\n\n.icon-ask:after {\n  content: 'Q'; }\n\n.icon-bookmark:after {\n  content: 'B'; }\n\n.icon-key:after {\n  content: 'K'; }\n\n.icon-copy:after {\n  content: 'e'; }\n\n.icon-viewfinder:after {\n  content: '@'; }\n\n.icon-magnifier:after {\n  content: 'M'; }\n\n.icon-lightning:after {\n  content: 'r'; }\n\n.icon-warning:after {\n  content: '!'; }\n\n.icon-pen:after {\n  content: 'w'; }\n\n.icon-folder:after {\n  content: 'F'; }\n\n.icon-arrow-up:after {\n  content: 'u'; }\n\n.icon-arrow-down:after {\n  content: 'd'; }\n\n.no-padding {\n  padding: 0px !important; }\n\n.no-margin {\n  margin: 0px !important; }\n\n.bg-color {\n  background-color: #5E335E; }\n\n.bg-color-dark {\n  background-color: #422442; }\n\n.bg-color-light {\n  background-color: #8D44AD; }\n\n.bg-neutral {\n  background-color: #F2F2F2; }\n\n.bg-neutral-darker {\n  background-color: #EFEFEF; }\n\n.bg-neutral-more-dark {\n  background-color: #dedede; }\n\n.font-primary {\n  color: #FFFFFF; }\n\n.full-height {\n  height: calc(100vh - 126px); }\n\n.font-headers {\n  color: #fff; }\n\n.font-headers-dark {\n  color: #FFA800; }\n\n.content-padding {\n  padding: 0px 30px; }\n\n.footer {\n  padding-top: 4.8px;\n  padding-bottom: 4.8px;\n  background-color: #535c68;\n  text-align: center;\n  font-size: 16px;\n  color: #fff;\n  position: absolute;\n  right: 0;\n  left: 0; }\n\n.bb-tag {\n  font-weight: 600; }\n\n.dropdown {\n  z-index: 999999; }\n\n.dropdown .btn {\n  background: none;\n  border: none;\n  color: #fff;\n  font-weight: 200;\n  font-size: 18px;\n  line-height: 24px;\n  font-family: Roboto; }\n\n.dropdown-menu {\n  background-color: #422442;\n  color: #fff;\n  border: none;\n  border-radius: 0px;\n  padding: .25rem 0; }\n\n.dropdown-item {\n  padding: 3px 0.8rem; }\n\n.dropdown-item:hover,\n.dropdown-item:active {\n  background-color: #5E335E; }\n\n.content {\n  font-family: Roboto;\n  font-weight: 400; }\n\n#preview-bb-content {\n  position: absolute;\n  left: 0;\n  right: 0;\n  z-index: 999;\n  height: calc(100vh - 88px);\n  background-color: #dedede;\n  border: none;\n  border-radius: 0;\n  font-size: 18px;\n  color: #422442; }\n\n.btn {\n  border: none; }\n  .btn:hover, .btn:active {\n    outline: none; }\n\n.btn-primary {\n  background-color: #95afc0;\n  color: #fff; }\n  .btn-primary:hover, .btn-primary:active {\n    background-color: #7092a9;\n    color: #fff; }\n\n.btn-danger {\n  background-color: #ff7979;\n  color: #fff; }\n  .btn-danger:hover, .btn-danger:active {\n    background-color: #eb4d4b;\n    color: #fff; }\n\n.alert-preview {\n  background-color: #535c68;\n  color: #fff; }\n\n.text-danger {\n  color: #ff7979; }\n\n.syntax-desc {\n  line-height: 2; }\n\nh5 {\n  color: #95afc0;\n  margin-top: 10px;\n  margin-bottom: 10px; }\n", ""]);
+exports.push([module.i, "@font-face {\n  font-family: Roboto;\n  src: url(" + escape(__webpack_require__("./src/public/fonts/Roboto-Light.ttf")) + ");\n  font-weight: 200; }\n\n@font-face {\n  font-family: Roboto;\n  src: url(" + escape(__webpack_require__("./src/public/fonts/Roboto-Regular.ttf")) + ");\n  font-weight: 400; }\n\n.fas {\n  font-size: 18px; }\n\n.icon-settings:after {\n  content: 'C'; }\n\n.icon-cake:after {\n  content: 'Y'; }\n\n.icon-paper:after {\n  content: 'D'; }\n\n.icon-bulb:after {\n  content: 'l'; }\n\n.icon-compass:after {\n  content: 'N'; }\n\n.icon-ask:after {\n  content: 'Q'; }\n\n.icon-bookmark:after {\n  content: 'B'; }\n\n.icon-key:after {\n  content: 'K'; }\n\n.icon-copy:after {\n  content: 'e'; }\n\n.icon-viewfinder:after {\n  content: '@'; }\n\n.icon-magnifier:after {\n  content: 'M'; }\n\n.icon-lightning:after {\n  content: 'r'; }\n\n.icon-warning:after {\n  content: '!'; }\n\n.icon-pen:after {\n  content: 'w'; }\n\n.icon-folder:after {\n  content: 'F'; }\n\n.icon-arrow-up:after {\n  content: 'u'; }\n\n.icon-arrow-down:after {\n  content: 'd'; }\n\n.no-padding {\n  padding: 0px !important; }\n\n.no-margin {\n  margin: 0px !important; }\n\n.bg-color {\n  background-color: #5E335E; }\n\n.bg-color-dark {\n  background-color: #422442; }\n\n.bg-color-light {\n  background-color: #8D44AD; }\n\n.bg-neutral {\n  background-color: #F2F2F2; }\n\n.bg-neutral-darker {\n  background-color: #EFEFEF; }\n\n.bg-neutral-more-dark {\n  background-color: #dedede; }\n\n.font-primary {\n  color: #FFFFFF; }\n\n.full-height {\n  height: calc(100vh - 126px); }\n\n.font-headers {\n  color: #fff; }\n\n.font-headers-dark {\n  color: #FFA800; }\n\n.content-padding {\n  padding: 0px 30px; }\n\n* {\n  font-family: Roboto;\n  font-weight: 200;\n  outline: 0 !important;\n  -webkit-tap-highlight-color: transparent; }\n\nbody {\n  background-color: #EFEFEF;\n  font-size: 18px;\n  min-height: 100vh;\n  overflow-x: hidden;\n  position: relative; }\n\nh2 {\n  margin: 0;\n  font-size: 21.6px;\n  width: 100%;\n  padding: 20px 0 10px 0 !important;\n  font-weight: 200;\n  padding-left: 16px;\n  font-size: 23.4px;\n  font-weight: 400; }\n\nh3 {\n  font-size: 18px;\n  width: 100%;\n  font-weight: 200;\n  padding: 8px 16px !important; }\n\ntextarea {\n  width: 100%;\n  height: calc(100vh - 190px);\n  background-color: #EFEFEF;\n  border: 1px solid rgba(94, 51, 94, 0.2);\n  font-weight: 400;\n  font-size: 18px;\n  resize: none;\n  padding: 4px; }\n\nmain {\n  min-height: calc(100vh - 84px); }\n\n.btn:focus, .btn:active {\n  outline: none !important;\n  box-shadow: none; }\n\n.btn .home-button-text {\n  font-family: Roboto;\n  font-weight: 400; }\n\na:active, a:visited,\na:link, a:hover, a {\n  color: #7092a9 !important; }\n\n.alert-success {\n  color: #fff;\n  background-color: #6ab04c;\n  border: none; }\n\n.alert-danger {\n  color: #fff;\n  background-color: #ff7979;\n  border: none; }\n\n@font-face {\n  font-family: Roboto;\n  src: url(" + escape(__webpack_require__("./src/public/fonts/Roboto-Light.ttf")) + ");\n  font-weight: 200; }\n\n@font-face {\n  font-family: Roboto;\n  src: url(" + escape(__webpack_require__("./src/public/fonts/Roboto-Regular.ttf")) + ");\n  font-weight: 400; }\n\n.fas {\n  font-size: 18px; }\n\n.icon-settings:after {\n  content: 'C'; }\n\n.icon-cake:after {\n  content: 'Y'; }\n\n.icon-paper:after {\n  content: 'D'; }\n\n.icon-bulb:after {\n  content: 'l'; }\n\n.icon-compass:after {\n  content: 'N'; }\n\n.icon-ask:after {\n  content: 'Q'; }\n\n.icon-bookmark:after {\n  content: 'B'; }\n\n.icon-key:after {\n  content: 'K'; }\n\n.icon-copy:after {\n  content: 'e'; }\n\n.icon-viewfinder:after {\n  content: '@'; }\n\n.icon-magnifier:after {\n  content: 'M'; }\n\n.icon-lightning:after {\n  content: 'r'; }\n\n.icon-warning:after {\n  content: '!'; }\n\n.icon-pen:after {\n  content: 'w'; }\n\n.icon-folder:after {\n  content: 'F'; }\n\n.icon-arrow-up:after {\n  content: 'u'; }\n\n.icon-arrow-down:after {\n  content: 'd'; }\n\n.no-padding {\n  padding: 0px !important; }\n\n.no-margin {\n  margin: 0px !important; }\n\n.bg-color {\n  background-color: #5E335E; }\n\n.bg-color-dark {\n  background-color: #422442; }\n\n.bg-color-light {\n  background-color: #8D44AD; }\n\n.bg-neutral {\n  background-color: #F2F2F2; }\n\n.bg-neutral-darker {\n  background-color: #EFEFEF; }\n\n.bg-neutral-more-dark {\n  background-color: #dedede; }\n\n.font-primary {\n  color: #FFFFFF; }\n\n.full-height {\n  height: calc(100vh - 126px); }\n\n.font-headers {\n  color: #fff; }\n\n.font-headers-dark {\n  color: #FFA800; }\n\n.content-padding {\n  padding: 0px 30px; }\n\ninput[type=\"file\"] {\n  display: none; }\n\n.main-edit-menu {\n  background: none; }\n\n@media screen and (min-width: 768px) {\n  .main-edit-menu {\n    margin-top: 0 !important;\n    margin-right: 0 !important;\n    display: inline-block; }\n  .important-buttons {\n    display: inline-block; } }\n\n@media screen and (max-width: 768px) {\n  .home-button {\n    width: 100%;\n    margin-right: 0 !important; }\n  .main-edit-menu {\n    width: 100%; }\n  .main-edit-menu,\n  .gui-edit-buttons {\n    background: none !important; }\n    .main-edit-menu .home-button,\n    .gui-edit-buttons .home-button {\n      width: 20%;\n      border-radius: 0;\n      border-right: 1px solid #7092a9; }\n    .main-edit-menu button:last-of-type,\n    .gui-edit-buttons button:last-of-type {\n      border-right: 0; }\n  .gui-edit-buttons .home-button {\n    margin-top: 0 !important; }\n  .important-buttons {\n    width: 100%; }\n    .important-buttons .home-button {\n      width: 33.333%;\n      border-radius: 0;\n      border-right: 1px solid #7092a9; }\n    .important-buttons button:last-of-type {\n      border-right: 0; } }\n\n@media screen and (max-width: 575px) {\n  .main-edit-menu .home-button .home-button-text,\n  .gui-edit-buttons .home-button .home-button-text {\n    display: none; }\n  .main-edit-menu .home-button .fas,\n  .gui-edit-buttons .home-button .fas {\n    margin-right: 0 !important; } }\n\n.custom-toggler.navbar-toggler {\n  border: none; }\n\n.custom-toggler .navbar-toggler-icon {\n  background-image: url(\"data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E\"); }\n\n.logo {\n  font-size: 18px; }\n\n.navbar {\n  background-color: #95afc0;\n  padding: 0; }\n  .navbar a:active, .navbar a:visited,\n  .navbar a:link, .navbar a:hover, .navbar a {\n    color: #fff !important; }\n\n.navbar-nav {\n  font-size: 18px; }\n\n.navbar-nav .icon {\n  font-size: 18px; }\n\n.active {\n  background-color: #535c68; }\n\n.nav-link {\n  padding-top: 12px;\n  padding-bottom: 12px;\n  padding-left: 16px !important;\n  padding-right: 16px !important; }\n\n.navbar-brand {\n  padding-left: 16px; }\n\n@font-face {\n  font-family: Roboto;\n  src: url(" + escape(__webpack_require__("./src/public/fonts/Roboto-Light.ttf")) + ");\n  font-weight: 200; }\n\n@font-face {\n  font-family: Roboto;\n  src: url(" + escape(__webpack_require__("./src/public/fonts/Roboto-Regular.ttf")) + ");\n  font-weight: 400; }\n\n.fas {\n  font-size: 18px; }\n\n.icon-settings:after {\n  content: 'C'; }\n\n.icon-cake:after {\n  content: 'Y'; }\n\n.icon-paper:after {\n  content: 'D'; }\n\n.icon-bulb:after {\n  content: 'l'; }\n\n.icon-compass:after {\n  content: 'N'; }\n\n.icon-ask:after {\n  content: 'Q'; }\n\n.icon-bookmark:after {\n  content: 'B'; }\n\n.icon-key:after {\n  content: 'K'; }\n\n.icon-copy:after {\n  content: 'e'; }\n\n.icon-viewfinder:after {\n  content: '@'; }\n\n.icon-magnifier:after {\n  content: 'M'; }\n\n.icon-lightning:after {\n  content: 'r'; }\n\n.icon-warning:after {\n  content: '!'; }\n\n.icon-pen:after {\n  content: 'w'; }\n\n.icon-folder:after {\n  content: 'F'; }\n\n.icon-arrow-up:after {\n  content: 'u'; }\n\n.icon-arrow-down:after {\n  content: 'd'; }\n\n.no-padding {\n  padding: 0px !important; }\n\n.no-margin {\n  margin: 0px !important; }\n\n.bg-color {\n  background-color: #5E335E; }\n\n.bg-color-dark {\n  background-color: #422442; }\n\n.bg-color-light {\n  background-color: #8D44AD; }\n\n.bg-neutral {\n  background-color: #F2F2F2; }\n\n.bg-neutral-darker {\n  background-color: #EFEFEF; }\n\n.bg-neutral-more-dark {\n  background-color: #dedede; }\n\n.font-primary {\n  color: #FFFFFF; }\n\n.full-height {\n  height: calc(100vh - 126px); }\n\n.font-headers {\n  color: #fff; }\n\n.font-headers-dark {\n  color: #FFA800; }\n\n.content-padding {\n  padding: 0px 30px; }\n\n.footer {\n  padding-top: 4.8px;\n  padding-bottom: 4.8px;\n  background-color: #535c68;\n  text-align: center;\n  font-size: 16px;\n  color: #fff;\n  position: absolute;\n  right: 0;\n  left: 0; }\n\n.bb-tag {\n  font-weight: 600; }\n\n.dropdown {\n  z-index: 999999; }\n\n.dropdown .btn {\n  background: none;\n  border: none;\n  color: #fff;\n  font-weight: 200;\n  font-size: 18px;\n  line-height: 24px;\n  font-family: Roboto; }\n\n.dropdown-menu {\n  background-color: #422442;\n  color: #fff;\n  border: none;\n  border-radius: 0px;\n  padding: .25rem 0; }\n\n.dropdown-item {\n  padding: 3px 0.8rem; }\n\n.dropdown-item:hover,\n.dropdown-item:active {\n  background-color: #5E335E; }\n\n.content {\n  font-family: Roboto;\n  font-weight: 400; }\n\n#preview-bb-content {\n  position: absolute;\n  left: 0;\n  right: 0;\n  z-index: 999;\n  height: calc(100vh - 88px);\n  background-color: #dedede;\n  border: none;\n  border-radius: 0;\n  font-size: 18px;\n  color: #422442; }\n\n.btn {\n  border: none; }\n  .btn:hover, .btn:active {\n    outline: none; }\n\n.btn-primary {\n  background-color: #95afc0;\n  color: #fff; }\n  .btn-primary:hover, .btn-primary:active {\n    background-color: #7092a9;\n    color: #fff; }\n\n.btn-danger {\n  background-color: #ff7979;\n  color: #fff; }\n  .btn-danger:hover, .btn-danger:active {\n    background-color: #eb4d4b;\n    color: #fff; }\n\n.alert-preview {\n  background-color: #535c68;\n  color: #fff; }\n\n.text-danger {\n  color: #ff7979; }\n\n.syntax-desc {\n  line-height: 2; }\n\nh5 {\n  color: #95afc0;\n  margin-top: 10px;\n  margin-bottom: 10px; }\n", ""]);
 
 // exports
 
@@ -33875,7 +33875,7 @@ _reactDom2.default.render(_react2.default.createElement(_App2.default, null), do
 /***/ "./src/lang/en.json":
 /***/ (function(module, exports) {
 
-module.exports = {"PAGE_IN_PROGRESS":"Page in progress! Next updates comming soon :)","TEXT_COPIED":"Text copied","TEXT_SAVED":"Text saved","TEXT_LOADED":"Text loaded","SAVE":"Save","LOAD":"Load","EXPORT":"Export","TOGGLE_TOOLBOX":"Toolbox","EXPORT_WARNING":"You have no text to export","IMPORT":"Import","MORE":"More","TEXT_IMPORTED":"Text imported","TEXT_IMPORTED_WARNING":"Cannot import text :(","TEXTAREA_PLACEHOLDER":"Write something :)","TEXT_REMOVED":"Text removed","BROWSER_SUPPORT":"Your browser doesn't support HTML5 features and this site can't work. Update your browser to use this site :)","YOUR_ACTIONS":"Your actions","REMOVE":"Remove saved text","EXPLAIN_LOCALSTORAGE":"This options works in your localstorage. This means, that the text will be save only in your brower and you can remove it using the \"remove\" button on this site or using your browser tools."}
+module.exports = {"PAGE_IN_PROGRESS":"Page in progress! Next updates comming soon :)","TEXT_COPIED":"Text copied","TEXT_SAVED":"Text saved","TEXT_LOADED":"Text loaded","SAVE":"Save","LOAD":"Load","EXPORT":"Export","TOGGLE_TOOLBOX":"Edit","EXPORT_WARNING":"You have no text to export","IMPORT":"Import","MORE":"More","PREVIEW":"View","COPY":"Copy","TEXT_IMPORTED":"Text imported","NOTHING_IN_TEXTAREA":"Textarea is empty","TEXT_IMPORTED_WARNING":"Cannot import text :(","TEXTAREA_PLACEHOLDER":"Write something :)","TEXT_REMOVED":"Text removed","BROWSER_SUPPORT":"Your browser doesn't support HTML5 features and this site can't work. Update your browser to use this site :)","YOUR_ACTIONS":"Your actions","REMOVE":"Remove saved text","EXPLAIN_LOCALSTORAGE":"This options works in your localstorage. This means, that the text will be save only in your brower and you can remove it using the \"remove\" button on this site or using your browser tools."}
 
 /***/ }),
 
@@ -33915,19 +33915,20 @@ Object.defineProperty(exports, "__esModule", {
 var BBCodeInterpreter = function () {
     var _bbText = '';
     var BASE_HTML_ELEMENT_TYPE = 'div';
+
+    var REGEXPS_TO_DETECT_TYPE = {
+        italic: /^\[i\](.*?)\[\/i\]$/,
+        bold: /^\[b\](.*?)\[\/b\]$/,
+        stars: /^\*(.*?)\*$/,
+        underline: /^\[u\](.*?)\[\/u\]$/,
+        strikethrough: /^\[s\](.*?)\[\/s\]$/
+    };
+
     var SIMPLE_SYMBOLS_PARSER = {
-        italic: {
-            parse: simpleReplace(/\[i\]/g, /\[\/i\]/g, 'bb-italic')
-        },
-        strong: {
-            parse: simpleReplace(/\[b\]/g, /\[\/b\]/g, 'bb-strong')
-        },
-        underlined: {
-            parse: simpleReplace(/\[u\]/g, /\[\/u\]/g, 'bb-underlined')
-        },
-        strikethrough: {
-            parse: simpleReplace(/\[s\]/g, /\[\/s\]/g, 'bb-strikethrough')
-        },
+        italic: { parse: simpleReplace(/\[i\]/g, /\[\/i\]/g, 'bb-italic') },
+        bold: { parse: simpleReplace(/\[b\]/g, /\[\/b\]/g, 'bb-strong') },
+        underlined: { parse: simpleReplace(/\[u\]/g, /\[\/u\]/g, 'bb-underlined') },
+        strikethrough: { parse: simpleReplace(/\[s\]/g, /\[\/s\]/g, 'bb-strikethrough') },
         code: {
             parse: function parse() {
                 var bbText = _bbText;
@@ -34063,7 +34064,10 @@ var BBCodeInterpreter = function () {
     }
 
     return {
-        decodeToHTML: decodeToHTML
+        decodeToHTML: decodeToHTML,
+        getRegexpsToDetectType: function getRegexpsToDetectType() {
+            return REGEXPS_TO_DETECT_TYPE;
+        }
     };
 }();
 
@@ -34351,7 +34355,7 @@ var HomePage = function (_React$Component) {
         _this.state = {
             displayAlert: false,
             alertText: LANG.PAGE_IN_PROGRESS,
-            alertColor: "danger",
+            alertColor: 'danger',
             displayPreview: false,
             currentText: _LocalStorageController2.default.getAutoSave() ? _LocalStorageController2.default.getText() : '',
             collapseMainEditButtons: false,
@@ -34363,7 +34367,7 @@ var HomePage = function (_React$Component) {
     _createClass(HomePage, [{
         key: '_setDisplayAlert',
         value: function _setDisplayAlert(icon, text) {
-            var color = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : "success";
+            var color = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 'success';
 
             this.setState({
                 displayAlert: true,
@@ -34379,7 +34383,7 @@ var HomePage = function (_React$Component) {
         key: '_handleCopyButtonAction',
         value: function _handleCopyButtonAction(event) {
             this.textArea.select();
-            document.execCommand("copy");
+            document.execCommand('copy');
             event.target.focus();
             this._setDisplayAlert(_iconsType2.default.COPY, LANG.TEXT_COPIED);
         }
@@ -34409,7 +34413,7 @@ var HomePage = function (_React$Component) {
             if (textToExport !== '') {
                 fileDownload(textToExport, 'beStarSession.txt');
             } else {
-                this._setDisplayAlert(_iconsType2.default.WARNING, LANG.EXPORT_WARNING, "danger");
+                this._setDisplayAlert(_iconsType2.default.WARNING, LANG.EXPORT_WARNING, 'danger');
             }
         }
     }, {
@@ -34419,14 +34423,14 @@ var HomePage = function (_React$Component) {
 
             var file = event.target.files[0];
             var reader = new FileReader();
-            reader.readAsText(file, "UTF-8");
+            reader.readAsText(file, 'UTF-8');
 
             reader.onload = function (event) {
                 _this2.setState({ currentText: event.target.result });
                 _this2._setDisplayAlert(_iconsType2.default.DOWNLOAD, LANG.TEXT_IMPORTED);
             };
             reader.onerror = function () {
-                return _this2._setDisplayAlert(_iconsType2.default.WARNING, LANG.TEXT_IMPORTED_WARNING, "danger");
+                return _this2._setDisplayAlert(_iconsType2.default.WARNING, LANG.TEXT_IMPORTED_WARNING, 'danger');
             };
         }
     }, {
@@ -34456,6 +34460,26 @@ var HomePage = function (_React$Component) {
             return additionalButtons;
         }
     }, {
+        key: '_setCurrentText',
+        value: function _setCurrentText(currentText) {
+            this.setState({ currentText: currentText });
+        }
+    }, {
+        key: '_getSelectedText',
+        value: function _getSelectedText() {
+            var start = this.textArea.selectionStart;
+            var end = this.textArea.selectionEnd;
+            return { start: start, end: end };
+        }
+    }, {
+        key: '_closeAllEditMenu',
+        value: function _closeAllEditMenu() {
+            this.setState({
+                collapseMainEditButtons: !this.state.collapseMainEditButtons,
+                collapseToolbox: false
+            });
+        }
+    }, {
         key: 'render',
         value: function render() {
             var _this4 = this;
@@ -34472,10 +34496,10 @@ var HomePage = function (_React$Component) {
                 { fluid: true },
                 _react2.default.createElement(
                     _reactstrap.Row,
-                    null,
+                    { className: 'mb-2' },
                     _react2.default.createElement(
                         _reactstrap.Col,
-                        { className: 'mb-3' },
+                        null,
                         _react2.default.createElement(_HomeElements.HomeMenu, {
                             previewAction: function previewAction() {
                                 return _this4._handlePreviewButtonAction();
@@ -34486,7 +34510,7 @@ var HomePage = function (_React$Component) {
                             additionals: this._renderAdditionalMenuButtons(),
                             isOpen: this.state.collapseMainEditButtons,
                             toggleButtons: function toggleButtons() {
-                                return _this4.setState({ collapseMainEditButtons: !_this4.state.collapseMainEditButtons });
+                                return _this4._closeAllEditMenu();
                             }
                         })
                     )
@@ -34494,7 +34518,21 @@ var HomePage = function (_React$Component) {
                 _react2.default.createElement(
                     _reactstrap.Row,
                     null,
-                    _react2.default.createElement(_HomeElements.GuiToolbox, { isOpen: this.state.collapseToolbox, className: 'mt-3' })
+                    _react2.default.createElement(
+                        _reactstrap.Col,
+                        null,
+                        _react2.default.createElement(_HomeElements.GuiToolbox, {
+                            isOpen: this.state.collapseToolbox,
+                            className: 'mb-3',
+                            currentText: this.state.currentText,
+                            getSelectedText: function getSelectedText() {
+                                return _this4._getSelectedText();
+                            },
+                            setCurrentText: function setCurrentText(text) {
+                                return _this4._setCurrentText(text);
+                            }
+                        })
+                    )
                 ),
                 _react2.default.createElement(
                     _reactstrap.Row,
@@ -34723,6 +34761,8 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.GuiToolbox = exports.ImportFile = exports.HomeMenu = exports.HomeMenuButton = exports.HomeTextArea = exports.Preview = undefined;
 
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
 var _react = __webpack_require__("./node_modules/react/index.js");
 
 var _react2 = _interopRequireDefault(_react);
@@ -34741,9 +34781,22 @@ var _iconsType = __webpack_require__("./src/presentation/iconsType.json");
 
 var _iconsType2 = _interopRequireDefault(_iconsType);
 
+var _utils = __webpack_require__("./src/presentation/utils.js");
+
+var _BBcodeInterpreter = __webpack_require__("./src/lib/BBcode-interpreter.js");
+
+var _BBcodeInterpreter2 = _interopRequireDefault(_BBcodeInterpreter);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
 var LANG = _langController2.default.getDefaultLang();
+var REGEXPS_TO_DETECT_BB_CODE = _BBcodeInterpreter2.default.getRegexpsToDetectType();
 
 var Preview = exports.Preview = function Preview(props) {
     return _react2.default.createElement(
@@ -34751,7 +34804,7 @@ var Preview = exports.Preview = function Preview(props) {
         { className: 'preview-content no-margin' },
         _react2.default.createElement(
             _reactstrap.Alert,
-            { color: "preview", isOpen: props.displayAlert, toggle: props.onAlertDismiss },
+            { color: 'preview', isOpen: props.displayAlert, toggle: props.onAlertDismiss },
             _react2.default.createElement('div', { dangerouslySetInnerHTML: { __html: props.text } })
         )
     );
@@ -34770,11 +34823,11 @@ var HomeTextArea = exports.HomeTextArea = function HomeTextArea(props) {
 var HomeMenuButton = exports.HomeMenuButton = function HomeMenuButton(props) {
     return _react2.default.createElement(
         _reactstrap.Button,
-        { color: 'primary', onClick: props.action, className: 'mr-2 mt-2 home-button' + (props.className ? ' ' + props.className : '') },
+        { color: 'primary', onClick: props.action, className: 'mr-2 mt-2 home-button' + _utils.UTIL.addClassIfNotEmpty(props) },
         _react2.default.createElement(_IconElement2.default, { icon: props.icon }),
         _react2.default.createElement(
             'span',
-            { className: "home-button-text" },
+            { className: 'home-button-text' },
             props.text
         )
     );
@@ -34787,9 +34840,9 @@ var HomeMenu = exports.HomeMenu = function HomeMenu(props) {
         _react2.default.createElement(
             'div',
             { className: 'important-buttons' },
-            _react2.default.createElement(HomeMenuButton, { action: props.previewAction, icon: "bullseye", text: "Preview" }),
-            _react2.default.createElement(HomeMenuButton, { action: props.copyAction, icon: "copy", text: "Copy" }),
-            _react2.default.createElement(HomeMenuButton, { action: props.toggleButtons, icon: _iconsType2.default.MORE, text: LANG.MORE, className: "d-md-none home-menu-more-btn" })
+            _react2.default.createElement(HomeMenuButton, { action: props.previewAction, icon: 'bullseye', text: LANG.PREVIEW }),
+            _react2.default.createElement(HomeMenuButton, { action: props.copyAction, icon: 'copy', text: LANG.COPY }),
+            _react2.default.createElement(HomeMenuButton, { action: props.toggleButtons, icon: _iconsType2.default.MORE, text: LANG.MORE, className: 'd-md-none home-menu-more-btn' })
         ),
         _react2.default.createElement(
             _reactstrap.Collapse,
@@ -34809,31 +34862,62 @@ var ImportFile = exports.ImportFile = function ImportFile(props) {
             } }),
         _react2.default.createElement(
             'span',
-            { className: "home-button-text" },
+            { className: 'home-button-text' },
             props.text
         )
     );
 };
 
-var GuiToolbox = exports.GuiToolbox = function GuiToolbox(props) {
-    return _react2.default.createElement(
-        _reactstrap.Col,
-        null,
-        _react2.default.createElement(
-            _reactstrap.Collapse,
-            { isOpen: props.isOpen, className: props.className },
-            _react2.default.createElement(
-                _reactstrap.Card,
-                null,
-                _react2.default.createElement(
-                    _reactstrap.CardBody,
-                    null,
-                    'Here will be GUI tools'
-                )
-            )
-        )
-    );
-};
+var GuiToolbox = exports.GuiToolbox = function (_React$Component) {
+    _inherits(GuiToolbox, _React$Component);
+
+    function GuiToolbox(props) {
+        _classCallCheck(this, GuiToolbox);
+
+        return _possibleConstructorReturn(this, (GuiToolbox.__proto__ || Object.getPrototypeOf(GuiToolbox)).call(this, props));
+    }
+
+    _createClass(GuiToolbox, [{
+        key: '_easyReplaceSelection',
+        value: function _easyReplaceSelection(startSymbol, endSymbol, regexpToDetect) {
+            var _props$getSelectedTex = this.props.getSelectedText(),
+                start = _props$getSelectedTex.start,
+                end = _props$getSelectedTex.end;
+
+            var currentText = this.props.currentText;
+            var selected = currentText.substring(start, end);
+            currentText = selected.match(regexpToDetect) ? currentText.replace(startSymbol, '').replace(endSymbol, '') : currentText.replace(selected, '' + startSymbol + selected + endSymbol);
+            this.props.setCurrentText(currentText);
+        }
+    }, {
+        key: 'render',
+        value: function render() {
+            var _this2 = this;
+
+            return _react2.default.createElement(
+                _reactstrap.Collapse,
+                { isOpen: this.props.isOpen, className: 'gui-edit-buttons' + _utils.UTIL.addClassIfNotEmpty(this.props) },
+                _react2.default.createElement(HomeMenuButton, { action: function action() {
+                        return _this2._easyReplaceSelection('[i]', '[/i]', REGEXPS_TO_DETECT_BB_CODE.italic);
+                    }, icon: _iconsType2.default.ITALIC, text: 'italic' }),
+                _react2.default.createElement(HomeMenuButton, { action: function action() {
+                        return _this2._easyReplaceSelection('[b]', '[/b]', REGEXPS_TO_DETECT_BB_CODE.bold);
+                    }, icon: _iconsType2.default.BOLD, text: 'bold' }),
+                _react2.default.createElement(HomeMenuButton, { action: function action() {
+                        return _this2._easyReplaceSelection('*', '*', REGEXPS_TO_DETECT_BB_CODE.stars);
+                    }, icon: _iconsType2.default.STAR, text: 'stars' }),
+                _react2.default.createElement(HomeMenuButton, { action: function action() {
+                        return _this2._easyReplaceSelection('[u]', '[/u]', REGEXPS_TO_DETECT_BB_CODE.underline);
+                    }, icon: _iconsType2.default.UNDERLINE, text: 'underline' }),
+                _react2.default.createElement(HomeMenuButton, { action: function action() {
+                        return _this2._easyReplaceSelection('[s]', '[/s]', REGEXPS_TO_DETECT_BB_CODE.strikethrough);
+                    }, icon: _iconsType2.default.STRIKETHROUGH, text: 'strikethrough' })
+            );
+        }
+    }]);
+
+    return GuiToolbox;
+}(_react2.default.Component);
 
 /***/ }),
 
@@ -34864,7 +34948,24 @@ exports.default = IconElement;
 /***/ "./src/presentation/iconsType.json":
 /***/ (function(module, exports) {
 
-module.exports = {"WARNING":"exclamation-triangle","COPY":"copy","SAVE":"save","LOAD":"arrow-alt-circle-down","DOWNLOAD":"download","UPLOAD":"upload","BARS":"bars","MORE":"ellipsis-h","TOOLBOX":"pencil-alt"}
+module.exports = {"WARNING":"exclamation-triangle","COPY":"copy","SAVE":"save","LOAD":"arrow-alt-circle-down","DOWNLOAD":"download","UPLOAD":"upload","BARS":"bars","MORE":"ellipsis-h","TOOLBOX":"pencil-alt","BOLD":"bold","ITALIC":"italic","STAR":"star","UNDERLINE":"underline","STRIKETHROUGH":"strikethrough"}
+
+/***/ }),
+
+/***/ "./src/presentation/utils.js":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+var UTIL = exports.UTIL = {
+    addClassIfNotEmpty: function addClassIfNotEmpty(props) {
+        return '' + (props.className ? ' ' + props.className : '');
+    }
+};
 
 /***/ }),
 
