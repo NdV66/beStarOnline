@@ -7,5 +7,10 @@
     "UPLOAD": "upload",
     "BARS": "bars",
     "MORE": "ellipsis-h",
-    "TOOLBOX": "pencil-alt"
+    "TOOLBOX": "pencil-alt",
+    "BOLD": "bold",
+    "ITALIC": "italic",
+    "STAR": "star",
+    "UNDERLINE": "underline",
+    "STRIKETHROUGH": "strikethrough"
 }

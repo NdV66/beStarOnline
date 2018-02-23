@@ -1,12 +1,35 @@
 {
-    "parserOptions": {
-        "ecmaVersion": 7,
-        "sourceType": "module",
-        "ecmaFeatures": {
-            "jsx": true
-        }
+    "settings": {
+      "react": {
+        "version": "16.2.0"
+      }
     },
-    "rules": {
-        "semi": 2
+      "rules": {
+        "semi": ["error", "always"],
+        "quotes": ["error", "single"],
+        "eol-last": ["warn", "require"]
+    },
+    "parserOptions": {
+      "ecmaVersion": 7,
+      "sourceType": "module",
+      "ecmaFeatures": {
+        "arrowFunctions": true,
+        "blockBindings": true,
+        "classes": true,
+        "defaultParams": true,
+        "destructuring": true,
+        "forOf": true,
+        "generators": true,
+        "modules": true,
+        "objectLiteralComputedProperties": true,
+        "objectLiteralDuplicateProperties": false,
+        "objectLiteralShorthandMethods": true,
+        "objectLiteralShorthandProperties": true,
+        "spread": true,
+        "superInFunctions": true,
+        "templateStrings": true,
+        "restParams": true,
+        "jsx": true
+      }
     }
 }

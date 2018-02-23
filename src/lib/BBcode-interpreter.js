@@ -1,19 +1,20 @@
 const BBCodeInterpreter = (() => {
     let _bbText = '';
     const BASE_HTML_ELEMENT_TYPE = 'div';
+
+    const REGEXPS_TO_DETECT_TYPE = {
+        italic: /^\[i\](.*?)\[\/i\]$/,
+        bold: /^\[b\](.*?)\[\/b\]$/,
+        stars: /^\*(.*?)\*$/,
+        underline: /^\[u\](.*?)\[\/u\]$/,
+        strikethrough: /^\[s\](.*?)\[\/s\]$/
+    }
+
     const SIMPLE_SYMBOLS_PARSER = {
-        italic: {
-            parse: simpleReplace(/\[i\]/g, /\[\/i\]/g, 'bb-italic')
-        },
-        strong: {
-            parse: simpleReplace(/\[b\]/g, /\[\/b\]/g, 'bb-strong')
-        },
-        underlined: {
-            parse: simpleReplace(/\[u\]/g, /\[\/u\]/g, 'bb-underlined')
-        },
-        strikethrough: {
-            parse: simpleReplace(/\[s\]/g, /\[\/s\]/g, 'bb-strikethrough')
-        },
+        italic: {parse: simpleReplace(/\[i\]/g, /\[\/i\]/g, 'bb-italic')},
+        bold: {parse: simpleReplace(/\[b\]/g, /\[\/b\]/g, 'bb-strong')},
+        underlined: {parse: simpleReplace(/\[u\]/g, /\[\/u\]/g, 'bb-underlined')},
+        strikethrough: {parse: simpleReplace(/\[s\]/g, /\[\/s\]/g, 'bb-strikethrough')},
         code: {
             parse: function () {
                 let bbText = _bbText;
@@ -145,7 +146,8 @@ const BBCodeInterpreter = (() => {
     }
 
     return {
-        decodeToHTML: decodeToHTML
+        decodeToHTML: decodeToHTML,
+        getRegexpsToDetectType: () => REGEXPS_TO_DETECT_TYPE
     };
 })();
 
