@@ -12,7 +12,7 @@ const _simpleReplace = (startRegexp, endRegexp, cssClass) => {
     return () => {
         const classTag = 'class';
         let bbText = _bbText;
-        bbText = bbText.replace(startRegexp, `<${BASE_HTML_ELEMENT_TYPE} ${classTag}="bb-display-inline ${cssClass}">`);
+        bbText = bbText.replace(startRegexp, `<${BASE_HTML_ELEMENT_TYPE} ${classTag}="${cssClass} bb-display-inline">`);
         bbText = bbText.replace(endRegexp, `</${BASE_HTML_ELEMENT_TYPE}>`);
         bbText && ( _bbText = bbText);
     };
@@ -44,14 +44,14 @@ const _parseCode =  () => {
 const _parseHref = (link) => {
     let newLink = link.replace(/\[\/url\]/, '</a>');
     newLink = newLink.replace(/\[\url\]/, `<a href="${link.substring(5, link.length - 6)}">`);
-    const replace = _bbText.replace(link, newLink);
+    const bbText = _bbText.replace(link, newLink);
     bbText && ( _bbText = bbText);
 };
 
 const _parseDescHref = (link) => {
     const linkName = link.match(/\](.*?)\[/);
     const linkHref = link.match(/\="(.*?)"/);
-    const replace = _bbText.replace(link, `<a href="${linkHref[1]}">${linkName[1]}</a>`);
+    const bbText = _bbText.replace(link, `<a href="${linkHref[1]}">${linkName[1]}</a>`);
     bbText && ( _bbText = bbText);
 };
 
@@ -75,7 +75,7 @@ const _parseLinks = () => {
 const _parseImage = () => {
     createHTMLelement(/\[img\](.*?)\[\/img\]/g, function (link) {
         const imgLink = link.match(/\[img\](.*?)\[\/img\]/);
-        const replace = _bbText.replace(link, `<img src="${imgLink[1]}" />`);
+        const bbText = _bbText.replace(link, `<img src="${imgLink[1]}" />`);
         bbText && ( _bbText = bbText);
     });
 };
@@ -83,7 +83,7 @@ const _parseImage = () => {
 const _parseQuote = () => {
     createHTMLelement(/\[quote\](.*?)\[\/quote\]/g, function (link) {
         const qouteLink = link.match(/\[quote\](.*?)\[\/quote\]/);
-        const replace = _bbText.replace(link, `<blockquote><p>${qouteLink[1]}</p></<blockquote>`);
+        const bbText = _bbText.replace(link, `<blockquote><p>${qouteLink[1]}</p></blockquote>`);
         bbText && ( _bbText = bbText);
     });
 };
@@ -96,6 +96,8 @@ const _parseTable = () => {
     bbText = bbText.replace(/\[\/tr\]/g, '</tr>');
     bbText = bbText.replace(/\[td\]/g, '<td>');
     bbText = bbText.replace(/\[\/td\]/g, '</td>');
+    bbText = bbText.replace(/\[th\]/g, '<th>');
+    bbText = bbText.replace(/\[\/th\]/g, '</th>');
     bbText && ( _bbText = bbText);
 };
 
@@ -118,12 +120,12 @@ const SIMPLE_SYMBOLS_PARSER = {
     bold: _simpleReplace(/\[b\]/g, /\[\/b\]/g, 'bb-strong'),
     underlined: _simpleReplace(/\[u\]/g, /\[\/u\]/g, 'bb-underlined'),
     strikethrough: _simpleReplace(/\[s\]/g, /\[\/s\]/g, 'bb-strikethrough'),
+    stars: _parseStars,
     code: _parseCode,
-    link: _parseLinks,
     image: _parseImage,
     quote: _parseQuote,
     table: _parseTable,
-    stars: _parseStars,
+    link: _parseLinks,
 };
 
 const BBCodeInterpreter =  {
