@@ -1,9 +1,7 @@
 import en from './en.json';
 
-module.exports = (() => {
-    const getDefaultLang = () => en;
+const LangController = {
+    getDefaultLang: () => en
+};
 
-    return {
-        getDefaultLang
-    };
-})();
+module.exports = LangController;

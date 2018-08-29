@@ -15,7 +15,7 @@ class SettingsPage extends React.Component {
             isAutoSave: localStorageController.getAutoSave(),
             displayAlert: false,
             alertText: '',
-            alertColor: "danger"
+            alertColor: 'danger'
         };
     }
 
@@ -23,27 +23,49 @@ class SettingsPage extends React.Component {
         localStorageController.removeText();
         this.setState({
             displayAlert: true,
-            alertText: [<Icon key="1" icon={ICONS_TYPE.WARNING}/>, <span key="2">{LANG.TEXT_REMOVED}</span>],
-            alertColor: "danger"
+            alertText: [<Icon key='1' icon={ICONS_TYPE.WARNING}/>, <span key='2'>{LANG.TEXT_REMOVED}</span>],
+            alertColor: 'danger'
         });
     }
 
+    _getBaseAlert() {
+        return <BaseAlert
+            text={this.state.alertText}
+            color={this.state.alertColor}
+            onAlertDismiss={() => this.setState({ displayAlert: false })}
+            displayAlert={this.state.displayAlert}
+        />;
+    }
+
+    _getBrowserWarn() {
+        return <Col xs='12' className='text-danger mb-3'><Icon icon='exclamation-triangle'/>{
+            LANG.BROWSER_SUPPORT}
+        </Col>;
+    }
 
     render() {
-        const alert = this.state.displayAlert ? <BaseAlert text={this.state.alertText} color={this.state.alertColor} onAlertDismiss={() => this.setState({ displayAlert: false })} displayAlert={this.state.displayAlert}/> : null ;
-        const support = (typeof(Storage) == "undefined") ? <Col xs="12" className="text-danger mb-3"><Icon icon="exclamation-triangle"/>{LANG.BROWSER_SUPPORT}</Col> : null ;
+        const alert = this.state.displayAlert ? this._getBaseAlert() : null ;
+        const support = (typeof(Storage) == 'undefined') ? this._getBrowserWarn() : null ;
 
         return (
             <Container fluid={false}>
-                <Row className="pb-3">
-                    <Col xs="12">
-                        <h2><Icon icon={"bookmark"}/>{LANG.YOUR_ACTIONS}</h2>
+                <Row className='pb-3'>
+                    <Col xs='12'>
+                        <h2>
+                            <Icon icon={'bookmark'}/>
+                            {LANG.YOUR_ACTIONS}
+                        </h2>
                     </Col>
                     {alert}
                     {support}
-                    <Col xs="12">{LANG.EXPLAIN_LOCALSTORAGE}</Col>
-                    <Col xs="12">
-                        <Button color="danger" className="mt-3" onClick={() => this.handleRemoveButtonAction()}><Icon icon={"exclamation-triangle"}/>{LANG.REMOVE}</Button>
+                    <Col xs='12'>
+                        {LANG.EXPLAIN_LOCALSTORAGE}
+                    </Col>
+                    <Col xs='12'>
+                        <Button color='danger' className='mt-3' onClick={() => this.handleRemoveButtonAction()}>
+                            <Icon icon={'exclamation-triangle'}/>
+                            {LANG.REMOVE}
+                        </Button>
                     </Col>
                 </Row>
             </Container>);

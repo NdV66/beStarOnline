@@ -10,7 +10,9 @@
   "scripts": {
     "start": "webpack-dev-server",
     "build": "webpack",
-    "deploy": "gh-pages -d dist && rm -rf dist/"
+    "deploy": "gh-pages -d dist && rm -rf dist/",
+    "lint": "eslint .",
+    "lint-file": "eslint"
   },
   "dependencies": {
     "bootstrap": "4.0.0-beta.3",

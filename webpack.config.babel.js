@@ -4,8 +4,8 @@ const webpack = require('webpack');
 
 const productionPublicPath = '/beStarOnline';
 const devPublicPath = '/';
-const isDevMode = process.env.mode === 'DEV';
-console.log('------ webpack in mode: ' + process.env.mode);
+const isDevMode = process.env.conf === 'DEV';
+console.log('------ webpack in mode: ' + process.env.conf);
 
 const HtmlWebpackPluginConfig_Index = new HtmlWebpackPlugin({
     template: './src/index.html',
@@ -34,7 +34,6 @@ const devServerConf = {
         'Access-Control-Allow-Origin': '*'
     }
 };
-
 
 const baseConfig = {
     entry: {
