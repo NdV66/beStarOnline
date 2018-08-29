@@ -5,9 +5,14 @@
       }
     },
       "rules": {
+        "indent": ["warn", 4],
+        "quotes": ["warn","single"],
         "semi": ["error", "always"],
-        "quotes": ["error", "single"],
-        "eol-last": ["warn", "require"]
+        "jsx-quotes": ["warn", "prefer-single"],
+        "linebreak-style": 0,
+        "eol-last": ["error", "always"],
+        "no-multiple-empty-lines": "error",
+        "max-len": ["warn", { "code": 160 }]
     },
     "parserOptions": {
       "ecmaVersion": 7,
