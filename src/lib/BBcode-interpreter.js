@@ -97,11 +97,12 @@ const _parseQuote = () => {
 
 const _parseStars = () => {
     const textArray  = _bbText.split('');
-    let starsIndex = textArray.map((letter, index) => letter === '*' ? index : undefined);
     let isStart = true;
-    starsIndex = starsIndex.filter((tmp) => tmp !== undefined);
+    let starsIndex = textArray
+        .map((letter, index) => (letter === '*') && index)
+        .filter(index => !isNaN(index));
 
-    starsIndex.map((index) => {
+    starsIndex.forEach(index => {
         textArray[index] = isStart ? '<div class="bb-star bb-display-inline">' : '</div>';
         isStart = !isStart;
     });

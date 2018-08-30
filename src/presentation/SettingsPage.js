@@ -5,6 +5,7 @@ import BaseAlert from './elements/Alert';
 import localStorageController from '../controller/LocalStorageController';
 import LangController from '../lang/langController';
 import ICONS_TYPE from './iconsType.json';
+
 const LANG = LangController.getDefaultLang();
 
 class SettingsPage extends React.Component {
@@ -19,7 +20,7 @@ class SettingsPage extends React.Component {
         };
     }
 
-    handleRemoveButtonAction() {
+    _handleRemoveButtonAction() {
         localStorageController.removeText();
         this.setState({
             displayAlert: true,
@@ -62,7 +63,7 @@ class SettingsPage extends React.Component {
                         {LANG.EXPLAIN_LOCALSTORAGE}
                     </Col>
                     <Col xs='12'>
-                        <Button color='danger' className='mt-3' onClick={() => this.handleRemoveButtonAction()}>
+                        <Button color='danger' className='mt-3' onClick={() => this._handleRemoveButtonAction()}>
                             <Icon icon={'exclamation-triangle'}/>
                             {LANG.REMOVE}
                         </Button>

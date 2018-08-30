@@ -1,25 +1,22 @@
-const localStorageController = (() => {
-    const autoSaveKey = 'beStarAutoSave';
-    const textKey = 'beStarText';
-    const shouldTextBeLoaded = 'beStarShouldTextBeLoaded';
+const autoSaveKey = 'beStarAutoSave';
+const textKey = 'beStarText';
 
-    const saveText = (textToSave) =>  localStorage.setItem(textKey, textToSave);
-    const removeText = () => localStorage.removeItem(textKey);
-    const getAutoSave = () => JSON.parse(localStorage.getItem(autoSaveKey));
-    const setAutoSave = (option) => localStorage.setItem(autoSaveKey, option);
+const saveText = (textToSave) =>  localStorage.setItem(textKey, textToSave);
+const removeText = () => localStorage.removeItem(textKey);
+const getAutoSave = () => JSON.parse(localStorage.getItem(autoSaveKey));
+const setAutoSave = (option) => localStorage.setItem(autoSaveKey, option);
 
-    const getText = () => {
-        const text = localStorage.getItem(textKey);
-        return text ? text : '';
-    };
+const getText = () => {
+    const text = localStorage.getItem(textKey);
+    return text ? text : '';
+};
 
-    return {
-        saveText,
-        removeText,
-        getText,
-        getAutoSave,
-        setAutoSave
-    };
-})();
+const localStorageController = {
+    saveText,
+    removeText,
+    getText,
+    getAutoSave,
+    setAutoSave
+};
 
 export default localStorageController;
